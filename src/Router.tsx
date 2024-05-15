@@ -11,24 +11,26 @@ function Router(){
             <Layout>
                 <CountryProvider>
                     <Routes>
-                        <Route
-                            path="/"
-                            element={
-                                <List />
-                            }
-                        />
-                        <Route
-                            path="/findby"
-                            element={
-                                <FindBy />
-                            }
-                        />
-                        <Route
-                            path="/list"
-                            element={
-                                <ListAll />
-                            }
-                        />
+                        <Route path="GeographyPractice">
+                            <Route
+                                path="/"
+                                element={
+                                    <List />
+                                }
+                            />
+                            <Route
+                                path="/findby"
+                                element={
+                                    <FindBy />
+                                }
+                            />
+                            <Route
+                                path="/list"
+                                element={
+                                    <ListAll />
+                                }
+                            />
+                        </Route>
                     </Routes>
                 </CountryProvider>
             </Layout>
