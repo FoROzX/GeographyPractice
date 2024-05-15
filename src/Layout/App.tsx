@@ -16,15 +16,15 @@ function App({ children }: Props){
         return [
             {
                 name: "Countries",
-                path: "/"
+                path: "/GeographyPractice"
             },
             {
                 name: "Find country",
-                path: "/findby"
+                path: "/GeographyPractice/findby"
             },
             {
                 name: "List countries",
-                path: "/list"
+                path: "/GeographyPractice/list"
             }
         ];
     }, []);

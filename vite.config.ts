@@ -11,6 +11,7 @@ export default defineConfig({
           react: ['react', 'react-dom']
         }
       }
-    }
+    },
+    outDir: "build"
   }
 })
