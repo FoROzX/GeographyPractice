@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import List from "./Pages/List";
 import FindBy from "./Pages/FindBy";
 import ListAll from "./Pages/ListAll";
@@ -11,21 +11,22 @@ function Router(){
             <Layout>
                 <CountryProvider>
                     <Routes>
-                        <Route path="GeographyPractice">
+                        <Route path="/" element={<Navigate to="/GeographyPractice" />} />
+                        <Route path="/GeographyPractice">
                             <Route
-                                path="/"
+                                path=""
                                 element={
                                     <List />
                                 }
                             />
                             <Route
-                                path="/findby"
+                                path="findby"
                                 element={
                                     <FindBy />
                                 }
                             />
                             <Route
-                                path="/list"
+                                path="list"
                                 element={
                                     <ListAll />
                                 }
