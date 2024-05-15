@@ -1,0 +1,9 @@
+.CountryDataOuterContainer {
+    display: flex;
+    height: 32px;
+    width: 100%;
+}
+.CountryDataInnerContainer {
+    background-color: navy;
+    color: white;
+}
