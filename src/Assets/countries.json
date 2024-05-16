@@ -14,7 +14,15 @@
         "population": 2877797,
         "alternativeNames": [],
         "countryCode": "AL",
-        "area": 28748
+        "area": 28748,
+        "translations": [
+          {
+            "language": "de",
+            "capital": null,
+            "name": "Albanien",
+            "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Andorra",
@@ -28,7 +36,8 @@
         "population": 77265,
         "alternativeNames": [],
         "countryCode": "AD",
-        "area": 468
+        "area": 468,
+        "translations": []
       },
       {
         "name": "Austria",
@@ -42,7 +51,15 @@
         "population": 9006398,
         "alternativeNames": [],
         "countryCode": "AT",
-        "area": 83871
+        "area": 83871,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Wien",
+           "name": "Österreich",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Belarus",
@@ -56,7 +73,8 @@
         "population": 9449323,
         "alternativeNames": [],
         "countryCode": "BY",
-        "area": 207600
+        "area": 207600,
+        "translations": []
       },
       {
         "name": "Belgium",
@@ -70,7 +88,15 @@
         "population": 11589623,
         "alternativeNames": [],
         "countryCode": "BE",
-        "area": 30528
+        "area": 30528,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Brüssel",
+           "name": "Belgien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Bosnia and Herzegovina",
@@ -84,7 +110,15 @@
         "population": 3280819,
         "alternativeNames": ["Bosnia"],
         "countryCode": "BA",
-        "area": 51209
+        "area": 51209,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bosnien und Herzegovina",
+           "alternativeNames": ["Bosnien"]
+          }
+        ]
       },
       {
         "name": "Bulgaria",
@@ -98,7 +132,15 @@
         "population": 6948445,
         "alternativeNames": [],
         "countryCode": "BG",
-        "area": 111002
+        "area": 111002,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bulgarien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Croatia",
@@ -112,7 +154,15 @@
         "population": 4105267,
         "alternativeNames": [],
         "countryCode": "HR",
-        "area": 56594
+        "area": 56594,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kroatien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Czech Republic",
@@ -124,9 +174,19 @@
         "latitude": 49.8175,
         "longitude": 15.4730,
         "population": 10708981,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "Czechia"
+        ],
         "countryCode": "CZ",
-        "area": 78865
+        "area": 78865,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Prag",
+           "name": "Tschechien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Denmark",
@@ -140,7 +200,15 @@
         "population": 5792202,
         "alternativeNames": [],
         "countryCode": "DK",
-        "area": 43094
+        "area": 43094,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Kopenhagen",
+           "name": "Dänemark",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Estonia",
@@ -154,7 +222,15 @@
         "population": 1326535,
         "alternativeNames": [],
         "countryCode": "EE",
-        "area": 45227
+        "area": 45227,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Estland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Faroe Islands",
@@ -168,7 +244,15 @@
         "population": 48863,
         "alternativeNames": [],
         "countryCode": "FO",
-        "area": 1393
+        "area": 1393,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Färöer",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Finland",
@@ -182,7 +266,15 @@
         "population": 5540720,
         "alternativeNames": [],
         "countryCode": "FI",
-        "area": 338424
+        "area": 338424,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Finnland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "France",
@@ -196,7 +288,15 @@
         "population": 65273511,
         "alternativeNames": [],
         "countryCode": "FR",
-        "area": 551695
+        "area": 551695,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Frankreich",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Germany",
@@ -210,7 +310,15 @@
         "population": 83783942,
         "alternativeNames": [],
         "countryCode": "DE",
-        "area": 357022
+        "area": 357022,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Deutschland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Gibraltar",
@@ -224,7 +332,8 @@
         "population": 33691,
         "alternativeNames": [],
         "countryCode": "GI",
-        "area": 6
+        "area": 6,
+        "translations": []
       },
       {
         "name": "Greece",
@@ -238,7 +347,15 @@
         "population": 10423054,
         "alternativeNames": [],
         "countryCode": "GR",
-        "area": 131990
+        "area": 131990,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Athen",
+           "name": "Griechenland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Guernsey",
@@ -252,7 +369,8 @@
         "population": 67052,
         "alternativeNames": [],
         "countryCode": "GG",
-        "area": 78
+        "area": 78,
+        "translations": []
       },
       {
         "name": "Vatican City",
@@ -266,7 +384,15 @@
         "population": 801,
         "alternativeNames": ["Vatican"],
         "countryCode": "VA",
-        "area": 0.49
+        "area": 0.49,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Vatikanstadt",
+           "name": "Vatikanstadt",
+           "alternativeNames": ["Vatikan"]
+          }
+        ]
       },
       {
         "name": "Hungary",
@@ -280,7 +406,15 @@
         "population": 9660351,
         "alternativeNames": [],
         "countryCode": "HU",
-        "area": 93028
+        "area": 93028,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Ungarn",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Iceland",
@@ -294,7 +428,15 @@
         "population": 341243,
         "alternativeNames": [],
         "countryCode": "IS",
-        "area": 103000
+        "area": 103000,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Island",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Ireland",
@@ -308,7 +450,15 @@
         "population": 4937786,
         "alternativeNames": [],
         "countryCode": "IE",
-        "area": 70273
+        "area": 70273,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Irland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Isle of Man",
@@ -322,7 +472,8 @@
         "population": 85033,
         "alternativeNames": [],
         "countryCode": "IM",
-        "area": 572
+        "area": 572,
+        "translations": []
       },
       {
         "name": "Italy",
@@ -336,7 +487,15 @@
         "population": 60461826,
         "alternativeNames": [],
         "countryCode": "IT",
-        "area": 301340
+        "area": 301340,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Rom",
+           "name": "Italien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Jersey",
@@ -350,7 +509,8 @@
         "population": 107800,
         "alternativeNames": [],
         "countryCode": "JE",
-        "area": 116
+        "area": 116,
+        "translations": []
       },
       {
         "name": "Latvia",
@@ -364,7 +524,15 @@
         "population": 1886198,
         "alternativeNames": [],
         "countryCode": "LV",
-        "area": 64589
+        "area": 64589,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Lettland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Liechtenstein",
@@ -378,7 +546,8 @@
         "population": 38128,
         "alternativeNames": [],
         "countryCode": "LI",
-        "area": 160
+        "area": 160,
+        "translations": []
       },
       {
         "name": "Lithuania",
@@ -392,7 +561,15 @@
         "population": 2722289,
         "alternativeNames": [],
         "countryCode": "LT",
-        "area": 65300
+        "area": 65300,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Litauen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Luxembourg",
@@ -406,7 +583,15 @@
         "population": 625978,
         "alternativeNames": [],
         "countryCode": "LU",
-        "area": 2586
+        "area": 2586,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Luxemburg",
+           "name": "Luxemburg",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Malta",
@@ -420,7 +605,8 @@
         "population": 441543,
         "alternativeNames": [],
         "countryCode": "MT",
-        "area": 316
+        "area": 316,
+        "translations": []
       },
       {
         "name": "Moldova",
@@ -434,7 +620,15 @@
         "population": 4033963,
         "alternativeNames": [],
         "countryCode": "MD",
-        "area": 33846
+        "area": 33846,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Moldawien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Monaco",
@@ -448,7 +642,8 @@
         "population": 39244,
         "alternativeNames": [],
         "countryCode": "MC",
-        "area": 2.02
+        "area": 2.02,
+        "translations": []
       },
       {
         "name": "Montenegro",
@@ -462,7 +657,8 @@
         "population": 628066,
         "alternativeNames": [],
         "countryCode": "ME",
-        "area": 13812
+        "area": 13812,
+        "translations": []
       },
       {
         "name": "Netherlands",
@@ -476,7 +672,15 @@
         "population": 17134872,
         "alternativeNames": [],
         "countryCode": "NL",
-        "area": 41850
+        "area": 41850,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Niederlande",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "North Macedonia",
@@ -490,7 +694,15 @@
         "population": 2083374,
         "alternativeNames": [],
         "countryCode": "MK",
-        "area": 25713
+        "area": 25713,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Nordmazedonien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Norway",
@@ -504,7 +716,15 @@
         "population": 5465997,
         "alternativeNames": [],
         "countryCode": "NO",
-        "area": 323802
+        "area": 323802,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Norwegen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Poland",
@@ -518,7 +738,15 @@
         "population": 37846611,
         "alternativeNames": [],
         "countryCode": "PL",
-        "area": 312696
+        "area": 312696,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Warschau",
+           "name": "Polen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Portugal",
@@ -532,7 +760,15 @@
         "population": 10196709,
         "alternativeNames": [],
         "countryCode": "PT",
-        "area": 92090
+        "area": 92090,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Lissabon",
+           "name": null,
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Kosovo",
@@ -546,7 +782,8 @@
         "population": 1775378,
         "alternativeNames": [],
         "countryCode": "XK",
-        "area": 10908
+        "area": 10908,
+        "translations": []
       },
       {
         "name": "Romania",
@@ -560,7 +797,15 @@
         "population": 19237691,
         "alternativeNames": [],
         "countryCode": "RO",
-        "area": 238397
+        "area": 238397,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Rumänien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "San Marino",
@@ -574,7 +819,8 @@
         "population": 33931,
         "alternativeNames": [],
         "countryCode": "SM",
-        "area": 61
+        "area": 61,
+        "translations": []
       },
       {
         "name": "Serbia",
@@ -588,7 +834,15 @@
         "population": 8737371,
         "alternativeNames": [],
         "countryCode": "RS",
-        "area": 88361
+        "area": 88361,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Belgrad",
+           "name": "Serbien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Slovakia",
@@ -602,7 +856,15 @@
         "population": 5460109,
         "alternativeNames": [],
         "countryCode": "SK",
-        "area": 49037
+        "area": 49037,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Slovakei",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Slovenia",
@@ -616,7 +878,15 @@
         "population": 2078938,
         "alternativeNames": [],
         "countryCode": "SI",
-        "area": 20273
+        "area": 20273,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Slovenien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Spain",
@@ -630,7 +900,15 @@
         "population": 46754778,
         "alternativeNames": [],
         "countryCode": "ES",
-        "area": 505990
+        "area": 505990,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Spanien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Svalbard and Jan Mayen",
@@ -644,7 +922,15 @@
         "population": 2655,
         "alternativeNames": [],
         "countryCode": "SJ",
-        "area": 61399
+        "area": 61399,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Svalbard und Jan Mayen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Sweden",
@@ -658,7 +944,15 @@
         "population": 10099265,
         "alternativeNames": [],
         "countryCode": "SE",
-        "area": 450295
+        "area": 450295,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Schweden",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Switzerland",
@@ -672,7 +966,15 @@
         "population": 8654622,
         "alternativeNames": [],
         "countryCode": "CH",
-        "area": 41284
+        "area": 41284,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Schweiz",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Ukraine",
@@ -686,7 +988,15 @@
         "population": 43733762,
         "alternativeNames": [],
         "countryCode": "UA",
-        "area": 603550
+        "area": 603550,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Kiew",
+           "name": null,
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "United Kingdom",
@@ -700,7 +1010,15 @@
         "population": 68207116,
         "alternativeNames": ["UK"],
         "countryCode": "GB",
-        "area": 242495
+        "area": 242495,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Vereinigtes Königreich",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   },
@@ -719,7 +1037,8 @@
         "population": 38928341,
         "alternativeNames": [],
         "countryCode": "AF",
-        "area": 652230
+        "area": 652230,
+        "translations": []
       },
       {
         "name": "Armenia",
@@ -733,7 +1052,15 @@
         "population": 2963243,
         "alternativeNames": [],
         "countryCode": "AM",
-        "area": 29743
+        "area": 29743,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Armenien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Azerbaijan",
@@ -747,7 +1074,15 @@
         "population": 10139177,
         "alternativeNames": [],
         "countryCode": "AZ",
-        "area": 86600
+        "area": 86600,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Aserbaidschan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Bahrain",
@@ -761,7 +1096,8 @@
         "population": 1701575,
         "alternativeNames": [],
         "countryCode": "BH",
-        "area": 760
+        "area": 760,
+        "translations": []
       },
       {
         "name": "Bangladesh",
@@ -775,7 +1111,15 @@
         "population": 164689383,
         "alternativeNames": [],
         "countryCode": "BD",
-        "area": 147570
+        "area": 147570,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bangladesch",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Bhutan",
@@ -789,7 +1133,8 @@
         "population": 771608,
         "alternativeNames": [],
         "countryCode": "BT",
-        "area": 38394
+        "area": 38394,
+        "translations": []
       },
       {
         "name": "Brunei",
@@ -803,7 +1148,8 @@
         "population": 437479,
         "alternativeNames": [],
         "countryCode": "BN",
-        "area": 5765
+        "area": 5765,
+        "translations": []
       },
       {
         "name": "Cambodia",
@@ -817,7 +1163,15 @@
         "population": 16718965,
         "alternativeNames": [],
         "countryCode": "KH",
-        "area": 181035
+        "area": 181035,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kambodscha",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "China",
@@ -831,7 +1185,15 @@
         "population": 1439323776,
         "alternativeNames": [],
         "countryCode": "CN",
-        "area": 9706961
+        "area": 9706961,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Peking",
+           "name": null,
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Christmas Island",
@@ -845,7 +1207,15 @@
         "population": 1946,
         "alternativeNames": [],
         "countryCode": "CX",
-        "area": 135
+        "area": 135,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Weihnachtsinsel",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Cocos (Keeling) Islands",
@@ -859,7 +1229,15 @@
         "population": 555,
         "alternativeNames": ["Cocos Islands", "Keeling Islands"],
         "countryCode": "CC",
-        "area": 14
+        "area": 14,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kokosinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Cyprus",
@@ -873,7 +1251,15 @@
         "population": 1207359,
         "alternativeNames": [],
         "countryCode": "CY",
-        "area": 9251
+        "area": 9251,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Zypern",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Georgia",
@@ -887,7 +1273,15 @@
         "population": 3989167,
         "alternativeNames": [],
         "countryCode": "GE",
-        "area": 69700
+        "area": 69700,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Georgien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Hong Kong",
@@ -901,7 +1295,8 @@
         "population": 7496981,
         "alternativeNames": [],
         "countryCode": "HK",
-        "area": 1104
+        "area": 1104,
+        "translations": []
       },
       {
         "name": "India",
@@ -915,7 +1310,15 @@
         "population": 1393409038,
         "alternativeNames": [],
         "countryCode": "IN",
-        "area": 3287590
+        "area": 3287590,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Neu Delhi",
+           "name": "Indien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Indonesia",
@@ -929,7 +1332,15 @@
         "population": 273523615,
         "alternativeNames": [],
         "countryCode": "ID",
-        "area": 1904569
+        "area": 1904569,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Indonesien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Iran",
@@ -943,7 +1354,8 @@
         "population": 83992949,
         "alternativeNames": [],
         "countryCode": "IR",
-        "area": 1648195
+        "area": 1648195,
+        "translations": []
       },
       {
         "name": "Iraq",
@@ -957,7 +1369,15 @@
         "population": 40222493,
         "alternativeNames": [],
         "countryCode": "IQ",
-        "area": 438317
+        "area": 438317,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Irak",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Israel",
@@ -971,7 +1391,8 @@
         "population": 8655535,
         "alternativeNames": [],
         "countryCode": "IL",
-        "area": 20770
+        "area": 20770,
+        "translations": []
       },
       {
         "name": "Japan",
@@ -985,7 +1406,15 @@
         "population": 126476461,
         "alternativeNames": [],
         "countryCode": "JP",
-        "area": 377975
+        "area": 377975,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Tokio",
+           "name": null,
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Jordan",
@@ -999,7 +1428,15 @@
         "population": 10203134,
         "alternativeNames": [],
         "countryCode": "JO",
-        "area": 89342
+        "area": 89342,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Jordanien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Kazakhstan",
@@ -1013,7 +1450,15 @@
         "population": 18776707,
         "alternativeNames": [],
         "countryCode": "KZ",
-        "area": 2724900
+        "area": 2724900,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kasachstan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "North Korea",
@@ -1027,7 +1472,15 @@
         "population": 25778816,
         "alternativeNames": [],
         "countryCode": "KP",
-        "area": 120538
+        "area": 120538,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Nordkorea",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "South Korea",
@@ -1041,7 +1494,15 @@
         "population": 51269183,
         "alternativeNames": [],
         "countryCode": "KR",
-        "area": 100210
+        "area": 100210,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Südkorea",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Kuwait",
@@ -1055,7 +1516,8 @@
         "population": 4270571,
         "alternativeNames": [],
         "countryCode": "KW",
-        "area": 17818
+        "area": 17818,
+        "translations": []
       },
       {
         "name": "Kyrgyzstan",
@@ -1069,7 +1531,15 @@
         "population": 6524195,
         "alternativeNames": [],
         "countryCode": "KG",
-        "area": 199951
+        "area": 199951,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kirgisistan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Laos",
@@ -1083,7 +1553,8 @@
         "population": 7275560,
         "alternativeNames": [],
         "countryCode": "LA",
-        "area": 236800
+        "area": 236800,
+        "translations": []
       },
       {
         "name": "Lebanon",
@@ -1097,7 +1568,15 @@
         "population": 6825442,
         "alternativeNames": [],
         "countryCode": "LB",
-        "area": 10452
+        "area": 10452,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Libanon",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Macao",
@@ -1111,7 +1590,8 @@
         "population": 649335,
         "alternativeNames": ["Macau"],
         "countryCode": "MO",
-        "area": 32.9
+        "area": 32.9,
+        "translations": []
       },
       {
         "name": "Malaysia",
@@ -1125,7 +1605,8 @@
         "population": 32365999,
         "alternativeNames": [],
         "countryCode": "MY",
-        "area": 330803
+        "area": 330803,
+        "translations": []
       },
       {
         "name": "Maldives",
@@ -1139,7 +1620,15 @@
         "population": 540544,
         "alternativeNames": [],
         "countryCode": "MV",
-        "area": 300
+        "area": 300,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Malediven",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Mongolia",
@@ -1153,7 +1642,15 @@
         "population": 3278290,
         "alternativeNames": [],
         "countryCode": "MN",
-        "area": 1564116
+        "area": 1564116,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Mongolei",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Myanmar",
@@ -1167,7 +1664,8 @@
         "population": 54409800,
         "alternativeNames": [],
         "countryCode": "MM",
-        "area": 676578
+        "area": 676578,
+        "translations": []
       },
       {
         "name": "Nepal",
@@ -1181,7 +1679,8 @@
         "population": 29136808,
         "alternativeNames": [],
         "countryCode": "NP",
-        "area": 147181
+        "area": 147181,
+        "translations": []
       },
       {
         "name": "Oman",
@@ -1195,7 +1694,8 @@
         "population": 5106622,
         "alternativeNames": [],
         "countryCode": "OM",
-        "area": 309500
+        "area": 309500,
+        "translations": []
       },
       {
         "name": "Pakistan",
@@ -1209,7 +1709,8 @@
         "population": 220892331,
         "alternativeNames": [],
         "countryCode": "PK",
-        "area": 881913
+        "area": 881913,
+        "translations": []
       },
       {
         "name": "Palestine",
@@ -1223,7 +1724,15 @@
         "population": 5101414,
         "alternativeNames": [],
         "countryCode": "PS",
-        "area": 6020
+        "area": 6020,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Palästina",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Philippines",
@@ -1237,7 +1746,15 @@
         "population": 113811583,
         "alternativeNames": [],
         "countryCode": "PH",
-        "area": 342353
+        "area": 342353,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Philippinen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Qatar",
@@ -1251,7 +1768,15 @@
         "population": 2881053,
         "alternativeNames": [],
         "countryCode": "QA",
-        "area": 11586
+        "area": 11586,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Katar",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Russia",
@@ -1265,7 +1790,15 @@
         "population": 145912025,
         "alternativeNames": [],
         "countryCode": "RU",
-        "area": 17098242
+        "area": 17098242,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Moskau",
+           "name": "Russland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Saudi Arabia",
@@ -1279,7 +1812,15 @@
         "population": 34813871,
         "alternativeNames": [],
         "countryCode": "SA",
-        "area": 2149690
+        "area": 2149690,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Saudi Arabien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Singapore",
@@ -1293,7 +1834,15 @@
         "population": 5896684,
         "alternativeNames": [],
         "countryCode": "SG",
-        "area": 726
+        "area": 726,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Singapur",
+           "name": "Singapur",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Sri Lanka",
@@ -1307,7 +1856,8 @@
         "population": 21413249,
         "alternativeNames": [],
         "countryCode": "LK",
-        "area": 65610
+        "area": 65610,
+        "translations": []
       },
       {
         "name": "Syria",
@@ -1321,7 +1871,15 @@
         "population": 17500658,
         "alternativeNames": [],
         "countryCode": "SY",
-        "area": 185180
+        "area": 185180,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Syrien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Taiwan",
@@ -1335,7 +1893,8 @@
         "population": 23816775,
         "alternativeNames": [],
         "countryCode": "TW",
-        "area": 36193
+        "area": 36193,
+        "translations": []
       },
       {
         "name": "Tajikistan",
@@ -1349,7 +1908,15 @@
         "population": 9706900,
         "alternativeNames": [],
         "countryCode": "TJ",
-        "area": 143100
+        "area": 143100,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Tadschikistan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Thailand",
@@ -1363,7 +1930,8 @@
         "population": 69799978,
         "alternativeNames": [],
         "countryCode": "TH",
-        "area": 513120
+        "area": 513120,
+        "translations": []
       },
       {
         "name": "Timor-Leste",
@@ -1377,7 +1945,15 @@
         "population": 1318445,
         "alternativeNames": ["East Timor", "Timor Leste"],
         "countryCode": "TL",
-        "area": 14874
+        "area": 14874,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Osttimor",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Turkey",
@@ -1391,7 +1967,15 @@
         "population": 84339067,
         "alternativeNames": [],
         "countryCode": "TR",
-        "area": 783356
+        "area": 783356,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Türkei",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Turkmenistan",
@@ -1405,7 +1989,8 @@
         "population": 6031187,
         "alternativeNames": [],
         "countryCode": "TM",
-        "area": 488100
+        "area": 488100,
+        "translations": []
       },
       {
         "name": "United Arab Emirates",
@@ -1419,7 +2004,15 @@
         "population": 9890402,
         "alternativeNames": ["UAE"],
         "countryCode": "AE",
-        "area": 83600
+        "area": 83600,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Vereinigte Arabische Emirate",
+           "alternativeNames": ["VAE"]
+          }
+        ]
       },
       {
         "name": "Uzbekistan",
@@ -1433,7 +2026,15 @@
         "population": 33469203,
         "alternativeNames": [],
         "countryCode": "UZ",
-        "area": 447400
+        "area": 447400,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Usbekistan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Vietnam",
@@ -1447,7 +2048,8 @@
         "population": 97338579,
         "alternativeNames": [],
         "countryCode": "VN",
-        "area": 331212
+        "area": 331212,
+        "translations": []
       },
       {
         "name": "Yemen",
@@ -1461,7 +2063,15 @@
         "population": 29825968,
         "alternativeNames": [],
         "countryCode": "YE",
-        "area": 527968
+        "area": 527968,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Jemen",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   },
@@ -1480,7 +2090,15 @@
         "population": 43851044,
         "alternativeNames": [],
         "countryCode": "DZ",
-        "area": 2381741
+        "area": 2381741,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Algerien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Angola",
@@ -1494,7 +2112,8 @@
         "population": 32866272,
         "alternativeNames": [],
         "countryCode": "AO",
-        "area": 1246700
+        "area": 1246700,
+        "translations": []
       },
       {
         "name": "Benin",
@@ -1508,7 +2127,8 @@
         "population": 12123198,
         "alternativeNames": [],
         "countryCode": "BJ",
-        "area": 112622
+        "area": 112622,
+        "translations": []
       },
       {
         "name": "Botswana",
@@ -1522,7 +2142,8 @@
         "population": 2351627,
         "alternativeNames": [],
         "countryCode": "BW",
-        "area": 581730
+        "area": 581730,
+        "translations": []
       },
       {
         "name": "British Indian Ocean Territory",
@@ -1536,7 +2157,15 @@
         "population": 0,
         "alternativeNames": [],
         "countryCode": "IO",
-        "area": 60
+        "area": 60,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Britisches Territorium im Indischen Ozean",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Burkina Faso",
@@ -1550,7 +2179,8 @@
         "population": 20903273,
         "alternativeNames": [],
         "countryCode": "BF",
-        "area": 274200
+        "area": 274200,
+        "translations": []
       },
       {
         "name": "Burundi",
@@ -1564,7 +2194,8 @@
         "population": 11890784,
         "alternativeNames": [],
         "countryCode": "BI",
-        "area": 27834
+        "area": 27834,
+        "translations": []
       },
       {
         "name": "Cape Verde",
@@ -1578,7 +2209,15 @@
         "population": 555987,
         "alternativeNames": ["Cabo Verde"],
         "countryCode": "CV",
-        "area": 4033
+        "area": 4033,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kap Verde",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Cameroon",
@@ -1592,7 +2231,15 @@
         "population": 26545863,
         "alternativeNames": [],
         "countryCode": "CM",
-        "area": 475442
+        "area": 475442,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kamerun",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Central African Republic",
@@ -1606,7 +2253,15 @@
         "population": 4829767,
         "alternativeNames": [],
         "countryCode": "CF",
-        "area": 622984
+        "area": 622984,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Zentralafrikanische Republic",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Chad",
@@ -1620,7 +2275,15 @@
         "population": 16425864,
         "alternativeNames": [],
         "countryCode": "TD",
-        "area": 1284000
+        "area": 1284000,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Tschad",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Comoros",
@@ -1634,7 +2297,15 @@
         "population": 869601,
         "alternativeNames": [],
         "countryCode": "KM",
-        "area": 1862
+        "area": 1862,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Komoren",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Republic of the Congo",
@@ -1648,7 +2319,15 @@
         "population": 5518087,
         "alternativeNames": ["Congo"],
         "countryCode": "CG",
-        "area": 342000
+        "area": 342000,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kongo",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Democratic Republic of the Congo",
@@ -1662,7 +2341,15 @@
         "population": 89561403,
         "alternativeNames": ["DR Congo"],
         "countryCode": "CD",
-        "area": 2344858
+        "area": 2344858,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Demokratische Republic Kongo",
+           "alternativeNames": ["DR Kongo"]
+          }
+        ]
       },
       {
         "name": "Djibouti",
@@ -1676,7 +2363,15 @@
         "population": 988000,
         "alternativeNames": [],
         "countryCode": "DJ",
-        "area": 23200
+        "area": 23200,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Dschibuti",
+           "name": "Dschibuti",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Egypt",
@@ -1690,7 +2385,15 @@
         "population": 102334404,
         "alternativeNames": [],
         "countryCode": "EG",
-        "area": 1002450
+        "area": 1002450,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Kairo",
+           "name": "Ägypten",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Equatorial Guinea",
@@ -1704,7 +2407,15 @@
         "population": 1402985,
         "alternativeNames": [],
         "countryCode": "GQ",
-        "area": 28051
+        "area": 28051,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Äquatorialguinea",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Eritrea",
@@ -1718,7 +2429,8 @@
         "population": 3546421,
         "alternativeNames": [],
         "countryCode": "ER",
-        "area": 117600
+        "area": 117600,
+        "translations": []
       },
       {
         "name": "Eswatini",
@@ -1732,7 +2444,8 @@
         "population": 1160164,
         "alternativeNames": [],
         "countryCode": "SZ",
-        "area": 17364
+        "area": 17364,
+        "translations": []
       },
       {
         "name": "Ethiopia",
@@ -1746,7 +2459,15 @@
         "population": 114963588,
         "alternativeNames": [],
         "countryCode": "ET",
-        "area": 1104300
+        "area": 1104300,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Äthiopien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Gabon",
@@ -1760,7 +2481,8 @@
         "population": 2225734,
         "alternativeNames": [],
         "countryCode": "GA",
-        "area": 267668
+        "area": 267668,
+        "translations": []
       },
       {
         "name": "Gambia",
@@ -1774,7 +2496,8 @@
         "population": 2416668,
         "alternativeNames": [],
         "countryCode": "GM",
-        "area": 10689
+        "area": 10689,
+        "translations": []
       },
       {
         "name": "Ghana",
@@ -1788,7 +2511,8 @@
         "population": 31072940,
         "alternativeNames": [],
         "countryCode": "GH",
-        "area": 238533
+        "area": 238533,
+        "translations": []
       },
       {
         "name": "Guinea",
@@ -1802,7 +2526,8 @@
         "population": 13132795,
         "alternativeNames": [],
         "countryCode": "GN",
-        "area": 245857
+        "area": 245857,
+        "translations": []
       },
       {
         "name": "Guinea-Bissau",
@@ -1814,9 +2539,10 @@
         "latitude": 11.8037,
         "longitude": -15.1804,
         "population": 1968001,
-        "alternativeNames": [],
+        "alternativeNames": ["Guinea Bissau"],
         "countryCode": "GW",
-        "area": 36125
+        "area": 36125,
+        "translations": []
       },
       {
         "name": "Kenya",
@@ -1830,7 +2556,15 @@
         "population": 53771296,
         "alternativeNames": [],
         "countryCode": "KE",
-        "area": 580367
+        "area": 580367,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kenia",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Lesotho",
@@ -1844,7 +2578,8 @@
         "population": 2142249,
         "alternativeNames": [],
         "countryCode": "LS",
-        "area": 30355
+        "area": 30355,
+        "translations": []
       },
       {
         "name": "Liberia",
@@ -1858,7 +2593,8 @@
         "population": 5057681,
         "alternativeNames": [],
         "countryCode": "LR",
-        "area": 111369
+        "area": 111369,
+        "translations": []
       },
       {
         "name": "Libya",
@@ -1872,7 +2608,15 @@
         "population": 6871292,
         "alternativeNames": [],
         "countryCode": "LY",
-        "area": 1759540
+        "area": 1759540,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Libyen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Madagascar",
@@ -1886,7 +2630,15 @@
         "population": 27691018,
         "alternativeNames": [],
         "countryCode": "MG",
-        "area": 587041
+        "area": 587041,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Madagaskar",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Malawi",
@@ -1900,7 +2652,8 @@
         "population": 19129955,
         "alternativeNames": [],
         "countryCode": "MW",
-        "area": 118484
+        "area": 118484,
+        "translations": []
       },
       {
         "name": "Mali",
@@ -1914,7 +2667,8 @@
         "population": 20250833,
         "alternativeNames": [],
         "countryCode": "ML",
-        "area": 1248574
+        "area": 1248574,
+        "translations": []
       },
       {
         "name": "Mauritania",
@@ -1928,7 +2682,15 @@
         "population": 4649658,
         "alternativeNames": [],
         "countryCode": "MR",
-        "area": 1030700
+        "area": 1030700,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Mauretanien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Mauritius",
@@ -1942,7 +2704,8 @@
         "population": 1271768,
         "alternativeNames": [],
         "countryCode": "MU",
-        "area": 2040
+        "area": 2040,
+        "translations": []
       },
       {
         "name": "Mayotte",
@@ -1956,7 +2719,8 @@
         "population": 272815,
         "alternativeNames": [],
         "countryCode": "YT",
-        "area": 374
+        "area": 374,
+        "translations": []
       },
       {
         "name": "Morocco",
@@ -1970,7 +2734,15 @@
         "population": 36910560,
         "alternativeNames": [],
         "countryCode": "MA",
-        "area": 446550
+        "area": 446550,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Marokko",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Mozambique",
@@ -1984,7 +2756,15 @@
         "population": 31255435,
         "alternativeNames": [],
         "countryCode": "MZ",
-        "area": 801590
+        "area": 801590,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Mosambik",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Namibia",
@@ -1998,7 +2778,8 @@
         "population": 2540905,
         "alternativeNames": [],
         "countryCode": "NA",
-        "area": 825615
+        "area": 825615,
+        "translations": []
       },
       {
         "name": "Niger",
@@ -2012,7 +2793,8 @@
         "population": 24206644,
         "alternativeNames": [],
         "countryCode": "NE",
-        "area": 1186408
+        "area": 1186408,
+        "translations": []
       },
       {
         "name": "Nigeria",
@@ -2026,7 +2808,8 @@
         "population": 206139587,
         "alternativeNames": [],
         "countryCode": "NG",
-        "area": 923768
+        "area": 923768,
+        "translations": []
       },
       {
         "name": "Réunion",
@@ -2038,9 +2821,10 @@
         "latitude": -21.1306,
         "longitude": 55.5260,
         "population": 895312,
-        "alternativeNames": [],
+        "alternativeNames": ["Reunion"],
         "countryCode": "RE",
-        "area": 2511
+        "area": 2511,
+        "translations": []
       },
       {
         "name": "Rwanda",
@@ -2054,7 +2838,15 @@
         "population": 12952218,
         "alternativeNames": [],
         "countryCode": "RW",
-        "area": 26338
+        "area": 26338,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Ruanda",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -2066,9 +2858,21 @@
         "latitude": -15.9650,
         "longitude": -5.7089,
         "population": 6077,
-        "alternativeNames": ["Saint Helena"],
+        "alternativeNames": [
+          "Saint Helena",
+          "St Helena",
+          "St. Helena"
+        ],
         "countryCode": "SH",
-        "area": 394
+        "area": 394,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "St. Helena, Ascension und Tristan da Cunha",
+           "alternativeNames": ["St. Helena, St Helena"]
+          }
+        ]
       },
       {
         "name": "Sao Tome and Principe",
@@ -2082,7 +2886,15 @@
         "population": 219159,
         "alternativeNames": [],
         "countryCode": "ST",
-        "area": 1001
+        "area": 1001,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Sao Tome und Principe",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Senegal",
@@ -2096,7 +2908,8 @@
         "population": 16743930,
         "alternativeNames": [],
         "countryCode": "SN",
-        "area": 196722
+        "area": 196722,
+        "translations": []
       },
       {
         "name": "Seychelles",
@@ -2110,7 +2923,15 @@
         "population": 98347,
         "alternativeNames": [],
         "countryCode": "SC",
-        "area": 452
+        "area": 452,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Seychellen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Sierra Leone",
@@ -2124,7 +2945,8 @@
         "population": 7976983,
         "alternativeNames": [],
         "countryCode": "SL",
-        "area": 71740
+        "area": 71740,
+        "translations": []
       },
       {
         "name": "Somalia",
@@ -2138,7 +2960,8 @@
         "population": 15893222,
         "alternativeNames": [],
         "countryCode": "SO",
-        "area": 637657
+        "area": 637657,
+        "translations": []
       },
       {
         "name": "South Africa",
@@ -2152,7 +2975,15 @@
         "population": 59308690,
         "alternativeNames": [],
         "countryCode": "ZA",
-        "area": 1221037
+        "area": 1221037,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Südafrika",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "South Sudan",
@@ -2166,7 +2997,15 @@
         "population": 11193725,
         "alternativeNames": [],
         "countryCode": "SS",
-        "area": 619745
+        "area": 619745,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Südsudan",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Sudan",
@@ -2180,7 +3019,8 @@
         "population": 43849260,
         "alternativeNames": [],
         "countryCode": "SD",
-        "area": 1886068
+        "area": 1886068,
+        "translations": []
       },
       {
         "name": "Tanzania",
@@ -2194,7 +3034,15 @@
         "population": 59734218,
         "alternativeNames": [],
         "countryCode": "TZ",
-        "area": 947303
+        "area": 947303,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Tansania",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Togo",
@@ -2208,7 +3056,8 @@
         "population": 8278724,
         "alternativeNames": [],
         "countryCode": "TG",
-        "area": 56785
+        "area": 56785,
+        "translations": []
       },
       {
         "name": "Tunisia",
@@ -2222,7 +3071,15 @@
         "population": 11818619,
         "alternativeNames": [],
         "countryCode": "TN",
-        "area": 163610
+        "area": 163610,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Tunesien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Uganda",
@@ -2236,7 +3093,8 @@
         "population": 45741007,
         "alternativeNames": [],
         "countryCode": "UG",
-        "area": 241038
+        "area": 241038,
+        "translations": []
       },
       {
         "name": "Western Sahara",
@@ -2250,7 +3108,15 @@
         "population": 597339,
         "alternativeNames": [],
         "countryCode": "EH",
-        "area": 266000
+        "area": 266000,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Westsahara",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Zambia",
@@ -2264,7 +3130,15 @@
         "population": 18383955,
         "alternativeNames": [],
         "countryCode": "ZM",
-        "area": 752612
+        "area": 752612,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Sambia",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Zimbabwe",
@@ -2278,7 +3152,15 @@
         "population": 14862924,
         "alternativeNames": [],
         "countryCode": "ZW",
-        "area": 390757
+        "area": 390757,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Simbabwe",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   },
@@ -2297,7 +3179,15 @@
         "population": 55191,
         "alternativeNames": [],
         "countryCode": "AS",
-        "area": 199
+        "area": 199,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Amerikanisch-Samoa",
+           "alternativeNames": ["Amerikanisch Samoa"]
+          }
+        ]
       },
       {
         "name": "Australia",
@@ -2311,7 +3201,15 @@
         "population": 25499884,
         "alternativeNames": [],
         "countryCode": "AU",
-        "area": 7692024
+        "area": 7692024,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Australien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Cook Islands",
@@ -2325,7 +3223,15 @@
         "population": 17564,
         "alternativeNames": [],
         "countryCode": "CK",
-        "area": 236
+        "area": 236,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Cookinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Fiji",
@@ -2339,7 +3245,15 @@
         "population": 896445,
         "alternativeNames": [],
         "countryCode": "FJ",
-        "area": 18274
+        "area": 18274,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Fidschi",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "French Polynesia",
@@ -2353,7 +3267,15 @@
         "population": 280908,
         "alternativeNames": [],
         "countryCode": "PF",
-        "area": 4167
+        "area": 4167,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Französisch-Polynesien",
+           "alternativeNames": ["Französisch Polynesien"]
+          }
+        ]
       },
       {
         "name": "Guam",
@@ -2367,7 +3289,8 @@
         "population": 168801,
         "alternativeNames": [],
         "countryCode": "GU",
-        "area": 544
+        "area": 544,
+        "translations": []
       },
       {
         "name": "Kiribati",
@@ -2381,7 +3304,8 @@
         "population": 119449,
         "alternativeNames": [],
         "countryCode": "KI",
-        "area": 811
+        "area": 811,
+        "translations": []
       },
       {
         "name": "Marshall Islands",
@@ -2395,7 +3319,15 @@
         "population": 59190,
         "alternativeNames": [],
         "countryCode": "MH",
-        "area": 181
+        "area": 181,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Marshallinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Federated States of Micronesia",
@@ -2409,7 +3341,15 @@
         "population": 115021,
         "alternativeNames": ["FSM", "Micronesia"],
         "countryCode": "FM",
-        "area": 702
+        "area": 702,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Mikronesien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Nauru",
@@ -2423,7 +3363,8 @@
         "population": 10824,
         "alternativeNames": [],
         "countryCode": "NR",
-        "area": 21
+        "area": 21,
+        "translations": []
       },
       {
         "name": "New Caledonia",
@@ -2437,7 +3378,15 @@
         "population": 285498,
         "alternativeNames": [],
         "countryCode": "NC",
-        "area": 18575
+        "area": 18575,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Neukaledonien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "New Zealand",
@@ -2451,7 +3400,15 @@
         "population": 4822233,
         "alternativeNames": [],
         "countryCode": "NZ",
-        "area": 270467
+        "area": 270467,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Neuseeland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Niue",
@@ -2465,7 +3422,8 @@
         "population": 1624,
         "alternativeNames": [],
         "countryCode": "NU",
-        "area": 260
+        "area": 260,
+        "translations": []
       },
       {
         "name": "Norfolk Island",
@@ -2479,7 +3437,15 @@
         "population": 1748,
         "alternativeNames": [],
         "countryCode": "NF",
-        "area": 36
+        "area": 36,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Norfolk-Insel",
+           "alternativeNames": ["Norfolkinsel", "Norfolk Insel"]
+          }
+        ]
       },
       {
         "name": "Northern Mariana Islands",
@@ -2493,7 +3459,15 @@
         "population": 57559,
         "alternativeNames": [],
         "countryCode": "MP",
-        "area": 464
+        "area": 464,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Nördliche Marianen",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Palau",
@@ -2507,7 +3481,8 @@
         "population": 18092,
         "alternativeNames": [],
         "countryCode": "PW",
-        "area": 459
+        "area": 459,
+        "translations": []
       },
       {
         "name": "Papua New Guinea",
@@ -2521,7 +3496,15 @@
         "population": 8947024,
         "alternativeNames": [],
         "countryCode": "PG",
-        "area": 462840
+        "area": 462840,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Papua-Neuguinea",
+           "alternativeNames": ["Papua Neuguinea"]
+          }
+        ]
       },
       {
         "name": "Pitcairn Islands",
@@ -2533,9 +3516,17 @@
         "latitude": -25.0667,
         "longitude": -130.1000,
         "population": 47,
-        "alternativeNames": ["Pitcairn"],
+        "alternativeNames": [],
         "countryCode": "PN",
-        "area": 47
+        "area": 47,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Pitcairninseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Samoa",
@@ -2549,7 +3540,8 @@
         "population": 198414,
         "alternativeNames": [],
         "countryCode": "WS",
-        "area": 2831
+        "area": 2831,
+        "translations": []
       },
       {
         "name": "Solomon Islands",
@@ -2563,7 +3555,15 @@
         "population": 686884,
         "alternativeNames": [],
         "countryCode": "SB",
-        "area": 28896
+        "area": 28896,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Salomoneninseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Tokelau",
@@ -2577,7 +3577,8 @@
         "population": 1400,
         "alternativeNames": [],
         "countryCode": "TK",
-        "area": 10
+        "area": 10,
+        "translations": []
       },
       {
         "name": "Tonga",
@@ -2591,7 +3592,8 @@
         "population": 105695,
         "alternativeNames": [],
         "countryCode": "TO",
-        "area": 747
+        "area": 747,
+        "translations": []
       },
       {
         "name": "Tuvalu",
@@ -2605,7 +3607,8 @@
         "population": 11792,
         "alternativeNames": [],
         "countryCode": "TV",
-        "area": 26
+        "area": 26,
+        "translations": []
       },
       {
         "name": "Vanuatu",
@@ -2619,7 +3622,8 @@
         "population": 307145,
         "alternativeNames": [],
         "countryCode": "VU",
-        "area": 12189
+        "area": 12189,
+        "translations": []
       },
       {
         "name": "Wallis and Futuna",
@@ -2633,7 +3637,15 @@
         "population": 11200,
         "alternativeNames": [],
         "countryCode": "WF",
-        "area": 142
+        "area": 142,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Wallis und Futuna",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   },
@@ -2652,7 +3664,8 @@
         "population": 15003,
         "alternativeNames": [],
         "countryCode": "AI",
-        "area": 91
+        "area": 91,
+        "translations": []
       },
       {
         "name": "Antigua and Barbuda",
@@ -2666,7 +3679,15 @@
         "population": 97928,
         "alternativeNames": [],
         "countryCode": "AG",
-        "area": 442
+        "area": 442,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Antigua und Barbuda",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Aruba",
@@ -2680,7 +3701,8 @@
         "population": 106766,
         "alternativeNames": [],
         "countryCode": "AW",
-        "area": 180
+        "area": 180,
+        "translations": []
       },
       {
         "name": "Bahamas",
@@ -2694,7 +3716,8 @@
         "population": 393244,
         "alternativeNames": [],
         "countryCode": "BS",
-        "area": 13940
+        "area": 13940,
+        "translations": []
       },
       {
         "name": "Barbados",
@@ -2708,7 +3731,8 @@
         "population": 287371,
         "alternativeNames": [],
         "countryCode": "BB",
-        "area": 430
+        "area": 430,
+        "translations": []
       },
       {
         "name": "Belize",
@@ -2722,7 +3746,8 @@
         "population": 397621,
         "alternativeNames": [],
         "countryCode": "BZ",
-        "area": 22966
+        "area": 22966,
+        "translations": []
       },
       {
         "name": "Bermuda",
@@ -2736,7 +3761,8 @@
         "population": 62278,
         "alternativeNames": [],
         "countryCode": "BM",
-        "area": 54
+        "area": 54,
+        "translations": []
       },
       {
         "name": "Bonaire, Sint Eustatius and Saba",
@@ -2750,7 +3776,15 @@
         "population": 26221,
         "alternativeNames": ["Bonaire", "Caribbean Netherlands"],
         "countryCode": "BQ",
-        "area": 294
+        "area": 294,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bonaire, Sint Eustatius und Saba",
+           "alternativeNames": ["Karibische Niederlande"]
+          }
+        ]
       },
       {
         "name": "Canada",
@@ -2764,7 +3798,15 @@
         "population": 37742154,
         "alternativeNames": [],
         "countryCode": "CA",
-        "area": 9984670
+        "area": 9984670,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kanada",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Cayman Islands",
@@ -2778,7 +3820,8 @@
         "population": 65722,
         "alternativeNames": [],
         "countryCode": "KY",
-        "area": 264
+        "area": 264,
+        "translations": []
       },
       {
         "name": "Costa Rica",
@@ -2792,7 +3835,8 @@
         "population": 5094118,
         "alternativeNames": [],
         "countryCode": "CR",
-        "area": 51100
+        "area": 51100,
+        "translations": []
       },
       {
         "name": "Cuba",
@@ -2806,7 +3850,15 @@
         "population": 11326616,
         "alternativeNames": [],
         "countryCode": "CU",
-        "area": 109884
+        "area": 109884,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kuba",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Curaçao",
@@ -2818,9 +3870,12 @@
         "latitude": 12.1696,
         "longitude": -68.9900,
         "population": 164093,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "Curacao"
+        ],
         "countryCode": "CW",
-        "area": 444
+        "area": 444,
+        "translations": []
       },
       {
         "name": "Dominica",
@@ -2834,7 +3889,8 @@
         "population": 71986,
         "alternativeNames": [],
         "countryCode": "DM",
-        "area": 751
+        "area": 751,
+        "translations": []
       },
       {
         "name": "Dominican Republic",
@@ -2848,7 +3904,15 @@
         "population": 10847910,
         "alternativeNames": [],
         "countryCode": "DO",
-        "area": 48671
+        "area": 48671,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Dominikanische Republik",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "El Salvador",
@@ -2862,7 +3926,8 @@
         "population": 6486205,
         "alternativeNames": [],
         "countryCode": "SV",
-        "area": 21041
+        "area": 21041,
+        "translations": []
       },
       {
         "name": "Greenland",
@@ -2876,7 +3941,15 @@
         "population": 56772,
         "alternativeNames": [],
         "countryCode": "GL",
-        "area": 2166086
+        "area": 2166086,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Grönland",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Grenada",
@@ -2890,7 +3963,8 @@
         "population": 112523,
         "alternativeNames": [],
         "countryCode": "GD",
-        "area": 344
+        "area": 344,
+        "translations": []
       },
       {
         "name": "Guadeloupe",
@@ -2904,7 +3978,8 @@
         "population": 400132,
         "alternativeNames": [],
         "countryCode": "GP",
-        "area": 1628
+        "area": 1628,
+        "translations": []
       },
       {
         "name": "Guatemala",
@@ -2918,7 +3993,8 @@
         "population": 17915568,
         "alternativeNames": [],
         "countryCode": "GT",
-        "area": 108889
+        "area": 108889,
+        "translations": []
       },
       {
         "name": "Haiti",
@@ -2932,7 +4008,8 @@
         "population": 11402528,
         "alternativeNames": [],
         "countryCode": "HT",
-        "area": 27750
+        "area": 27750,
+        "translations": []
       },
       {
         "name": "Honduras",
@@ -2946,7 +4023,8 @@
         "population": 9904607,
         "alternativeNames": [],
         "countryCode": "HN",
-        "area": 112492
+        "area": 112492,
+        "translations": []
       },
       {
         "name": "Jamaica",
@@ -2960,7 +4038,15 @@
         "population": 2961161,
         "alternativeNames": [],
         "countryCode": "JM",
-        "area": 10991
+        "area": 10991,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Jamaika",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Martinique",
@@ -2974,7 +4060,8 @@
         "population": 375265,
         "alternativeNames": [],
         "countryCode": "MQ",
-        "area": 1128
+        "area": 1128,
+        "translations": []
       },
       {
         "name": "Mexico",
@@ -2988,7 +4075,15 @@
         "population": 128932753,
         "alternativeNames": [],
         "countryCode": "MX",
-        "area": 1964375
+        "area": 1964375,
+        "translations": [
+          {
+           "language": "de",
+           "capital": "Mexiko City",
+           "name": "Mexiko",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Montserrat",
@@ -3002,7 +4097,8 @@
         "population": 4989,
         "alternativeNames": [],
         "countryCode": "MS",
-        "area": 102
+        "area": 102,
+        "translations": []
       },
       {
         "name": "Nicaragua",
@@ -3016,7 +4112,8 @@
         "population": 6624554,
         "alternativeNames": [],
         "countryCode": "NI",
-        "area": 130373
+        "area": 130373,
+        "translations": []
       },
       {
         "name": "Panama",
@@ -3030,7 +4127,8 @@
         "population": 4314767,
         "alternativeNames": [],
         "countryCode": "PA",
-        "area": 75420
+        "area": 75420,
+        "translations": []
       },
       {
         "name": "Puerto Rico",
@@ -3044,7 +4142,8 @@
         "population": 2860853,
         "alternativeNames": [],
         "countryCode": "PR",
-        "area": 9104
+        "area": 9104,
+        "translations": []
       },
       {
         "name": "Saint Barthélemy",
@@ -3056,9 +4155,14 @@
         "latitude": 17.9000,
         "longitude": -62.8333,
         "population": 9873,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "Saint Barthelemy",
+          "St Barthelemy",
+          "St. Barthelemy"
+        ],
         "countryCode": "BL",
-        "area": 21
+        "area": 21,
+        "translations": []
       },
       {
         "name": "Saint Kitts and Nevis",
@@ -3070,9 +4174,20 @@
         "latitude": 17.2500,
         "longitude": -62.6667,
         "population": 53199,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "St Kitts and Nevis",
+          "St. Kitts and Nevis"
+        ],
         "countryCode": "KN",
-        "area": 261
+        "area": 261,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "St. Kitts und Nevis",
+           "alternativeNames": ["St Kitts und Nevis"]
+          }
+        ]
       },
       {
         "name": "Saint Lucia",
@@ -3084,9 +4199,13 @@
         "latitude": 13.9094,
         "longitude": -60.9789,
         "population": 183627,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "St Lucia",
+          "St. Lucia"
+        ],
         "countryCode": "LC",
-        "area": 616
+        "area": 616,
+        "translations": []
       },
       {
         "name": "Saint Martin",
@@ -3098,9 +4217,13 @@
         "latitude": 18.0708,
         "longitude": -63.0501,
         "population": 41109,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "St Martin",
+          "St. Martin"
+        ],
         "countryCode": "MF",
-        "area": 53
+        "area": 53,
+        "translations": []
       },
       {
         "name": "Saint Pierre and Miquelon",
@@ -3112,9 +4235,20 @@
         "latitude": 46.8852,
         "longitude": -56.3159,
         "population": 5771,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "St Pierre and Miquelon",
+          "St. Pierre and Miquelon"
+        ],
         "countryCode": "PM",
-        "area": 242
+        "area": 242,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Saint Pierre und Miquelon",
+           "alternativeNames": ["St. Pierre und Miquelon", "St Pierre und Miquelon"]
+          }
+        ]
       },
       {
         "name": "Saint Vincent and the Grenadines",
@@ -3126,9 +4260,20 @@
         "latitude": 13.2528,
         "longitude": -61.1970,
         "population": 110210,
-        "alternativeNames": [],
+        "alternativeNames": [
+          "St Vincent and the Grenadines",
+          "St. Vincent and the Grenadines"
+        ],
         "countryCode": "VC",
-        "area": 389
+        "area": 389,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Saint Vincent und die Grenadinen",
+           "alternativeNames": ["St. Vincent und die Grenadinen", "St Vincent und die Grenadinen"]
+          }
+        ]
       },
       {
         "name": "Sint Maarten",
@@ -3142,7 +4287,8 @@
         "population": 42876,
         "alternativeNames": [],
         "countryCode": "SX",
-        "area": 34
+        "area": 34,
+        "translations": []
       },
       {
         "name": "Trinidad and Tobago",
@@ -3156,7 +4302,15 @@
         "population": 1402978,
         "alternativeNames": [],
         "countryCode": "TT",
-        "area": 5130
+        "area": 5130,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Trinidad und Tobago",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Turks and Caicos Islands",
@@ -3170,7 +4324,15 @@
         "population": 41312,
         "alternativeNames": [],
         "countryCode": "TC",
-        "area": 948
+        "area": 948,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Turks und Caicosinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "United States",
@@ -3184,7 +4346,15 @@
         "population": 331002651,
         "alternativeNames": ["USA"],
         "countryCode": "US",
-        "area": 9372610
+        "area": 9372610,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Vereinigte Staaten",
+           "alternativeNames": ["USA"]
+          }
+        ]
       },
       {
         "name": "British Virgin Islands",
@@ -3198,7 +4368,15 @@
         "population": 30030,
         "alternativeNames": [],
         "countryCode": "VG",
-        "area": 151
+        "area": 151,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Britische Jungferninseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "United States Virgin Islands",
@@ -3212,7 +4390,15 @@
         "population": 104425,
         "alternativeNames": ["US Virgin Islands", "USVI"],
         "countryCode": "VI",
-        "area": 347
+        "area": 347,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Amerikanische Jungferninseln",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   },
@@ -3231,7 +4417,15 @@
         "population": 45195777,
         "alternativeNames": [],
         "countryCode": "AR",
-        "area": 2780400
+        "area": 2780400,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Argentinien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Bolivia",
@@ -3245,7 +4439,15 @@
         "population": 11673021,
         "alternativeNames": [],
         "countryCode": "BO",
-        "area": 1098581
+        "area": 1098581,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bolivien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Brazil",
@@ -3259,7 +4461,15 @@
         "population": 212559417,
         "alternativeNames": [],
         "countryCode": "BR",
-        "area": 8515767
+        "area": 8515767,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Brasilien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Chile",
@@ -3273,7 +4483,8 @@
         "population": 19116201,
         "alternativeNames": [],
         "countryCode": "CL",
-        "area": 756102
+        "area": 756102,
+        "translations": []
       },
       {
         "name": "Colombia",
@@ -3287,7 +4498,15 @@
         "population": 50882891,
         "alternativeNames": [],
         "countryCode": "CO",
-        "area": 1141748
+        "area": 1141748,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Kolumbien",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Ecuador",
@@ -3301,7 +4520,8 @@
         "population": 17643054,
         "alternativeNames": [],
         "countryCode": "EC",
-        "area": 276841
+        "area": 276841,
+        "translations": []
       },
       {
         "name": "Falkland Islands",
@@ -3315,7 +4535,15 @@
         "population": 3480,
         "alternativeNames": ["Malvinas"],
         "countryCode": "FK",
-        "area": 12173
+        "area": 12173,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Falklandinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "French Guiana",
@@ -3329,7 +4557,15 @@
         "population": 298682,
         "alternativeNames": [],
         "countryCode": "GF",
-        "area": 83534
+        "area": 83534,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Französisch-Guayana",
+           "alternativeNames": ["Französisch Guayana"]
+          }
+        ]
       },
       {
         "name": "Guyana",
@@ -3343,7 +4579,8 @@
         "population": 786552,
         "alternativeNames": [],
         "countryCode": "GY",
-        "area": 214969
+        "area": 214969,
+        "translations": []
       },
       {
         "name": "Paraguay",
@@ -3357,7 +4594,8 @@
         "population": 7132530,
         "alternativeNames": [],
         "countryCode": "PY",
-        "area": 406752
+        "area": 406752,
+        "translations": []
       },
       {
         "name": "Peru",
@@ -3371,7 +4609,8 @@
         "population": 32971846,
         "alternativeNames": [],
         "countryCode": "PE",
-        "area": 1285216
+        "area": 1285216,
+        "translations": []
       },
       {
         "name": "Suriname",
@@ -3385,7 +4624,8 @@
         "population": 586634,
         "alternativeNames": [],
         "countryCode": "SR",
-        "area": 163820
+        "area": 163820,
+        "translations": []
       },
       {
         "name": "Uruguay",
@@ -3399,7 +4639,8 @@
         "population": 3473730,
         "alternativeNames": [],
         "countryCode": "UY",
-        "area": 181034
+        "area": 181034,
+        "translations": []
       },
       {
         "name": "Venezuela",
@@ -3413,7 +4654,8 @@
         "population": 28435940,
         "alternativeNames": [],
         "countryCode": "VE",
-        "area": 916445
+        "area": 916445,
+        "translations": []
       }
     ]
   },
@@ -3428,7 +4670,15 @@
         "population": 1000,
         "alternativeNames": [],
         "countryCode": "AQ",
-        "area": 14000000
+        "area": 14000000,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Antarktis",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Bouvet Island",
@@ -3438,7 +4688,15 @@
         "population": 0,
         "alternativeNames": [],
         "countryCode": "BV",
-        "area": 49
+        "area": 49,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Bouvetinsel",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "French Southern Territories",
@@ -3452,7 +4710,15 @@
         "population": 0,
         "alternativeNames": [],
         "countryCode": "TF",
-        "area": 7747
+        "area": 7747,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Französische Süd und Antarktisgebiete",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "Heard Island and McDonald Islands",
@@ -3462,7 +4728,15 @@
         "population": 0,
         "alternativeNames": [],
         "countryCode": "HM",
-        "area": 412
+        "area": 412,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Heard und McDonaldinseln",
+           "alternativeNames": []
+          }
+        ]
       },
       {
         "name": "South Georgia and the South Sandwich Islands",
@@ -3476,7 +4750,15 @@
         "population": 30,
         "alternativeNames": [],
         "countryCode": "GS",
-        "area": 3903
+        "area": 3903,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Südgeorgien und die südlichen Sandwichinseln",
+           "alternativeNames": []
+          }
+        ]
       }
     ]
   }
