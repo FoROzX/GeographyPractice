@@ -84,7 +84,7 @@ function Practice(){
                 <img
                     src={
                         settingsContext.countryMode === CountryMode.Flag ?
-                        `https://teuteuf-dashboard-assets.pages.dev/data/common/flags/${country!.countryCode.toLowerCase()}.svg` :
+                        `https://flagcdn.com/${country!.countryCode.toLowerCase()}.svg` :
                         `https://teuteuf-dashboard-assets.pages.dev/data/common/country-shapes/${country!.countryCode.toLowerCase()}.svg`
                     }
                     style={{ height: "30vh" }}

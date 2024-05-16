@@ -71,7 +71,7 @@ function App() {
                         header: "Flag",
                         accessor: "countryCode",
                         formatter: (countryCode: string) => countryCode === "" ? "" : <img
-                            src={`https://teuteuf-dashboard-assets.pages.dev/data/common/flags/${countryCode.toLowerCase()}.svg`}
+                            src={`https://flagcdn.com/${countryCode.toLowerCase()}.svg`}
                             style={{
                                 height: "80px"
                             }}
