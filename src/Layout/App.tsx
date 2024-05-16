@@ -43,7 +43,7 @@ function App({ children }: Props){
                     disableGutters
                     sx={{
                         width: "80vw",
-                        m: "auto",
+                        mx: "auto",
                         display: "flex",
                         justifyContent: "center",
                         borderBottom: 1,
@@ -89,7 +89,7 @@ function App({ children }: Props){
                         >
                             <MenuItem
                                 onClick={() => {
-                                    navTo("/settings");
+                                    navTo("/GeographyPractice/settings");
                                     closeUserMenu();
                                 }}
                             >

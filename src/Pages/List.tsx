@@ -2,9 +2,39 @@ import { CircularProgress } from '@mui/material';
 import useCountries from '../Hooks/useCountries';
 import DataTable from '../Components/DataTable';
 import { City } from '../Types/City';
+import React from 'react';
+import { SettingsContext } from '../Providers/SettingsProvider';
+import { isNil } from 'lodash';
 
 function App() {
     const [countriesLoaded, countries] = useCountries();
+
+    const settingsContext = React.useContext(SettingsContext);
+
+    const formatNumber = React.useCallback((number: number) => {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }, []);
+
+    const translatedCountries = React.useMemo(() => {
+        return countries.map(country => {
+            const translation = country.translations.find(translation => translation.language === settingsContext.language);
+
+            const data = { ...country };
+
+            if(isNil(translation)){
+                return data;
+            }
+            if(!isNil(translation.name)){
+                data.name = translation.name;
+                data.alternativeNames = translation.alternativeNames;
+            }
+            if(!isNil(translation.capital)){
+                data.capital!.name = translation.capital;
+            }
+
+            return data;
+        });
+    }, [countries]);
 
     if(!countriesLoaded){
         return <CircularProgress />
@@ -28,6 +58,16 @@ function App() {
                         formatter: (capital: City) => capital?.name ?? "Has no capital"
                     },
                     {
+                        header: "Population",
+                        accessor: "population",
+                        formatter: formatNumber
+                    },
+                    {
+                        header: "Size",
+                        accessor: "area",
+                        formatter: (area: number) => `${formatNumber(area)} km²`
+                    },
+                    {
                         header: "Flag",
                         accessor: "countryCode",
                         formatter: (countryCode: string) => countryCode === "" ? "" : <img
@@ -49,7 +89,7 @@ function App() {
                     }
                 ]
             }
-            data={ countries }
+            data={ translatedCountries }
         />
     );
 }

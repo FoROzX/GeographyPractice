@@ -2198,6 +2198,28 @@
         "translations": []
       },
       {
+        "name": "Côte d'Ivoire",
+        "capital": {
+          "name": "Yamoussoukro",
+          "latitude": 6.8163,
+          "longitude": 5.2744
+        },
+        "latitude": 7.5400,
+        "longitude": 5.5471,
+        "population": 29503352,
+        "alternativeNames": ["Ivory Coast"],
+        "countryCode": "CI",
+        "area": 322462,
+        "translations": [
+          {
+            "language": "de",
+            "capital": null,
+            "name": "Elfenbeinküste",
+            "alternativeNames": []
+          }
+        ]
+      },
+      {
         "name": "Cape Verde",
         "capital": {
           "name": "Praia",

@@ -1,16 +1,17 @@
-import { Button, CircularProgress, FormControl, FormControlLabel, Switch, Table, TableBody, TextField } from "@mui/material";
+import { Button, CircularProgress, Table, TableBody, TextField } from "@mui/material";
 import CountryData from "../Components/CountryData/CountryData";
 import React from "react";
 import { Country } from "../Types/Country";
 import { isNil } from "lodash";
 import { CountryContext } from "../Providers/CountryProvider";
 import WinDialog, { WinDialogRef } from "../Components/WinDialog";
+import { SettingsContext } from "../Providers/SettingsProvider";
+import { CountryMode } from "../Types/Setting";
 
 function Practice(){
     const [guess, setGuess] = React.useState<string>("");
-
-    const [flagMode, setFlagMode] = React.useState<boolean>(false);
-
+    
+    const settingsContext = React.useContext(SettingsContext);
     const [countriesLoaded, countries] = React.useContext(CountryContext);
 
     const [country, setCountry] = React.useState<Country>();
@@ -21,7 +22,13 @@ function Practice(){
     const ref = React.useRef<WinDialogRef>(null);
 
     const guessedCountry = React.useMemo(() => {
-        return countries.find(c => c.name.toLowerCase() === guess.toLowerCase() || c.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
+        return countries.find(country => {
+            const translation = country.translations.find(translation => settingsContext.language === translation.language);
+
+            const reference = isNil(translation) || isNil(translation.name) ? country : translation;
+
+            return reference.name!.toLowerCase() === guess.toLowerCase() || reference.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase());
+        });
     }, [countries, guess]);
 
     const onGuess = React.useCallback(() => {
@@ -53,10 +60,6 @@ function Practice(){
     }, [countries]);
 
     React.useEffect(() => {
-        refetchCountry();
-    }, [flagMode]);
-
-    React.useEffect(() => {
         setGuess("");
         setGuessedCountries([]);
         setGameOver(false);
@@ -75,26 +78,13 @@ function Practice(){
             <WinDialog
                 ref={ ref }
                 country={ country }
+                refetchCountry={ refetchCountry }
             />
-
-            <FormControl>
-                <FormControlLabel
-                    control={
-                        <Switch
-                            color="primary"
-                            onClick={() => setFlagMode(!flagMode)}
-                            defaultChecked={ flagMode }
-                        />
-                    }
-                    label="Find by flag"
-                    labelPlacement="top"
-                />
-            </FormControl>
 
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <img
                     src={
-                        flagMode ?
+                        settingsContext.countryMode === CountryMode.Flag ?
                         `https://teuteuf-dashboard-assets.pages.dev/data/common/flags/${country!.countryCode.toLowerCase()}.svg` :
                         `https://teuteuf-dashboard-assets.pages.dev/data/common/country-shapes/${country!.countryCode.toLowerCase()}.svg`
                     }

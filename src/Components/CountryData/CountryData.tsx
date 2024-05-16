@@ -35,9 +35,9 @@ function CountryData({ sourceCountry, targetCountry }: Props){
 
     return (
         <TableRow>
-            <TableCell>{ sourceCountry.name }</TableCell>
-            <TableCell>{ Math.round(distanceInKm) }km</TableCell>
-            <TableCell>
+            <TableCell key="name">{ sourceCountry.name }</TableCell>
+            <TableCell key="distance">{ Math.round(distanceInKm) }km</TableCell>
+            <TableCell key="bearing">
                 <DirectionPointer
                     rotation={ direction }
                     isCorrect={ sourceCountry.name === targetCountry.name }
