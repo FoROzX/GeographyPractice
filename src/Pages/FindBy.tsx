@@ -78,7 +78,6 @@ function Practice(){
             <WinDialog
                 ref={ ref }
                 country={ country }
-                refetchCountry={ refetchCountry }
             />
 
             <div style={{ display: "flex", justifyContent: "center" }}>
