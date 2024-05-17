@@ -1,6 +1,6 @@
 import React from "react";
 import { ISettingsContext, defaultSettingsContext } from "./SettingsContext";
-import { CountryMode, Setting, defaultSetting } from "../Types/Setting";
+import { CountryMode, ListMode, Setting, defaultSetting } from "../Types/Setting";
 import { isNil } from "lodash";
 
 export const SettingsContext = React.createContext<ISettingsContext>(defaultSettingsContext);
@@ -24,6 +24,9 @@ function SettingsProvider({ children }: Props){
     const setCountryMode = React.useCallback((countryMode: CountryMode) => {
         updateSetting({ ...setting, countryMode });
     }, [setting]);
+    const setListMode = React.useCallback((listMode: ListMode) => {
+        updateSetting({ ...setting, listMode });
+    }, [setting]);
     const setExcludedContinents = React.useCallback((excludedContinents: string[]) => {
         updateSetting({ ...setting, excludedContinents });
     }, [setting]);
@@ -32,6 +35,7 @@ function SettingsProvider({ children }: Props){
         ...setting,
         setLanguage,
         setCountryMode,
+        setListMode,
         setExcludedContinents
     }), [setting]);
 

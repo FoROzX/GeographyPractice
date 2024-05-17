@@ -2,7 +2,7 @@ import { SelectChangeEvent } from "@mui/material";
 import React from "react";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import SelectFormItem from "../Components/SelectFormItem";
-import { CountryMode } from "../Types/Setting";
+import { CountryMode, ListMode } from "../Types/Setting";
 import data from "../Assets/countries.json";
 
 function Settings(){
@@ -16,6 +16,11 @@ function Settings(){
             settingsContext.setCountryMode(e.target.value as any);
         }
     }, [settingsContext.setCountryMode]);
+    const onListModeChange = React.useCallback((e: SelectChangeEvent<string>) => {
+        if(e.target.value in ListMode){
+            settingsContext.setListMode(e.target.value as any);
+        }
+    }, [settingsContext.setListMode]);
     const onExcludedContinentsChange = React.useCallback((e: SelectChangeEvent<any>) => {
         settingsContext.setExcludedContinents(e.target.value);
     }, [settingsContext.setExcludedContinents]);
@@ -35,6 +40,13 @@ function Settings(){
                 onChange={ onCountryModeChange }
                 options={ Object.keys(CountryMode).map(mode => ({ displayMember: mode, valueMember: mode })) }
                 value={ settingsContext.countryMode }
+            />
+            <SelectFormItem
+                label="Find all"
+                name="list-mode"
+                onChange={ onListModeChange }
+                options={ Object.keys(ListMode).map(mode => ({ displayMember: mode, valueMember: mode })) }
+                value={ settingsContext.listMode }
             />
             <SelectFormItem
                 label="Excluded continents"

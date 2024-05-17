@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import List from "./Pages/List";
-import FindBy from "./Pages/FindBy";
+import FindBy from "./Pages/FindBy/App";
 import ListAll from "./Pages/ListAll";
 import CountryProvider from "./Providers/CountryProvider";
 import Layout from "./Layout/App";

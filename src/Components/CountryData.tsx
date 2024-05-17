@@ -1,7 +1,7 @@
 import React from "react";
-import { Country } from "../../Types/Country";
+import { Country } from "../Types/Country";
 import { TableCell, TableRow } from "@mui/material";
-import DirectionPointer from "../DirectionPointer";
+import DirectionPointer from "./DirectionPointer";
 
 type Props = {
     sourceCountry: Partial<Country>;

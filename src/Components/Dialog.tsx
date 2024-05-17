@@ -1,16 +1,15 @@
-import { Box, Dialog, Typography } from "@mui/material";
+import { Box, Dialog as MUIDialog, Typography } from "@mui/material";
 import React from "react";
-import { Country } from "../Types/Country";
 
-export type WinDialogRef = {
+export type DialogRef = {
     open: () => void;
 };
 
 type Props = {
-    country?: Country;
+    text: string;
 };
 
-const WinDialog = React.forwardRef<WinDialogRef, Props>(({ country }, ref) => {
+const Dialog = React.forwardRef<DialogRef, Props>(({ text }, ref) => {
     const [open, setOpen] = React.useState(false);
 
     React.useImperativeHandle(ref, () => ({
@@ -20,7 +19,7 @@ const WinDialog = React.forwardRef<WinDialogRef, Props>(({ country }, ref) => {
     }));
 
     return (
-        <Dialog
+        <MUIDialog
             open={ open }
             onClose={() => setOpen(false)}
             sx={{ opacity: 0.9 }}
@@ -35,10 +34,10 @@ const WinDialog = React.forwardRef<WinDialogRef, Props>(({ country }, ref) => {
                     width: "15vw"
                 }}
             >
-                <Typography sx={{ display: "block" }}>{ country!.name } is the correct country!</Typography>
+                <Typography sx={{ display: "block" }}>{ text }</Typography>
             </Box>
-        </Dialog>
+        </MUIDialog>
     );
 });
 
-export default WinDialog;
+export default Dialog;
