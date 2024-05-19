@@ -42,7 +42,7 @@ function App({ children }: Props){
                 <Toolbar
                     disableGutters
                     sx={{
-                        width: "80vw",
+                        width: "99vw",
                         mx: "auto",
                         display: "flex",
                         justifyContent: "center",

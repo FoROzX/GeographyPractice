@@ -1,11 +1,11 @@
 import React from "react";
-import Dialog, { DialogRef } from "../../Components/Dialog";
 import { SettingsContext } from "../../Providers/SettingsProvider";
 import { Button, Table, TableBody, TextField, Typography } from "@mui/material";
 import { CountryMode } from "../../Types/Setting";
 import { GameState } from "../../Types/GameState";
 import { Country } from "../../Types/Country";
 import { isNil } from "lodash";
+import Toast, { ToastRef } from "../../Components/Toast";
 
 type Props = {
     label: string;
@@ -26,7 +26,8 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
 
     const settingsContext = React.useContext(SettingsContext);
 
-    const ref = React.useRef<DialogRef>(null);
+    const toastRef = React.useRef<ToastRef>(null);
+    const inputRef = React.useRef<HTMLInputElement>(null);
 
     const onGuess = React.useCallback(() => {
         const guessedCountry = determineGuessedCountry(guess);
@@ -44,14 +45,14 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
 
         if(country.name === guessedCountry.name){
             setGameState(GameState.Found);
-            ref.current?.open();
+            toastRef.current?.open(1000);
         }
 
         setGuess("");
     }, [guess]);
     const onGiveUp = React.useCallback(() => {
         setGameState(GameState.GaveUp);
-        ref.current?.open();
+        toastRef.current?.open(5000);
     }, []);
 
     React.useEffect(() => {
@@ -59,11 +60,17 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
         setGuessedCountries([]);
         setGameState(GameState.Searching);
     }, [country, round]);
+    React.useEffect(() => {
+        if(gameState === GameState.Searching){
+            toastRef.current?.close();
+            inputRef.current?.focus();
+        }
+    }, [gameState]);
 
     return (
         <>
-            <Dialog
-                ref={ ref }
+            <Toast
+                ref={ toastRef }
                 text={ gameState === GameState.Found ? `${solution} is correct!` : `The correct answer was ${solution}` }
             />
 
@@ -86,6 +93,7 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", margin: "20px 0" }}>
                 <TextField
+                    inputRef={ inputRef }
                     value={ guess }
                     label="Guess"
                     variant="outlined"
