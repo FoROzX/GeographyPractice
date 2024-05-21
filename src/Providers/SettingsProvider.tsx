@@ -1,6 +1,6 @@
 import React from "react";
 import { ISettingsContext, defaultSettingsContext } from "./SettingsContext";
-import { CountryMode, ListMode, Setting, defaultSetting } from "../Types/Setting";
+import { CountryMode, ListMode, NextRoundMode, Setting, defaultSetting } from "../Types/Setting";
 import { isNil } from "lodash";
 
 export const SettingsContext = React.createContext<ISettingsContext>(defaultSettingsContext);
@@ -27,6 +27,9 @@ function SettingsProvider({ children }: Props){
     const setListMode = React.useCallback((listMode: ListMode) => {
         updateSetting({ ...setting, listMode });
     }, [setting]);
+    const setNextRoundMode = React.useCallback((nextRoundMode: NextRoundMode) => {
+        updateSetting({ ...setting, nextRoundMode });
+    }, [setting]);
     const setExcludedContinents = React.useCallback((excludedContinents: string[]) => {
         updateSetting({ ...setting, excludedContinents });
     }, [setting]);
@@ -36,6 +39,7 @@ function SettingsProvider({ children }: Props){
         setLanguage,
         setCountryMode,
         setListMode,
+        setNextRoundMode,
         setExcludedContinents
     }), [setting]);
 
@@ -50,7 +54,7 @@ function SettingsProvider({ children }: Props){
     }, []);
 
     return (
-        <SettingsContext.Provider value={settingsContext}>
+        <SettingsContext.Provider value={ settingsContext }>
             { children }
         </SettingsContext.Provider>
     );

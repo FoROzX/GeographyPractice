@@ -2,7 +2,7 @@ import { SelectChangeEvent } from "@mui/material";
 import React from "react";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import SelectFormItem from "../Components/SelectFormItem";
-import { CountryMode, ListMode } from "../Types/Setting";
+import { CountryMode, ListMode, NextRoundMode } from "../Types/Setting";
 import data from "../Assets/countries.json";
 
 function Settings(){
@@ -21,6 +21,11 @@ function Settings(){
             settingsContext.setListMode(e.target.value as any);
         }
     }, [settingsContext.setListMode]);
+    const onNextRoundModeChange = React.useCallback((e: SelectChangeEvent<string>) => {
+        if(e.target.value in NextRoundMode){
+            settingsContext.setNextRoundMode(e.target.value as any);
+        }
+    }, [settingsContext.setNextRoundMode]);
     const onExcludedContinentsChange = React.useCallback((e: SelectChangeEvent<any>) => {
         settingsContext.setExcludedContinents(e.target.value);
     }, [settingsContext.setExcludedContinents]);
@@ -47,6 +52,13 @@ function Settings(){
                 onChange={ onListModeChange }
                 options={ Object.keys(ListMode).map(mode => ({ displayMember: mode, valueMember: mode })) }
                 value={ settingsContext.listMode }
+            />
+            <SelectFormItem
+                label="Start next round"
+                name="next-round-mode"
+                onChange={ onNextRoundModeChange }
+                options={ Object.keys(NextRoundMode).map(mode => ({ displayMember: mode, valueMember: mode })) }
+                value={ settingsContext.nextRoundMode }
             />
             <SelectFormItem
                 label="Excluded continents"

@@ -3,27 +3,38 @@ import { Country } from "../Types/Country";
 import data from "../Assets/countries.json";
 import { Continent } from "../Types/Continent";
 import { SettingsContext } from "../Providers/SettingsProvider";
+import { isNil } from "lodash";
 
 const continents: Continent[] = data;
 
-const useCountries = (): [boolean, Country[], VoidFunction] => {
+const useCountries = (): Country[] => {
     const settingsContext = React.useContext(SettingsContext);
-    const [countries, setCountries] = React.useState<Country[]>([]);
-    const [countriesLoaded, setCountriesLoaded] = React.useState(false);
 
-    const refetchCountries = React.useCallback(() => {
-        setCountriesLoaded(false);
+    const countries = React.useMemo(() => {
+        const filteredCountries = continents.filter(c => !settingsContext.excludedContinents.includes(c.name)).flatMap(c => c.countries);
 
-        setCountries(continents.filter(c => !settingsContext.excludedContinents.includes(c.name)).flatMap(c => c.countries));
+        const translatedCountries = filteredCountries.map((c): Country => {
+            const translation = c.translations.find(t => t.language === settingsContext.language);
 
-        setCountriesLoaded(true);
-    }, [settingsContext.excludedContinents]);
+            const country = { ...c };
 
-    React.useEffect(() => {
-        refetchCountries();
-    }, [refetchCountries]);
+            if(!isNil(translation)){
+                if(!isNil(translation.name)){
+                    c.name = translation.name;
+                    c.alternativeNames = translation.alternativeNames;
+                }
+                if(!isNil(translation.capital)){
+                    c.capital!.name = translation.capital;
+                }
+            }
 
-    return [countriesLoaded, countries, refetchCountries];
+            return country;
+        });
+
+        return translatedCountries;
+    }, [settingsContext]);
+
+    return countries;
 };
 
 export default useCountries;

@@ -2,17 +2,17 @@ import React from "react";
 import { Country } from "../Types/Country";
 import useCountries from "../Hooks/useCountries";
 
-export const CountryContext = React.createContext<[boolean, Country[], () => void]>([false, [], () => {}]);
+export const CountryContext = React.createContext<Country[]>([]);
 
 type Props = {
     children: React.ReactNode;
 };
 
 function CountryProvider({ children }: Props){
-    const [countriesLoaded, countries, refetchCountries] = useCountries();
+    const countries = useCountries();
 
     return (
-        <CountryContext.Provider value={[ countriesLoaded, countries, refetchCountries ]}>
+        <CountryContext.Provider value={ countries }>
             { children }
         </CountryContext.Provider>
     );

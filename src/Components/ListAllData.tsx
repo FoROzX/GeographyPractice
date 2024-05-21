@@ -3,43 +3,51 @@ import { Country } from "../Types/Country";
 import React from "react";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import { CountryMode, ListMode } from "../Types/Setting";
-import { GameState } from "../Types/GameState";
 
 type Props = {
     country: Country;
-    gameState: GameState;
 };
 
-function ListAllData({ country, gameState }: Props){
-    const [guess, setGuess] = React.useState("");
+function ListAllData({ country }: Props){
+    const [error, setError] = React.useState(false);
+    const [disabled, setDisabled] = React.useState(false);
 
     const settingsContext = React.useContext(SettingsContext);
 
     const determineCorrectGuess = React.useCallback((value: string) => {
         switch(settingsContext.listMode){
             case ListMode.Country:
-                return value.toLowerCase() === country.name.toLowerCase();
+                return value.toLowerCase() === country.name.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(value.toLowerCase());
             case ListMode.Capital:
                 return value.toLowerCase() === country.capital?.name.toLowerCase();
         }
-    }, [settingsContext.listMode, country]);
-
-    React.useEffect(() => {
-        if(gameState === GameState.Found){
-            setGuess(settingsContext.listMode === ListMode.Country ? country.name : country.capital!.name);
-        }
-    }, [gameState, settingsContext]);
+    }, [settingsContext, country]);
 
     return (
         <TableRow>
             <TableCell>
                 <TextField
-                    error={ gameState === GameState.GaveUp || (!determineCorrectGuess(guess) && guess !== "") }
-                    disabled={ gameState === GameState.GaveUp || gameState === GameState.Found || determineCorrectGuess(guess) }
+                    error={ error }
+                    disabled={ disabled }
                     autoComplete="off"
-                    value={ guess }
                     sx={{ width: 400 }}
-                    onChange={e => setGuess(e.target.value)}
+                    onChange={() => setError(false)}
+                    onBlur={e => {
+                        if(e.target.value.trim() === ""){
+                            setError(false);
+                            return;
+                        }
+
+                        const isCorrectGuess = determineCorrectGuess(e.target.value);
+
+                        if(!isCorrectGuess){
+                            setError(true);
+                            return;
+                        }
+
+                        setDisabled(true);
+                        e.target.value = settingsContext.listMode === ListMode.Country ? country.name : country.capital!.name;
+                    }}
                 />
             </TableCell>
             <TableCell>

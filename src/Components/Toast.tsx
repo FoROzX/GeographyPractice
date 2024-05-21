@@ -1,36 +1,46 @@
 import { Snackbar } from "@mui/material";
+import { isNil } from "lodash";
 import React from "react";
 
 export type ToastRef = {
-    open: (duration: number) => void;
+    open: (text: string, duration: number) => void;
     close: () => void;
 };
 
-type Props = {
-    text: string;
-};
+let timeout: NodeJS.Timeout|undefined;
 
-const Toast = React.forwardRef<ToastRef, Props>(({ text }, ref) => {
+const Toast = React.forwardRef<ToastRef>(({}, ref) => {
     const [open, setOpen] = React.useState(false);
+    const [message, setMessage] = React.useState("");
+
+    const openFunction = React.useCallback((text: string, duration: number) => {
+        if(!isNil(timeout)){
+            clearTimeout(timeout);
+        }
+
+        setOpen(true);
+        setMessage(text);
+
+        timeout = setTimeout(() => {
+            closeFunction();
+            timeout = undefined;
+        }, duration);
+    }, []);
+    const closeFunction = React.useCallback(() => {
+        setOpen(false);
+        setMessage("");
+    }, []);
 
     React.useImperativeHandle(ref, () => ({
-        open: (duration: number) => {
-            setOpen(true);
-
-            setTimeout(() => {
-                setOpen(false);
-            }, duration);
-        },
-        close: () => {
-            setOpen(false)
-        }
-    }));
+        open: openFunction,
+        close: closeFunction
+    }), [openFunction, closeFunction]);
 
     return (
         <Snackbar
             anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
             open={ open }
-            message={ text }
+            message={ message }
             sx={{ mb: "40vh" }}
         />
     );

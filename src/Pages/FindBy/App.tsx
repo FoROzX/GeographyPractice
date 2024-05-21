@@ -1,6 +1,5 @@
 import { CircularProgress } from "@mui/material";
 import { CountryContext } from "../../Providers/CountryProvider";
-import { SettingsContext } from "../../Providers/SettingsProvider";
 import React from "react";
 import { Country } from "../../Types/Country";
 import { isNil } from "lodash";
@@ -9,11 +8,9 @@ import CountryData from "../../Components/CountryData";
 import CapitalData from "../../Components/CapitalData";
 
 function App(){
-    const settingsContext = React.useContext(SettingsContext);
-
     const [country, setCountry] = React.useState<Country>();
 
-    const [countriesLoaded, countries] = React.useContext(CountryContext);
+    const countries = React.useContext(CountryContext);
     const [round, setRound] = React.useState(0);
 
     const refetchCountry = React.useCallback(() => {
@@ -57,21 +54,9 @@ function App(){
     const determineGuessedCountry = React.useCallback((guess: string) => {
         switch(round){
             case 0:
-                return countries.find(country => {
-                    const translation = country.translations.find(translation => settingsContext.language === translation.language);
-        
-                    const reference = isNil(translation) || isNil(translation.name) ? country : translation;
-        
-                    return reference.name!.toLowerCase() === guess.toLowerCase() || reference.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase());
-                });
+                return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
             case 1:
-                return countries.find(country => {
-                    const translation = country.translations.find(translation => settingsContext.language === translation.language);
-
-                    const reference = isNil(translation) || isNil(translation.capital) ? country.capital?.name : translation.capital;
-
-                    return reference?.toLowerCase() === guess.toLowerCase();
-                });
+                return countries.find(country => country.capital!.name.toLowerCase() === guess.toLowerCase());
         }
     }, [countries, round]);
 
@@ -88,7 +73,7 @@ function App(){
         setRound(round + 1);
     }, [round]);
 
-    if(isNil(country) || !countriesLoaded){
+    if(isNil(country)){
         return <CircularProgress />;
     }
 

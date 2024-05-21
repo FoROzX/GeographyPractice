@@ -1,21 +1,21 @@
 import React from "react";
 import { CountryContext } from "../Providers/CountryProvider";
-import { CircularProgress, Table, TableBody } from "@mui/material";
-import { GameState } from "../Types/GameState";
+import { Table, TableBody } from "@mui/material";
 import ListAllData from "../Components/ListAllData";
+import { SettingsContext } from "../Providers/SettingsProvider";
 
-function ListAllDisplay(){
-    const [gameState, setGameState] = React.useState<GameState>(GameState.Searching);
+function ListAll(){
+    const { language } = React.useContext(SettingsContext);
 
-    const [countriesLoaded, countries] = React.useContext(CountryContext);
+    const countries = React.useContext(CountryContext);
 
     const randomizedCountries = React.useMemo(() => {
         return countries.sort(() => Math.random() - Math.random());
     }, [countries]);
 
-    if(!countriesLoaded){
-        return <CircularProgress />;
-    }
+    React.useEffect(() => {
+        console.log(language);
+    }, [language]);
 
     return (
         <Table>
@@ -24,7 +24,7 @@ function ListAllDisplay(){
                     randomizedCountries.map(country => 
                         <ListAllData
                             country={ country }
-                            gameState={ gameState }
+                            key={ country.countryCode }
                         />
                     )
                 }
@@ -33,4 +33,4 @@ function ListAllDisplay(){
     );
 }
 
-export default ListAllDisplay;
+export default ListAll;

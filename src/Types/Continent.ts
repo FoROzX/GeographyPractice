@@ -1,6 +1,6 @@
-import { Country } from "./Country";
+import { DatabaseCountry } from "./Country";
 
 export type Continent = {
     name: string;
-    countries: Country[];
+    countries: DatabaseCountry[];
 };

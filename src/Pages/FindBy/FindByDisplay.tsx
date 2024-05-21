@@ -1,7 +1,7 @@
 import React from "react";
 import { SettingsContext } from "../../Providers/SettingsProvider";
 import { Button, Table, TableBody, TextField, Typography } from "@mui/material";
-import { CountryMode } from "../../Types/Setting";
+import { CountryMode, NextRoundMode } from "../../Types/Setting";
 import { GameState } from "../../Types/GameState";
 import { Country } from "../../Types/Country";
 import { isNil } from "lodash";
@@ -45,15 +45,15 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
 
         if(country.name === guessedCountry.name){
             setGameState(GameState.Found);
-            toastRef.current?.open(1000);
+            toastRef.current?.open(`${solution} is correct!`, 2000);
         }
 
         setGuess("");
-    }, [guess]);
+    }, [guess, country, solution, determineGuessedCountry]);
     const onGiveUp = React.useCallback(() => {
         setGameState(GameState.GaveUp);
-        toastRef.current?.open(5000);
-    }, []);
+        toastRef.current?.open(`The correct answer was ${solution}`, 5000);
+    }, [solution]);
 
     React.useEffect(() => {
         setGuess("");
@@ -62,8 +62,17 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
     }, [country, round]);
     React.useEffect(() => {
         if(gameState === GameState.Searching){
-            toastRef.current?.close();
             inputRef.current?.focus();
+            return;
+        }
+
+        if(settingsContext.nextRoundMode === NextRoundMode.Automatic){
+            if(round < rounds - 1){
+                nextRound();
+                return;
+            }
+
+            getNewCountry();
         }
     }, [gameState]);
 
@@ -71,7 +80,6 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
         <>
             <Toast
                 ref={ toastRef }
-                text={ gameState === GameState.Found ? `${solution} is correct!` : `The correct answer was ${solution}` }
             />
 
             <div style={{ display: "flex", justifyContent: "center" }}>
