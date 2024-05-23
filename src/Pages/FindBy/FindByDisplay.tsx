@@ -58,6 +58,22 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
     React.useEffect(() => {
         setGuess("");
         setGuessedCountries([]);
+
+        if(isNil(solution)){
+            toastRef.current?.open("No answer required for this round", 3000);
+
+            if(settingsContext.nextRoundMode === NextRoundMode.Automatic){
+                if(round < rounds - 1){
+                    nextRound();
+                    return;
+                }
+    
+                getNewCountry();
+            }
+
+            return;
+        }
+
         setGameState(GameState.Searching);
     }, [country, round]);
     React.useEffect(() => {

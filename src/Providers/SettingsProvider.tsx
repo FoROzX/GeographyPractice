@@ -41,7 +41,7 @@ function SettingsProvider({ children }: Props){
         setListMode,
         setNextRoundMode,
         setExcludedContinents
-    }), [setting]);
+    }), [setting, setLanguage, setCountryMode, setListMode, setNextRoundMode, setExcludedContinents]);
 
     React.useEffect(() => {
         const settingJson = localStorage.getItem("setting");

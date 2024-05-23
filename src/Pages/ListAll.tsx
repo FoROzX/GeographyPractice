@@ -1,35 +1,68 @@
 import React from "react";
 import { CountryContext } from "../Providers/CountryProvider";
-import { Table, TableBody } from "@mui/material";
+import { Button, Table, TableBody } from "@mui/material";
 import ListAllData from "../Components/ListAllData";
+import { GameState } from "../Types/GameState";
+import { Country } from "../Types/Country";
 import { SettingsContext } from "../Providers/SettingsProvider";
+import { ListMode } from "../Types/Setting";
+import { isNil } from "lodash";
 
 function ListAll(){
-    const { language } = React.useContext(SettingsContext);
-
+    const settingsContext = React.useContext(SettingsContext);
     const countries = React.useContext(CountryContext);
 
-    const randomizedCountries = React.useMemo(() => {
-        return countries.sort(() => Math.random() - Math.random());
-    }, [countries]);
+    const [gameState, setGameState] = React.useState(GameState.Searching);
+    const [randomizedCountries, setRandomizedCountries] = React.useState<Country[]>([]);
+
+    const randomizeCountries = React.useCallback(() => {
+        const randomizedCountries = countries.sort(() => Math.random() - Math.random());
+
+        if(settingsContext.listMode === ListMode.Country){
+            setRandomizedCountries(randomizedCountries);
+
+            return;
+        }
+        
+        setRandomizedCountries(randomizedCountries.filter(country => !isNil(country.capital)));
+    }, [countries, settingsContext.listMode]);
 
     React.useEffect(() => {
-        console.log(language);
-    }, [language]);
+        randomizeCountries();
+    }, [randomizeCountries]);
 
     return (
-        <Table>
-            <TableBody>
-                {
-                    randomizedCountries.map(country => 
-                        <ListAllData
-                            country={ country }
-                            key={ country.countryCode }
-                        />
-                    )
-                }
-            </TableBody>
-        </Table>
+        <>
+            <Table>
+                <TableBody>
+                    {
+                        randomizedCountries.map(country => 
+                            <ListAllData
+                                country={ country }
+                                gameState={ gameState }
+                                key={ country.countryCode }
+                            />
+                        )
+                    }
+                </TableBody>
+            </Table>
+            
+            <Button
+                variant="outlined"
+                onClick={() => {
+                    if(gameState === GameState.Searching){
+                        setGameState(GameState.GaveUp);
+                    }
+                    else{
+                        setGameState(GameState.Searching);
+                        randomizeCountries();
+                    }
+                }}
+                sx={{ position: "fixed", right: 20, bottom: 10 }}
+            >
+                { gameState === GameState.Searching ? "Give up" : "Play again" }
+            </Button>
+        </>
     );
 }
 

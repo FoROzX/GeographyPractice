@@ -16,7 +16,7 @@ const useCountries = (): Country[] => {
         const translatedCountries = filteredCountries.map((c): Country => {
             const translation = c.translations.find(t => t.language === settingsContext.language);
 
-            const country = { ...c };
+            const country: Country = { ...c };
 
             if(!isNil(translation)){
                 if(!isNil(translation.name)){

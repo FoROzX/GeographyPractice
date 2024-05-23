@@ -46,8 +46,6 @@ function App(){
                 return country.name;
             case 1:
                 return country.capital?.name;
-            default:
-                return "";
         }
     }, [country, round]);
 
