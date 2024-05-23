@@ -1,7 +1,7 @@
 import React from "react";
 import { ISettingsContext, defaultSettingsContext } from "./SettingsContext";
-import { CountryMode, ListMode, NextRoundMode, Setting, defaultSetting } from "../Types/Setting";
-import { isNil } from "lodash";
+import { CountryMode, ListMode, NextRoundMode, defaultSetting } from "../Types/Setting";
+import { SettingOperation, settingReducer } from "../Types/SettingReducer";
 
 export const SettingsContext = React.createContext<ISettingsContext>(defaultSettingsContext);
 
@@ -10,29 +10,27 @@ type Props = {
 }
 
 function SettingsProvider({ children }: Props){
-    const [setting, setSetting] = React.useState<Setting>(defaultSetting);
+    const [setting, dispatchSetting] = React.useReducer(settingReducer, defaultSetting);
 
-    const updateSetting = React.useCallback((setting: Setting) => {
-        setSetting(setting);
-
+    React.useEffect(() => {
         localStorage.setItem("setting", JSON.stringify(setting));
-    }, []);
+    }, [setting]);
 
     const setLanguage = React.useCallback((language: string) => {
-        updateSetting({ ...setting, language });
-    }, [setting]);
+        dispatchSetting({ type: SettingOperation.Language, payload: language });
+    }, []);
     const setCountryMode = React.useCallback((countryMode: CountryMode) => {
-        updateSetting({ ...setting, countryMode });
-    }, [setting]);
+        dispatchSetting({ type: SettingOperation.CountryMode, payload: countryMode });
+    }, []);
     const setListMode = React.useCallback((listMode: ListMode) => {
-        updateSetting({ ...setting, listMode });
-    }, [setting]);
+        dispatchSetting({ type: SettingOperation.ListMode, payload: listMode });
+    }, []);
     const setNextRoundMode = React.useCallback((nextRoundMode: NextRoundMode) => {
-        updateSetting({ ...setting, nextRoundMode });
-    }, [setting]);
+        dispatchSetting({ type: SettingOperation.NextRoundMode, payload: nextRoundMode });
+    }, []);
     const setExcludedContinents = React.useCallback((excludedContinents: string[]) => {
-        updateSetting({ ...setting, excludedContinents });
-    }, [setting]);
+        dispatchSetting({ type: SettingOperation.ExcludedContinents, payload: excludedContinents });
+    }, []);
 
     const settingsContext: ISettingsContext = React.useMemo(() => ({
         ...setting,
@@ -42,16 +40,6 @@ function SettingsProvider({ children }: Props){
         setNextRoundMode,
         setExcludedContinents
     }), [setting, setLanguage, setCountryMode, setListMode, setNextRoundMode, setExcludedContinents]);
-
-    React.useEffect(() => {
-        const settingJson = localStorage.getItem("setting");
-
-        if(isNil(settingJson)){
-            return;
-        }
-
-        setSetting(JSON.parse(settingJson));
-    }, []);
 
     return (
         <SettingsContext.Provider value={ settingsContext }>

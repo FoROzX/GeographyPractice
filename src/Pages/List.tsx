@@ -1,10 +1,10 @@
-import useCountries from '../Hooks/useCountries';
 import DataTable from '../Components/DataTable';
+import { CountryContext } from '../Providers/CountryProvider';
 import { City } from '../Types/City';
 import React from 'react';
 
 function App() {
-    const countries = useCountries();
+    const countries = React.useContext(CountryContext);
 
     const formatNumber = React.useCallback((number: number) => {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

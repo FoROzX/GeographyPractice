@@ -1,3 +1,5 @@
+import { isNil } from "lodash";
+
 export type Setting = {
     language: string;
     countryMode: CountryMode;
@@ -19,10 +21,18 @@ export enum NextRoundMode {
     Automatic = "Automatic"
 }
 
-export const defaultSetting: Setting = {
-    language: "en",
-    countryMode: CountryMode.Outline,
-    listMode: ListMode.Country,
-    nextRoundMode: NextRoundMode.Manual,
-    excludedContinents: []
-};
+export const defaultSetting = function(): Setting {
+    const settingJson = localStorage.getItem("setting");
+
+    if(isNil(settingJson)){
+        return {
+            language: "en",
+            countryMode: CountryMode.Outline,
+            listMode: ListMode.Country,
+            nextRoundMode: NextRoundMode.Manual,
+            excludedContinents: []
+        };
+    }
+
+    return JSON.parse(settingJson);
+}();
