@@ -6,6 +6,7 @@ export type Setting = {
     listMode: ListMode;
     nextRoundMode: NextRoundMode;
     excludedContinents: string[];
+    excludedRounds: FindByRound[];
 };
 
 export enum CountryMode {
@@ -20,6 +21,10 @@ export enum NextRoundMode {
     Manual = "Manual",
     Automatic = "Automatic"
 }
+export enum FindByRound {
+    Country = "Country",
+    Capital = "Capital"
+}
 
 export const defaultSetting = function(): Setting {
     const settingJson = localStorage.getItem("setting");
@@ -30,7 +35,8 @@ export const defaultSetting = function(): Setting {
             countryMode: CountryMode.Outline,
             listMode: ListMode.Country,
             nextRoundMode: NextRoundMode.Manual,
-            excludedContinents: []
+            excludedContinents: [],
+            excludedRounds: []
         };
     }
 

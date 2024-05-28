@@ -1,6 +1,6 @@
 import React from "react";
 import { ISettingsContext, defaultSettingsContext } from "./SettingsContext";
-import { CountryMode, ListMode, NextRoundMode, defaultSetting } from "../Types/Setting";
+import { CountryMode, FindByRound, ListMode, NextRoundMode, defaultSetting } from "../Types/Setting";
 import { SettingOperation, settingReducer } from "../Types/SettingReducer";
 
 export const SettingsContext = React.createContext<ISettingsContext>(defaultSettingsContext);
@@ -31,6 +31,9 @@ function SettingsProvider({ children }: Props){
     const setExcludedContinents = React.useCallback((excludedContinents: string[]) => {
         dispatchSetting({ type: SettingOperation.ExcludedContinents, payload: excludedContinents });
     }, []);
+    const setExcludedRounds = React.useCallback((excludedRounds: FindByRound[]) => {
+        dispatchSetting({ type: SettingOperation.ExcludedRounds, payload: excludedRounds });
+    }, []);
 
     const settingsContext: ISettingsContext = React.useMemo(() => ({
         ...setting,
@@ -38,8 +41,9 @@ function SettingsProvider({ children }: Props){
         setCountryMode,
         setListMode,
         setNextRoundMode,
-        setExcludedContinents
-    }), [setting, setLanguage, setCountryMode, setListMode, setNextRoundMode, setExcludedContinents]);
+        setExcludedContinents,
+        setExcludedRounds
+    }), [setting, setLanguage, setCountryMode, setListMode, setNextRoundMode, setExcludedContinents, setExcludedRounds]);
 
     return (
         <SettingsContext.Provider value={ settingsContext }>

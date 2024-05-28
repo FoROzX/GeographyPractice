@@ -2,7 +2,7 @@ import { SelectChangeEvent } from "@mui/material";
 import React from "react";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import SelectFormItem from "../Components/SelectFormItem";
-import { CountryMode, ListMode, NextRoundMode } from "../Types/Setting";
+import { CountryMode, FindByRound, ListMode, NextRoundMode } from "../Types/Setting";
 import data from "../Assets/countries.json";
 
 function Settings(){
@@ -29,9 +29,12 @@ function Settings(){
     const onExcludedContinentsChange = React.useCallback((e: SelectChangeEvent<any>) => {
         settingsContext.setExcludedContinents(e.target.value);
     }, [settingsContext.setExcludedContinents]);
+    const onExcludedRoundsChange = React.useCallback((e: SelectChangeEvent<any>) => {
+        settingsContext.setExcludedRounds(e.target.value);
+    }, [settingsContext.setExcludedRounds]);
 
     return (
-        <div style={{ margin: "20px", display: "flex", columnGap: "50px", rowGap: "20px" }}>
+        <div style={{ margin: "20px", display: "flex", columnGap: "50px", rowGap: "20px", flexWrap: "wrap" }}>
             <SelectFormItem
                 label="Language"
                 name="language"
@@ -59,6 +62,14 @@ function Settings(){
                 onChange={ onNextRoundModeChange }
                 options={ Object.keys(NextRoundMode).map(mode => ({ displayMember: mode, valueMember: mode })) }
                 value={ settingsContext.nextRoundMode }
+            />
+            <SelectFormItem
+                label="Excluded rounds"
+                name="excluded-rounds"
+                onChange={ onExcludedRoundsChange }
+                options={ Object.keys(FindByRound).map(round => ({ displayMember: round, valueMember: round })) }
+                value={ settingsContext.excludedRounds }
+                multiple
             />
             <SelectFormItem
                 label="Excluded continents"

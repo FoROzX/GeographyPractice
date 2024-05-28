@@ -1,4 +1,4 @@
-import { CountryMode, ListMode, NextRoundMode, Setting, defaultSetting } from "../Types/Setting";
+import { CountryMode, FindByRound, ListMode, NextRoundMode, Setting, defaultSetting } from "../Types/Setting";
 
 export type ISettingsContext = Setting & {
     setLanguage: (language: string) => void;
@@ -6,6 +6,7 @@ export type ISettingsContext = Setting & {
     setListMode: (listMode: ListMode) => void;
     setNextRoundMode: (nextRoundMode: NextRoundMode) => void;
     setExcludedContinents: (excludedContinents: string[]) => void;
+    setExcludedRounds: (excludedRounds: FindByRound[]) => void;
 };
 
 export const defaultSettingsContext: ISettingsContext = {
@@ -14,5 +15,6 @@ export const defaultSettingsContext: ISettingsContext = {
     setCountryMode: () => {},
     setListMode: () => {},
     setNextRoundMode: () => {},
-    setExcludedContinents: () => {}
+    setExcludedContinents: () => {},
+    setExcludedRounds: () => {}
 };

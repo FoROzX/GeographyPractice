@@ -1,7 +1,7 @@
 import React from "react";
 import { SettingsContext } from "../../Providers/SettingsProvider";
 import { Button, Table, TableBody, TextField, Typography } from "@mui/material";
-import { CountryMode, NextRoundMode } from "../../Types/Setting";
+import { CountryMode, FindByRound, NextRoundMode } from "../../Types/Setting";
 import { GameState } from "../../Types/GameState";
 import { Country } from "../../Types/Country";
 import { isNil } from "lodash";
@@ -12,14 +12,12 @@ type Props = {
     solution?: string;
     country: Country;
     round: number;
-    rounds: number;
-    getNewCountry: () => void;
     nextRound: () => void;
     determineGuessedCountry: (guess: string) => Country|undefined;
     guessDisplayFormatter: (guessedCountries: Country[]) => React.ReactNode;
 };
 
-function FindByDisplay({ label, solution, country, round, rounds, getNewCountry, nextRound, determineGuessedCountry, guessDisplayFormatter }: Props){
+function FindByDisplay({ label, solution, country, round, nextRound, determineGuessedCountry, guessDisplayFormatter }: Props){
     const [guess, setGuess] = React.useState("");
     const [gameState, setGameState] = React.useState(GameState.Searching);
     const [guessedCountries, setGuessedCountries] = React.useState<Country[]>([]);
@@ -58,37 +56,28 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
     React.useEffect(() => {
         setGuess("");
         setGuessedCountries([]);
+        setGameState(GameState.Searching);
 
-        if(isNil(solution)){
-            toastRef.current?.open("No answer required for this round", 3000);
+        const key = Object.keys(FindByRound)[round];
 
-            if(settingsContext.nextRoundMode === NextRoundMode.Automatic){
-                if(round < rounds - 1){
-                    nextRound();
-                    return;
-                }
-    
-                getNewCountry();
-            }
+        if(settingsContext.excludedRounds?.includes(key as any)){
+            nextRound();
 
             return;
         }
-
-        setGameState(GameState.Searching);
-    }, [country, round]);
+        if(isNil(solution) && settingsContext.nextRoundMode === NextRoundMode.Automatic){
+            nextRound();
+        }
+    }, [round]);
     React.useEffect(() => {
         if(gameState === GameState.Searching){
             inputRef.current?.focus();
+
             return;
         }
 
         if(settingsContext.nextRoundMode === NextRoundMode.Automatic){
-            if(round < rounds - 1){
-                nextRound();
-                return;
-            }
-
-            getNewCountry();
+            nextRound();
         }
     }, [gameState]);
 
@@ -151,14 +140,6 @@ function FindByDisplay({ label, solution, country, round, rounds, getNewCountry,
                             Give up
                         </Button>
                     </> :
-                    rounds - 1 === round ?
-                    <Button
-                        variant="outlined"
-                        sx={{ ml: 2 }}
-                        onClick={ getNewCountry }
-                    >
-                        Play again
-                    </Button> :
                     <Button
                         variant="outlined"
                         sx={{ ml: 2 }}

@@ -9,7 +9,8 @@ export enum SettingOperation {
     ListMode,
     NextRoundMode,
     Language,
-    ExcludedContinents
+    ExcludedContinents,
+    ExcludedRounds
 }
 
 export const settingReducer = (state: Setting, action: SettingAction): Setting => {
@@ -24,5 +25,7 @@ export const settingReducer = (state: Setting, action: SettingAction): Setting =
             return { ...state, language: action.payload };
         case SettingOperation.ExcludedContinents:
             return { ...state, excludedContinents: action.payload };
+        case SettingOperation.ExcludedRounds:
+            return { ...state, excludedRounds: action.payload };
     }
 };

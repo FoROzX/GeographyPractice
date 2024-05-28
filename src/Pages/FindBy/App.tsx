@@ -6,12 +6,15 @@ import { isNil } from "lodash";
 import FindByDisplay from "./FindByDisplay";
 import CountryData from "../../Components/CountryData";
 import CapitalData from "../../Components/CapitalData";
+import { FindByRound } from "../../Types/Setting";
+
+const rounds = Object.keys(FindByRound).length;
 
 function App(){
     const [country, setCountry] = React.useState<Country>();
+    const [round, setRound] = React.useState(0);
 
     const countries = React.useContext(CountryContext);
-    const [round, setRound] = React.useState(0);
 
     const refetchCountry = React.useCallback(() => {
         setCountry(countries[~~(Math.random() * countries.length)]);
@@ -20,10 +23,6 @@ function App(){
     React.useEffect(() => {
         refetchCountry();
     }, [refetchCountry]);
-
-    React.useEffect(() => {
-        setRound(0);
-    }, [country]);
 
     const label = React.useMemo(() => {
         switch(round){
@@ -54,7 +53,7 @@ function App(){
             case 0:
                 return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
             case 1:
-                return countries.find(country => country.capital!.name.toLowerCase() === guess.toLowerCase());
+                return countries.find(country => country.capital?.name.toLowerCase() === guess.toLowerCase());
         }
     }, [countries, round]);
 
@@ -68,8 +67,15 @@ function App(){
     }, [country, round]);
     
     const nextRound = React.useCallback(() => {
+        if(round === rounds - 1){
+            refetchCountry();
+            setRound(0);
+
+            return;
+        }
+        
         setRound(round + 1);
-    }, [round]);
+    }, [round, refetchCountry]);
 
     if(isNil(country)){
         return <CircularProgress />;
@@ -81,10 +87,8 @@ function App(){
             solution={ solution }
             country={ country }
             determineGuessedCountry={ determineGuessedCountry }
-            getNewCountry={ refetchCountry }
             guessDisplayFormatter={ guessDisplayFormatter }
             round={ round }
-            rounds={ 2 }
             nextRound={ nextRound }
         />
     );
