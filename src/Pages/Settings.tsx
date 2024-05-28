@@ -68,7 +68,7 @@ function Settings(){
                 name="excluded-rounds"
                 onChange={ onExcludedRoundsChange }
                 options={ Object.keys(FindByRound).map(round => ({ displayMember: round, valueMember: round })) }
-                value={ settingsContext.excludedRounds }
+                value={ settingsContext.excludedRounds ?? [] }
                 multiple
             />
             <SelectFormItem
@@ -76,7 +76,7 @@ function Settings(){
                 name="excluded-continents"
                 onChange={ onExcludedContinentsChange }
                 options={ data.map(continent => ({ displayMember: continent.name, valueMember: continent.name })) }
-                value={ settingsContext.excludedContinents }
+                value={ settingsContext.excludedContinents ?? [] }
                 multiple
             />
         </div>
