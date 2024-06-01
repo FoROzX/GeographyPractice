@@ -3,37 +3,29 @@ import { Country } from "../Types/Country";
 import React from "react";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import { CountryMode, ListMode } from "../Types/Setting";
-import { isNil } from "lodash";
+import { isEmpty, isNil } from "lodash";
 import { GameState } from "../Types/GameState";
 
 type Props = {
     country: Country;
     gameState: GameState;
+    determineGuessedCountry: (guess: string) => Country|undefined;
 };
 
-function ListAllData({ country, gameState }: Props){
+function ListAllData({ country, gameState, determineGuessedCountry }: Props){
     const [guess, setGuess] = React.useState("");
     const [error, setError] = React.useState(false);
     const [disabled, setDisabled] = React.useState(false);
 
     const settingsContext = React.useContext(SettingsContext);
-
-    const determineCorrectGuess = React.useCallback(() => {
-        switch(settingsContext.listMode){
-            case ListMode.Country:
-                return guess.toLowerCase() === country.name.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase());
-            case ListMode.Capital:
-                return guess.toLowerCase() === country.capital?.name.toLowerCase();
-        }
-    }, [settingsContext, country, guess]);
     
-    const correctedValue = React.useMemo(() => {
+    const solution = React.useMemo(() => {
         return settingsContext.listMode === ListMode.Country ? country.name : country.capital?.name as string;
     }, [settingsContext.listMode, country]);
 
     React.useEffect(() => {
-        if(gameState === GameState.GaveUp && !determineCorrectGuess()){
-            setGuess(correctedValue);
+        if(gameState === GameState.GaveUp && !disabled){
+            setGuess(solution);
             setDisabled(true);
         }
         if(gameState === GameState.Searching){
@@ -43,7 +35,7 @@ function ListAllData({ country, gameState }: Props){
         }
     }, [gameState]);
 
-    if(isNil(correctedValue)){
+    if(isNil(solution)){
         return <></>;
     }
 
@@ -61,20 +53,20 @@ function ListAllData({ country, gameState }: Props){
                         setGuess(e.target.value);
                     }}
                     onBlur={() => {
-                        if(guess.trim() === ""){
+                        if(isEmpty(guess)){
                             setError(false);
                             return;
                         }
 
-                        const isCorrectGuess = determineCorrectGuess();
-
-                        if(!isCorrectGuess){
+                        const guessedCountry = determineGuessedCountry(guess);
+                        
+                        if(isNil(guessedCountry) || guessedCountry.name !== country.name){
                             setError(true);
                             return;
                         }
 
                         setDisabled(true);
-                        setGuess(correctedValue);
+                        setGuess(solution);
                     }}
                 />
             </TableCell>

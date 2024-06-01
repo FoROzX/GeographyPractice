@@ -48,7 +48,8 @@ function App({ children }: Props){
                         justifyContent: "center",
                         borderBottom: 1,
                         borderColor: "divider",
-                        columnGap: "40vw"
+                        columnGap: "40vw",
+                        flexWrap: "wrap"
                     }}
                 >
                     <Box>

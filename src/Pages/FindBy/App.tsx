@@ -53,7 +53,7 @@ function App(){
             case 0:
                 return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
             case 1:
-                return countries.find(country => country.capital?.name.toLowerCase() === guess.toLowerCase());
+                return countries.find(country => country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLocaleLowerCase()).includes(guess.toLowerCase()));
         }
     }, [countries, round]);
 

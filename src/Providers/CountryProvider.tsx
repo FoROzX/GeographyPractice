@@ -30,7 +30,7 @@ function CountryProvider({ children }: Props){
                     translatedCountry.alternativeNames = translation.alternativeNames;
                 }
                 if(!isNil(translation.capital)){
-                    translatedCountry.capital!.name = translation.capital;
+                    translatedCountry.capital = { ...translatedCountry.capital!, ...translation.capital };
                 }
             }
 

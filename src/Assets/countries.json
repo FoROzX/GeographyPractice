@@ -7,7 +7,8 @@
         "capital": {
           "name": "Tirana",
           "latitude": 41.3275,
-          "longitude": 19.8187
+          "longitude": 19.8187,
+          "alternativeNames": []
         },
         "latitude": 41.1533,
         "longitude": 20.1683,
@@ -29,7 +30,8 @@
         "capital": {
           "name": "Andorra la Vella",
           "latitude": 42.5063,
-          "longitude": 1.5218
+          "longitude": 1.5218,
+          "alternativeNames": []
         },
         "latitude": 42.5463,
         "longitude": 1.6016,
@@ -44,7 +46,8 @@
         "capital": {
           "name": "Vienna",
           "latitude": 48.2082,
-          "longitude": 16.3738
+          "longitude": 16.3738,
+          "alternativeNames": []
         },
         "latitude": 47.5162,
         "longitude": 14.5501,
@@ -55,7 +58,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Wien",
+           "capital": {
+            "name": "Wien",
+            "alternativeNames": []
+           },
            "name": "Österreich",
            "alternativeNames": []
           }
@@ -66,7 +72,8 @@
         "capital": {
           "name": "Minsk",
           "latitude": 53.9045,
-          "longitude": 27.5615
+          "longitude": 27.5615,
+          "alternativeNames": []
         },
         "latitude": 53.7098,
         "longitude": 27.9534,
@@ -81,7 +88,8 @@
         "capital": {
           "name": "Brussels",
           "latitude": 50.8503,
-          "longitude": 4.3517
+          "longitude": 4.3517,
+          "alternativeNames": []
         },
         "latitude": 50.5039,
         "longitude": 4.4699,
@@ -92,7 +100,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Brüssel",
+           "capital": {
+            "name": "Brüssel",
+            "alternativeNames": []
+           },
            "name": "Belgien",
            "alternativeNames": []
           }
@@ -103,7 +114,8 @@
         "capital": {
           "name": "Sarajevo",
           "latitude": 43.8563,
-          "longitude": 18.4131
+          "longitude": 18.4131,
+          "alternativeNames": []
         },
         "latitude": 43.9159,
         "longitude": 17.6791,
@@ -125,7 +137,8 @@
         "capital": {
           "name": "Sofia",
           "latitude": 42.6977,
-          "longitude": 23.3219
+          "longitude": 23.3219,
+          "alternativeNames": []
         },
         "latitude": 42.7339,
         "longitude": 25.4858,
@@ -147,7 +160,8 @@
         "capital": {
           "name": "Zagreb",
           "latitude": 45.8150,
-          "longitude": 15.9819
+          "longitude": 15.9819,
+          "alternativeNames": []
         },
         "latitude": 45.1000,
         "longitude": 15.2000,
@@ -169,7 +183,8 @@
         "capital": {
           "name": "Prague",
           "latitude": 50.0755,
-          "longitude": 14.4378
+          "longitude": 14.4378,
+          "alternativeNames": []
         },
         "latitude": 49.8175,
         "longitude": 15.4730,
@@ -182,7 +197,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Prag",
+           "capital": {
+            "name": "Prag",
+            "alternativeNames": []
+           },
            "name": "Tschechien",
            "alternativeNames": []
           }
@@ -193,7 +211,8 @@
         "capital": {
           "name": "Copenhagen",
           "latitude": 55.6761,
-          "longitude": 12.5683
+          "longitude": 12.5683,
+          "alternativeNames": []
         },
         "latitude": 56.2639,
         "longitude": 9.5018,
@@ -204,7 +223,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Kopenhagen",
+           "capital": {
+            "name": "Kopenhagen",
+            "alternativeNames": []
+           },
            "name": "Dänemark",
            "alternativeNames": []
           }
@@ -215,7 +237,8 @@
         "capital": {
           "name": "Tallinn",
           "latitude": 59.4370,
-          "longitude": 24.7536
+          "longitude": 24.7536,
+          "alternativeNames": []
         },
         "latitude": 58.5953,
         "longitude": 25.0136,
@@ -237,7 +260,8 @@
         "capital": {
           "name": "Torshavn",
           "latitude": 62.0177,
-          "longitude": -6.7717
+          "longitude": -6.7717,
+          "alternativeNames": []
         },
         "latitude": 61.8926,
         "longitude": -6.9118,
@@ -259,7 +283,8 @@
         "capital": {
           "name": "Helsinki",
           "latitude": 60.1695,
-          "longitude": 24.9354
+          "longitude": 24.9354,
+          "alternativeNames": []
         },
         "latitude": 61.9241,
         "longitude": 25.7482,
@@ -281,7 +306,8 @@
         "capital": {
           "name": "Paris",
           "latitude": 48.8566,
-          "longitude": 2.3522
+          "longitude": 2.3522,
+          "alternativeNames": []
         },
         "latitude": 46.6034,
         "longitude": 1.8883,
@@ -303,7 +329,8 @@
         "capital": {
           "name": "Berlin",
           "latitude": 52.5200,
-          "longitude": 13.4050
+          "longitude": 13.4050,
+          "alternativeNames": []
         },
         "latitude": 51.1657,
         "longitude": 10.4515,
@@ -325,7 +352,8 @@
         "capital": {
           "name": "Gibraltar",
           "latitude": 36.1408,
-          "longitude": -5.3536
+          "longitude": -5.3536,
+          "alternativeNames": []
         },
         "latitude": 36.1377,
         "longitude": -5.3453,
@@ -340,7 +368,8 @@
         "capital": {
           "name": "Athens",
           "latitude": 37.9838,
-          "longitude": 23.7275
+          "longitude": 23.7275,
+          "alternativeNames": []
         },
         "latitude": 39.0742,
         "longitude": 21.8243,
@@ -351,7 +380,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Athen",
+           "capital": {
+            "name": "Athen",
+            "alternativeNames": []
+           },
            "name": "Griechenland",
            "alternativeNames": []
           }
@@ -362,7 +394,8 @@
         "capital": {
           "name": "Saint Peter Port",
           "latitude": 49.4539,
-          "longitude": -2.5363
+          "longitude": -2.5363,
+          "alternativeNames": ["St. Peter Port", "St Peter Port"]
         },
         "latitude": 49.4657,
         "longitude": -2.5853,
@@ -377,7 +410,8 @@
         "capital": {
           "name": "Vatican City",
           "latitude": 41.9029,
-          "longitude": 12.4534
+          "longitude": 12.4534,
+          "alternativeNames": ["Vatican"]
         },
         "latitude": 41.9029,
         "longitude": 12.4534,
@@ -388,7 +422,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Vatikanstadt",
+           "capital": {
+            "name": "Vatikanstadt",
+            "alternativeNames": ["Vatikan"]
+           },
            "name": "Vatikanstadt",
            "alternativeNames": ["Vatikan"]
           }
@@ -399,7 +436,8 @@
         "capital": {
           "name": "Budapest",
           "latitude": 47.4979,
-          "longitude": 19.0402
+          "longitude": 19.0402,
+          "alternativeNames": []
         },
         "latitude": 47.1625,
         "longitude": 19.5033,
@@ -421,7 +459,8 @@
         "capital": {
           "name": "Reykjavik",
           "latitude": 64.1466,
-          "longitude": -21.9426
+          "longitude": -21.9426,
+          "alternativeNames": []
         },
         "latitude": 64.9631,
         "longitude": -19.0208,
@@ -443,7 +482,8 @@
         "capital": {
           "name": "Dublin",
           "latitude": 53.3498,
-          "longitude": -6.2603
+          "longitude": -6.2603,
+          "alternativeNames": []
         },
         "latitude": 53.1424,
         "longitude": -7.6921,
@@ -465,7 +505,8 @@
         "capital": {
           "name": "Douglas",
           "latitude": 54.2361,
-          "longitude": -4.5481
+          "longitude": -4.5481,
+          "alternativeNames": []
         },
         "latitude": 54.2361,
         "longitude": -4.5481,
@@ -480,7 +521,8 @@
         "capital": {
           "name": "Rome",
           "latitude": 41.9028,
-          "longitude": 12.4964
+          "longitude": 12.4964,
+          "alternativeNames": []
         },
         "latitude": 41.8719,
         "longitude": 12.5674,
@@ -491,7 +533,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Rom",
+           "capital": {
+            "name": "Rom",
+            "alternativeNames": []
+           },
            "name": "Italien",
            "alternativeNames": []
           }
@@ -502,7 +547,8 @@
         "capital": {
           "name": "Saint Helier",
           "latitude": 49.1860,
-          "longitude": -2.1071
+          "longitude": -2.1071,
+          "alternativeNames": ["St. Helier", "St Helier"]
         },
         "latitude": 49.2144,
         "longitude": -2.1313,
@@ -517,7 +563,8 @@
         "capital": {
           "name": "Riga",
           "latitude": 56.9496,
-          "longitude": 24.1052
+          "longitude": 24.1052,
+          "alternativeNames": []
         },
         "latitude": 56.8796,
         "longitude": 24.6032,
@@ -539,7 +586,8 @@
         "capital": {
           "name": "Vaduz",
           "latitude": 47.1410,
-          "longitude": 9.5209
+          "longitude": 9.5209,
+          "alternativeNames": []
         },
         "latitude": 47.1660,
         "longitude": 9.5554,
@@ -554,7 +602,8 @@
         "capital": {
           "name": "Vilnius",
           "latitude": 54.6872,
-          "longitude": 25.2797
+          "longitude": 25.2797,
+          "alternativeNames": []
         },
         "latitude": 55.1694,
         "longitude": 23.8813,
@@ -576,7 +625,8 @@
         "capital": {
           "name": "Luxembourg",
           "latitude": 49.6116,
-          "longitude": 6.1319
+          "longitude": 6.1319,
+          "alternativeNames": []
         },
         "latitude": 49.8153,
         "longitude": 6.1296,
@@ -587,7 +637,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Luxemburg",
+           "capital": {
+            "name": "Luxemburg",
+            "alternativeNames": []
+           },
            "name": "Luxemburg",
            "alternativeNames": []
           }
@@ -598,7 +651,8 @@
         "capital": {
           "name": "Valletta",
           "latitude": 35.8989,
-          "longitude": 14.5146
+          "longitude": 14.5146,
+          "alternativeNames": []
         },
         "latitude": 35.9375,
         "longitude": 14.3754,
@@ -613,7 +667,8 @@
         "capital": {
           "name": "Chisinau",
           "latitude": 47.0105,
-          "longitude": 28.8638
+          "longitude": 28.8638,
+          "alternativeNames": []
         },
         "latitude": 47.4116,
         "longitude": 28.3699,
@@ -635,7 +690,8 @@
         "capital": {
           "name": "Monaco",
           "latitude": 43.7384,
-          "longitude": 7.4246
+          "longitude": 7.4246,
+          "alternativeNames": []
         },
         "latitude": 43.7384,
         "longitude": 7.4246,
@@ -650,7 +706,8 @@
         "capital": {
           "name": "Podgorica",
           "latitude": 42.4304,
-          "longitude": 19.2594
+          "longitude": 19.2594,
+          "alternativeNames": []
         },
         "latitude": 42.7087,
         "longitude": 19.3744,
@@ -665,7 +722,8 @@
         "capital": {
           "name": "Amsterdam",
           "latitude": 52.3676,
-          "longitude": 4.9041
+          "longitude": 4.9041,
+          "alternativeNames": []
         },
         "latitude": 52.1326,
         "longitude": 5.2913,
@@ -687,7 +745,8 @@
         "capital": {
           "name": "Skopje",
           "latitude": 41.9973,
-          "longitude": 21.4280
+          "longitude": 21.4280,
+          "alternativeNames": []
         },
         "latitude": 41.6086,
         "longitude": 21.7453,
@@ -709,7 +768,8 @@
         "capital": {
           "name": "Oslo",
           "latitude": 59.9139,
-          "longitude": 10.7522
+          "longitude": 10.7522,
+          "alternativeNames": []
         },
         "latitude": 60.4720,
         "longitude": 8.4689,
@@ -731,7 +791,8 @@
         "capital": {
           "name": "Warsaw",
           "latitude": 52.2297,
-          "longitude": 21.0122
+          "longitude": 21.0122,
+          "alternativeNames": []
         },
         "latitude": 51.9194,
         "longitude": 19.1451,
@@ -742,7 +803,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Warschau",
+           "capital": {
+            "name": "Warschau",
+            "alternativeNames": []
+           },
            "name": "Polen",
            "alternativeNames": []
           }
@@ -753,7 +817,8 @@
         "capital": {
           "name": "Lisbon",
           "latitude": 38.7223,
-          "longitude": -9.1393
+          "longitude": -9.1393,
+          "alternativeNames": []
         },
         "latitude": 39.3999,
         "longitude": -8.2245,
@@ -764,7 +829,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Lissabon",
+           "capital": {
+            "name": "Lissabon",
+            "alternativeNames": []
+           },
            "name": null,
            "alternativeNames": []
           }
@@ -775,7 +843,8 @@
         "capital": {
           "name": "Pristina",
           "latitude": 42.6727,
-          "longitude": 21.1669
+          "longitude": 21.1669,
+          "alternativeNames": []
         },
         "latitude": 42.6026,
         "longitude": 20.9020,
@@ -790,7 +859,8 @@
         "capital": {
           "name": "Bucharest",
           "latitude": 44.4268,
-          "longitude": 26.1025
+          "longitude": 26.1025,
+          "alternativeNames": []
         },
         "latitude": 45.9432,
         "longitude": 24.9668,
@@ -812,7 +882,8 @@
         "capital": {
           "name": "San Marino",
           "latitude": 43.9424,
-          "longitude": 12.4578
+          "longitude": 12.4578,
+          "alternativeNames": []
         },
         "latitude": 43.9424,
         "longitude": 12.4578,
@@ -827,7 +898,8 @@
         "capital": {
           "name": "Belgrade",
           "latitude": 44.7866,
-          "longitude": 20.4489
+          "longitude": 20.4489,
+          "alternativeNames": []
         },
         "latitude": 44.0165,
         "longitude": 21.0059,
@@ -838,7 +910,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Belgrad",
+           "capital": {
+            "name": "Belgrad",
+            "alternativeNames": []
+           },
            "name": "Serbien",
            "alternativeNames": []
           }
@@ -849,7 +924,8 @@
         "capital": {
           "name": "Bratislava",
           "latitude": 48.1486,
-          "longitude": 17.1077
+          "longitude": 17.1077,
+          "alternativeNames": []
         },
         "latitude": 48.6690,
         "longitude": 19.6990,
@@ -871,7 +947,8 @@
         "capital": {
           "name": "Ljubljana",
           "latitude": 46.0569,
-          "longitude": 14.5058
+          "longitude": 14.5058,
+          "alternativeNames": []
         },
         "latitude": 46.1512,
         "longitude": 14.9955,
@@ -893,7 +970,8 @@
         "capital": {
           "name": "Madrid",
           "latitude": 40.4168,
-          "longitude": -3.7038
+          "longitude": -3.7038,
+          "alternativeNames": []
         },
         "latitude": 40.4637,
         "longitude": -3.7492,
@@ -915,7 +993,8 @@
         "capital": {
           "name": "Longyearbyen",
           "latitude": 78.2232,
-          "longitude": 15.6267
+          "longitude": 15.6267,
+          "alternativeNames": []
         },
         "latitude": 77.5536,
         "longitude": 23.6703,
@@ -937,7 +1016,8 @@
         "capital": {
           "name": "Stockholm",
           "latitude": 59.3293,
-          "longitude": 18.0686
+          "longitude": 18.0686,
+          "alternativeNames": []
         },
         "latitude": 60.1282,
         "longitude": 18.6435,
@@ -959,7 +1039,8 @@
         "capital": {
           "name": "Bern",
           "latitude": 46.9480,
-          "longitude": 7.4474
+          "longitude": 7.4474,
+          "alternativeNames": []
         },
         "latitude": 46.8182,
         "longitude": 8.2275,
@@ -981,7 +1062,8 @@
         "capital": {
           "name": "Kyiv",
           "latitude": 50.4501,
-          "longitude": 30.5234
+          "longitude": 30.5234,
+          "alternativeNames": []
         },
         "latitude": 48.3794,
         "longitude": 31.1656,
@@ -992,7 +1074,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Kiew",
+           "capital": {
+            "name": "Kiew",
+            "alternativeNames": []
+           },
            "name": null,
            "alternativeNames": []
           }
@@ -1003,7 +1088,8 @@
         "capital": {
           "name": "London",
           "latitude": 51.5074,
-          "longitude": -0.1278
+          "longitude": -0.1278,
+          "alternativeNames": []
         },
         "latitude": 55.3781,
         "longitude": -3.4360,
@@ -1030,7 +1116,8 @@
         "capital": {
           "name": "Kabul",
           "latitude": 34.5553,
-          "longitude": 69.2075
+          "longitude": 69.2075,
+          "alternativeNames": []
         },
         "latitude": 33.9391,
         "longitude": 67.7100,
@@ -1045,7 +1132,8 @@
         "capital": {
           "name": "Yerevan",
           "latitude": 40.1792,
-          "longitude": 44.4991
+          "longitude": 44.4991,
+          "alternativeNames": []
         },
         "latitude": 40.0691,
         "longitude": 45.0382,
@@ -1067,7 +1155,8 @@
         "capital": {
           "name": "Baku",
           "latitude": 40.4093,
-          "longitude": 49.8671
+          "longitude": 49.8671,
+          "alternativeNames": []
         },
         "latitude": 40.1431,
         "longitude": 47.5769,
@@ -1089,7 +1178,8 @@
         "capital": {
           "name": "Manama",
           "latitude": 26.2285,
-          "longitude": 50.5860
+          "longitude": 50.5860,
+          "alternativeNames": []
         },
         "latitude": 26.0667,
         "longitude": 50.5577,
@@ -1104,7 +1194,8 @@
         "capital": {
           "name": "Dhaka",
           "latitude": 23.8103,
-          "longitude": 90.4125
+          "longitude": 90.4125,
+          "alternativeNames": []
         },
         "latitude": 23.6850,
         "longitude": 90.3563,
@@ -1126,7 +1217,8 @@
         "capital": {
           "name": "Thimphu",
           "latitude": 27.4728,
-          "longitude": 89.6390
+          "longitude": 89.6390,
+          "alternativeNames": []
         },
         "latitude": 27.5142,
         "longitude": 90.4336,
@@ -1141,7 +1233,8 @@
         "capital": {
           "name": "Bandar Seri Begawan",
           "latitude": 4.9031,
-          "longitude": 114.9403
+          "longitude": 114.9403,
+          "alternativeNames": []
         },
         "latitude": 4.5353,
         "longitude": 114.7277,
@@ -1156,7 +1249,8 @@
         "capital": {
           "name": "Phnom Penh",
           "latitude": 11.5564,
-          "longitude": 104.9282
+          "longitude": 104.9282,
+          "alternativeNames": []
         },
         "latitude": 12.5657,
         "longitude": 104.9910,
@@ -1178,7 +1272,8 @@
         "capital": {
           "name": "Beijing",
           "latitude": 39.9042,
-          "longitude": 116.4074
+          "longitude": 116.4074,
+          "alternativeNames": []
         },
         "latitude": 35.8617,
         "longitude": 104.1954,
@@ -1189,7 +1284,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Peking",
+           "capital": {
+            "name": "Peking",
+            "alternativeNames": []
+           },
            "name": null,
            "alternativeNames": []
           }
@@ -1200,7 +1298,8 @@
         "capital": {
           "name": "Flying Fish Cove",
           "latitude": -10.4206,
-          "longitude": 105.6904
+          "longitude": 105.6904,
+          "alternativeNames": []
         },
         "latitude": -10.4475,
         "longitude": 105.6904,
@@ -1222,7 +1321,8 @@
         "capital": {
           "name": "West Island",
           "latitude": -12.1885,
-          "longitude": 96.8236
+          "longitude": 96.8236,
+          "alternativeNames": []
         },
         "latitude": -12.1642,
         "longitude": 96.8700,
@@ -1244,7 +1344,8 @@
         "capital": {
           "name": "Nicosia",
           "latitude": 35.1856,
-          "longitude": 33.3823
+          "longitude": 33.3823,
+          "alternativeNames": []
         },
         "latitude": 35.1264,
         "longitude": 33.4299,
@@ -1266,7 +1367,8 @@
         "capital": {
           "name": "Tbilisi",
           "latitude": 41.7151,
-          "longitude": 44.8271
+          "longitude": 44.8271,
+          "alternativeNames": []
         },
         "latitude": 42.3154,
         "longitude": 43.3569,
@@ -1288,7 +1390,8 @@
         "capital": {
           "name": "Hong Kong",
           "latitude": 22.3193,
-          "longitude": 114.1694
+          "longitude": 114.1694,
+          "alternativeNames": []
         },
         "latitude": 22.3193,
         "longitude": 114.1694,
@@ -1303,7 +1406,8 @@
         "capital": {
           "name": "New Delhi",
           "latitude": 28.6139,
-          "longitude": 77.2090
+          "longitude": 77.2090,
+          "alternativeNames": []
         },
         "latitude": 20.5937,
         "longitude": 78.9629,
@@ -1314,7 +1418,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Neu Delhi",
+           "capital": {
+            "name": "Neu Delhi",
+            "alternativeNames": []
+           },
            "name": "Indien",
            "alternativeNames": []
           }
@@ -1325,7 +1432,8 @@
         "capital": {
           "name": "Jakarta",
           "latitude": -6.2088,
-          "longitude": 106.8456
+          "longitude": 106.8456,
+          "alternativeNames": []
         },
         "latitude": -0.7893,
         "longitude": 113.9213,
@@ -1347,7 +1455,8 @@
         "capital": {
           "name": "Tehran",
           "latitude": 35.6892,
-          "longitude": 51.3890
+          "longitude": 51.3890,
+          "alternativeNames": []
         },
         "latitude": 32.4279,
         "longitude": 53.6880,
@@ -1362,7 +1471,8 @@
         "capital": {
           "name": "Baghdad",
           "latitude": 33.3152,
-          "longitude": 44.3661
+          "longitude": 44.3661,
+          "alternativeNames": []
         },
         "latitude": 33.2232,
         "longitude": 43.6793,
@@ -1384,7 +1494,8 @@
         "capital": {
           "name": "Jerusalem",
           "latitude": 31.7683,
-          "longitude": 35.2137
+          "longitude": 35.2137,
+          "alternativeNames": []
         },
         "latitude": 31.0461,
         "longitude": 34.8516,
@@ -1399,7 +1510,8 @@
         "capital": {
           "name": "Tokyo",
           "latitude": 35.6895,
-          "longitude": 139.6917
+          "longitude": 139.6917,
+          "alternativeNames": []
         },
         "latitude": 36.2048,
         "longitude": 138.2529,
@@ -1410,7 +1522,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Tokio",
+           "capital": {
+            "name": "Tokio",
+            "alternativeNames": []
+           },
            "name": null,
            "alternativeNames": []
           }
@@ -1421,7 +1536,8 @@
         "capital": {
           "name": "Amman",
           "latitude": 31.9454,
-          "longitude": 35.9284
+          "longitude": 35.9284,
+          "alternativeNames": []
         },
         "latitude": 30.5852,
         "longitude": 36.2384,
@@ -1443,7 +1559,8 @@
         "capital": {
           "name": "Astana",
           "latitude": 51.1655,
-          "longitude": 71.4272
+          "longitude": 71.4272,
+          "alternativeNames": []
         },
         "latitude": 48.0196,
         "longitude": 66.9237,
@@ -1465,7 +1582,8 @@
         "capital": {
           "name": "Pyongyang",
           "latitude": 39.0392,
-          "longitude": 125.7625
+          "longitude": 125.7625,
+          "alternativeNames": []
         },
         "latitude": 40.3399,
         "longitude": 127.5101,
@@ -1487,7 +1605,8 @@
         "capital": {
           "name": "Seoul",
           "latitude": 37.5665,
-          "longitude": 126.9780
+          "longitude": 126.9780,
+          "alternativeNames": []
         },
         "latitude": 35.9078,
         "longitude": 127.7669,
@@ -1509,7 +1628,8 @@
         "capital": {
           "name": "Kuwait City",
           "latitude": 29.3759,
-          "longitude": 47.9774
+          "longitude": 47.9774,
+          "alternativeNames": []
         },
         "latitude": 29.3759,
         "longitude": 47.9774,
@@ -1524,7 +1644,8 @@
         "capital": {
           "name": "Bishkek",
           "latitude": 42.8746,
-          "longitude": 74.5698
+          "longitude": 74.5698,
+          "alternativeNames": []
         },
         "latitude": 41.2044,
         "longitude": 74.7661,
@@ -1546,7 +1667,8 @@
         "capital": {
           "name": "Vientiane",
           "latitude": 17.9757,
-          "longitude": 102.6331
+          "longitude": 102.6331,
+          "alternativeNames": []
         },
         "latitude": 19.8563,
         "longitude": 102.4955,
@@ -1561,7 +1683,8 @@
         "capital": {
           "name": "Beirut",
           "latitude": 33.8938,
-          "longitude": 35.5018
+          "longitude": 35.5018,
+          "alternativeNames": []
         },
         "latitude": 33.8547,
         "longitude": 35.8623,
@@ -1583,7 +1706,8 @@
         "capital": {
           "name": "Macao",
           "latitude": 22.1987,
-          "longitude": 113.5439
+          "longitude": 113.5439,
+          "alternativeNames": ["Macau"]
         },
         "latitude": 22.1987,
         "longitude": 113.5439,
@@ -1598,7 +1722,8 @@
         "capital": {
           "name": "Kuala Lumpur",
           "latitude": 3.1390,
-          "longitude": 101.6869
+          "longitude": 101.6869,
+          "alternativeNames": []
         },
         "latitude": 4.2105,
         "longitude": 101.9758,
@@ -1613,7 +1738,8 @@
         "capital": {
           "name": "Male",
           "latitude": 4.1755,
-          "longitude": 73.5093
+          "longitude": 73.5093,
+          "alternativeNames": []
         },
         "latitude": 3.2028,
         "longitude": 73.2207,
@@ -1635,7 +1761,8 @@
         "capital": {
           "name": "Ulaanbaatar",
           "latitude": 47.8864,
-          "longitude": 106.9057
+          "longitude": 106.9057,
+          "alternativeNames": []
         },
         "latitude": 46.8625,
         "longitude": 103.8467,
@@ -1657,7 +1784,8 @@
         "capital": {
           "name": "Naypyidaw",
           "latitude": 19.7633,
-          "longitude": 96.0785
+          "longitude": 96.0785,
+          "alternativeNames": []
         },
         "latitude": 21.9162,
         "longitude": 95.9560,
@@ -1672,7 +1800,8 @@
         "capital": {
           "name": "Kathmandu",
           "latitude": 27.7172,
-          "longitude": 85.3240
+          "longitude": 85.3240,
+          "alternativeNames": []
         },
         "latitude": 28.3949,
         "longitude": 84.1240,
@@ -1687,7 +1816,8 @@
         "capital": {
           "name": "Muscat",
           "latitude": 23.6140,
-          "longitude": 58.5922
+          "longitude": 58.5922,
+          "alternativeNames": []
         },
         "latitude": 21.4735,
         "longitude": 55.9754,
@@ -1702,7 +1832,8 @@
         "capital": {
           "name": "Islamabad",
           "latitude": 33.6844,
-          "longitude": 73.0479
+          "longitude": 73.0479,
+          "alternativeNames": []
         },
         "latitude": 30.3753,
         "longitude": 69.3451,
@@ -1717,7 +1848,8 @@
         "capital": {
           "name": "Ramallah",
           "latitude": 31.9038,
-          "longitude": 35.2034
+          "longitude": 35.2034,
+          "alternativeNames": []
         },
         "latitude": 31.9522,
         "longitude": 35.2332,
@@ -1739,7 +1871,8 @@
         "capital": {
           "name": "Manila",
           "latitude": 14.5995,
-          "longitude": 120.9842
+          "longitude": 120.9842,
+          "alternativeNames": []
         },
         "latitude": 12.8797,
         "longitude": 121.7740,
@@ -1761,7 +1894,8 @@
         "capital": {
           "name": "Doha",
           "latitude": 25.2769,
-          "longitude": 51.5201
+          "longitude": 51.5201,
+          "alternativeNames": []
         },
         "latitude": 25.3548,
         "longitude": 51.1839,
@@ -1783,7 +1917,8 @@
         "capital": {
           "name": "Moscow",
           "latitude": 55.7558,
-          "longitude": 37.6176
+          "longitude": 37.6176,
+          "alternativeNames": []
         },
         "latitude": 61.5240,
         "longitude": 105.3188,
@@ -1794,7 +1929,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Moskau",
+           "capital": {
+            "name": "Moskau",
+            "alternativeNames": []
+           },
            "name": "Russland",
            "alternativeNames": []
           }
@@ -1805,7 +1943,8 @@
         "capital": {
           "name": "Riyadh",
           "latitude": 24.7136,
-          "longitude": 46.6753
+          "longitude": 46.6753,
+          "alternativeNames": []
         },
         "latitude": 24.6877,
         "longitude": 44.8444,
@@ -1827,7 +1966,8 @@
         "capital": {
           "name": "Singapore",
           "latitude": 1.3521,
-          "longitude": 103.8198
+          "longitude": 103.8198,
+          "alternativeNames": []
         },
         "latitude": 1.2903,
         "longitude": 103.8519,
@@ -1838,7 +1978,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Singapur",
+           "capital": {
+            "name": "Singapur",
+            "alternativeNames": []
+           },
            "name": "Singapur",
            "alternativeNames": []
           }
@@ -1849,7 +1992,8 @@
         "capital": {
           "name": "Colombo",
           "latitude": 6.9271,
-          "longitude": 79.8612
+          "longitude": 79.8612,
+          "alternativeNames": []
         },
         "latitude": 7.8731,
         "longitude": 80.7718,
@@ -1864,7 +2008,8 @@
         "capital": {
           "name": "Damascus",
           "latitude": 33.5138,
-          "longitude": 36.2765
+          "longitude": 36.2765,
+          "alternativeNames": []
         },
         "latitude": 34.8021,
         "longitude": 38.9968,
@@ -1886,7 +2031,8 @@
         "capital": {
           "name": "Taipei",
           "latitude": 25.0330,
-          "longitude": 121.5654
+          "longitude": 121.5654,
+          "alternativeNames": []
         },
         "latitude": 23.6978,
         "longitude": 120.9605,
@@ -1901,7 +2047,8 @@
         "capital": {
           "name": "Dushanbe",
           "latitude": 38.5869,
-          "longitude": 68.7790
+          "longitude": 68.7790,
+          "alternativeNames": []
         },
         "latitude": 38.8610,
         "longitude": 71.2761,
@@ -1923,7 +2070,8 @@
         "capital": {
           "name": "Bangkok",
           "latitude": 13.7563,
-          "longitude": 100.5018
+          "longitude": 100.5018,
+          "alternativeNames": []
         },
         "latitude": 15.8700,
         "longitude": 100.9925,
@@ -1938,7 +2086,8 @@
         "capital": {
           "name": "Dili",
           "latitude": -8.5569,
-          "longitude": 125.5600
+          "longitude": 125.5600,
+          "alternativeNames": []
         },
         "latitude": -8.8742,
         "longitude": 125.7275,
@@ -1960,7 +2109,8 @@
         "capital": {
           "name": "Ankara",
           "latitude": 39.9334,
-          "longitude": 32.8597
+          "longitude": 32.8597,
+          "alternativeNames": []
         },
         "latitude": 38.9637,
         "longitude": 35.2433,
@@ -1982,7 +2132,8 @@
         "capital": {
           "name": "Ashgabat",
           "latitude": 37.9601,
-          "longitude": 58.3261
+          "longitude": 58.3261,
+          "alternativeNames": []
         },
         "latitude": 38.9697,
         "longitude": 59.5563,
@@ -1997,7 +2148,8 @@
         "capital": {
           "name": "Abu Dhabi",
           "latitude": 24.4539,
-          "longitude": 54.3773
+          "longitude": 54.3773,
+          "alternativeNames": []
         },
         "latitude": 23.4241,
         "longitude": 53.8478,
@@ -2019,7 +2171,8 @@
         "capital": {
           "name": "Tashkent",
           "latitude": 41.2995,
-          "longitude": 69.2401
+          "longitude": 69.2401,
+          "alternativeNames": []
         },
         "latitude": 41.3775,
         "longitude": 64.5853,
@@ -2041,7 +2194,8 @@
         "capital": {
           "name": "Hanoi",
           "latitude": 21.0285,
-          "longitude": 105.8542
+          "longitude": 105.8542,
+          "alternativeNames": []
         },
         "latitude": 14.0583,
         "longitude": 108.2772,
@@ -2054,9 +2208,10 @@
       {
         "name": "Yemen",
         "capital": {
-          "name": "Sanaa",
+          "name": "Sana'a",
           "latitude": 15.3694,
-          "longitude": 44.1910
+          "longitude": 44.1910,
+          "alternativeNames": ["Sanaa"]
         },
         "latitude": 15.5527,
         "longitude": 48.5164,
@@ -2083,7 +2238,8 @@
         "capital": {
           "name": "Algiers",
           "latitude": 36.7372,
-          "longitude": 3.0869
+          "longitude": 3.0869,
+          "alternativeNames": []
         },
         "latitude": 28.0339,
         "longitude": 1.6596,
@@ -2105,7 +2261,8 @@
         "capital": {
           "name": "Luanda",
           "latitude": -8.8391,
-          "longitude": 13.2894
+          "longitude": 13.2894,
+          "alternativeNames": []
         },
         "latitude": -11.2027,
         "longitude": 17.8739,
@@ -2120,7 +2277,8 @@
         "capital": {
           "name": "Porto-Novo",
           "latitude": 6.4963,
-          "longitude": 2.6036
+          "longitude": 2.6036,
+          "alternativeNames": ["Porto Novo"]
         },
         "latitude": 9.3077,
         "longitude": 2.3158,
@@ -2135,7 +2293,8 @@
         "capital": {
           "name": "Gaborone",
           "latitude": -24.6282,
-          "longitude": 25.9231
+          "longitude": 25.9231,
+          "alternativeNames": []
         },
         "latitude": -22.3285,
         "longitude": 24.6849,
@@ -2150,7 +2309,8 @@
         "capital": {
           "name": "Diego Garcia",
           "latitude": -7.3133,
-          "longitude": 72.4111
+          "longitude": 72.4111,
+          "alternativeNames": []
         },
         "latitude": -6.3432,
         "longitude": 71.8765,
@@ -2172,7 +2332,8 @@
         "capital": {
           "name": "Ouagadougou",
           "latitude": 12.3714,
-          "longitude": -1.5197
+          "longitude": -1.5197,
+          "alternativeNames": []
         },
         "latitude": 12.2383,
         "longitude": -1.5616,
@@ -2187,7 +2348,8 @@
         "capital": {
           "name": "Gitega",
           "latitude": -3.4276,
-          "longitude": 29.9248
+          "longitude": 29.9248,
+          "alternativeNames": []
         },
         "latitude": -3.3731,
         "longitude": 29.9189,
@@ -2202,7 +2364,8 @@
         "capital": {
           "name": "Yamoussoukro",
           "latitude": 6.8163,
-          "longitude": 5.2744
+          "longitude": 5.2744,
+          "alternativeNames": []
         },
         "latitude": 7.5400,
         "longitude": 5.5471,
@@ -2224,7 +2387,8 @@
         "capital": {
           "name": "Praia",
           "latitude": 14.9167,
-          "longitude": -23.5167
+          "longitude": -23.5167,
+          "alternativeNames": []
         },
         "latitude": 16.5388,
         "longitude": -23.0418,
@@ -2246,7 +2410,8 @@
         "capital": {
           "name": "Yaounde",
           "latitude": 3.8480,
-          "longitude": 11.5021
+          "longitude": 11.5021,
+          "alternativeNames": []
         },
         "latitude": 7.3697,
         "longitude": 12.3547,
@@ -2268,7 +2433,8 @@
         "capital": {
           "name": "Bangui",
           "latitude": 4.3947,
-          "longitude": 18.5582
+          "longitude": 18.5582,
+          "alternativeNames": []
         },
         "latitude": 6.6111,
         "longitude": 20.9394,
@@ -2290,7 +2456,8 @@
         "capital": {
           "name": "N'Djamena",
           "latitude": 12.1131,
-          "longitude": 15.0491
+          "longitude": 15.0491,
+          "alternativeNames": ["Ndjamena"]
         },
         "latitude": 15.4542,
         "longitude": 18.7322,
@@ -2312,7 +2479,8 @@
         "capital": {
           "name": "Moroni",
           "latitude": -11.7042,
-          "longitude": 43.2551
+          "longitude": 43.2551,
+          "alternativeNames": []
         },
         "latitude": -11.6455,
         "longitude": 43.3333,
@@ -2334,7 +2502,8 @@
         "capital": {
           "name": "Brazzaville",
           "latitude": -4.2634,
-          "longitude": 15.2429
+          "longitude": 15.2429,
+          "alternativeNames": []
         },
         "latitude": -0.2280,
         "longitude": 15.8277,
@@ -2356,7 +2525,8 @@
         "capital": {
           "name": "Kinshasa",
           "latitude": -4.4419,
-          "longitude": 15.2663
+          "longitude": 15.2663,
+          "alternativeNames": []
         },
         "latitude": -4.0383,
         "longitude": 21.7587,
@@ -2378,7 +2548,8 @@
         "capital": {
           "name": "Djibouti",
           "latitude": 11.5886,
-          "longitude": 43.4075
+          "longitude": 43.4075,
+          "alternativeNames": []
         },
         "latitude": 11.8251,
         "longitude": 42.5903,
@@ -2389,7 +2560,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Dschibuti",
+           "capital": {
+            "name": "Dschibuti",
+            "alternativeNames": []
+           },
            "name": "Dschibuti",
            "alternativeNames": []
           }
@@ -2400,7 +2574,8 @@
         "capital": {
           "name": "Cairo",
           "latitude": 30.0444,
-          "longitude": 31.2357
+          "longitude": 31.2357,
+          "alternativeNames": []
         },
         "latitude": 26.8206,
         "longitude": 30.8025,
@@ -2411,7 +2586,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Kairo",
+           "capital": {
+            "name": "Kairo",
+            "alternativeNames": []
+           },
            "name": "Ägypten",
            "alternativeNames": []
           }
@@ -2422,7 +2600,8 @@
         "capital": {
           "name": "Malabo",
           "latitude": 3.7504,
-          "longitude": 8.7371
+          "longitude": 8.7371,
+          "alternativeNames": []
         },
         "latitude": 1.6508,
         "longitude": 10.2679,
@@ -2444,7 +2623,8 @@
         "capital": {
           "name": "Asmara",
           "latitude": 15.3229,
-          "longitude": 38.9250
+          "longitude": 38.9250,
+          "alternativeNames": []
         },
         "latitude": 15.1794,
         "longitude": 39.7823,
@@ -2459,7 +2639,8 @@
         "capital": {
           "name": "Mbabane",
           "latitude": -26.3054,
-          "longitude": 31.1367
+          "longitude": 31.1367,
+          "alternativeNames": []
         },
         "latitude": -26.5225,
         "longitude": 31.4659,
@@ -2474,7 +2655,8 @@
         "capital": {
           "name": "Addis Ababa",
           "latitude": 9.0227,
-          "longitude": 38.7465
+          "longitude": 38.7465,
+          "alternativeNames": []
         },
         "latitude": 9.1450,
         "longitude": 40.4897,
@@ -2496,7 +2678,8 @@
         "capital": {
           "name": "Libreville",
           "latitude": 0.4162,
-          "longitude": 9.4673
+          "longitude": 9.4673,
+          "alternativeNames": []
         },
         "latitude": -0.8037,
         "longitude": 11.6094,
@@ -2511,7 +2694,8 @@
         "capital": {
           "name": "Banjul",
           "latitude": 13.4549,
-          "longitude": -16.5790
+          "longitude": -16.5790,
+          "alternativeNames": []
         },
         "latitude": 13.4432,
         "longitude": -15.3101,
@@ -2526,7 +2710,8 @@
         "capital": {
           "name": "Accra",
           "latitude": 5.6037,
-          "longitude": -0.1870
+          "longitude": -0.1870,
+          "alternativeNames": []
         },
         "latitude": 7.9465,
         "longitude": -1.0232,
@@ -2541,7 +2726,8 @@
         "capital": {
           "name": "Conakry",
           "latitude": 9.5182,
-          "longitude": -13.7164
+          "longitude": -13.7164,
+          "alternativeNames": []
         },
         "latitude": 9.9456,
         "longitude": -9.6966,
@@ -2556,7 +2742,8 @@
         "capital": {
           "name": "Bissau",
           "latitude": 11.8636,
-          "longitude": -15.5977
+          "longitude": -15.5977,
+          "alternativeNames": []
         },
         "latitude": 11.8037,
         "longitude": -15.1804,
@@ -2571,7 +2758,8 @@
         "capital": {
           "name": "Nairobi",
           "latitude": -1.2864,
-          "longitude": 36.8172
+          "longitude": 36.8172,
+          "alternativeNames": []
         },
         "latitude": -0.0236,
         "longitude": 37.9062,
@@ -2593,7 +2781,8 @@
         "capital": {
           "name": "Maseru",
           "latitude": -29.3132,
-          "longitude": 27.4839
+          "longitude": 27.4839,
+          "alternativeNames": []
         },
         "latitude": -29.6090,
         "longitude": 28.2336,
@@ -2608,7 +2797,8 @@
         "capital": {
           "name": "Monrovia",
           "latitude": 6.3133,
-          "longitude": -10.8014
+          "longitude": -10.8014,
+          "alternativeNames": []
         },
         "latitude": 6.4281,
         "longitude": -9.4295,
@@ -2623,7 +2813,8 @@
         "capital": {
           "name": "Tripoli",
           "latitude": 32.8872,
-          "longitude": 13.1913
+          "longitude": 13.1913,
+          "alternativeNames": []
         },
         "latitude": 26.3351,
         "longitude": 17.2283,
@@ -2645,7 +2836,8 @@
         "capital": {
           "name": "Antananarivo",
           "latitude": -18.8792,
-          "longitude": 47.5079
+          "longitude": 47.5079,
+          "alternativeNames": []
         },
         "latitude": -18.7669,
         "longitude": 46.8691,
@@ -2667,7 +2859,8 @@
         "capital": {
           "name": "Lilongwe",
           "latitude": -13.9632,
-          "longitude": 33.7741
+          "longitude": 33.7741,
+          "alternativeNames": []
         },
         "latitude": -13.2543,
         "longitude": 34.3015,
@@ -2682,7 +2875,8 @@
         "capital": {
           "name": "Bamako",
           "latitude": 12.6392,
-          "longitude": -8.0029
+          "longitude": -8.0029,
+          "alternativeNames": []
         },
         "latitude": 17.5707,
         "longitude": -3.9962,
@@ -2697,7 +2891,8 @@
         "capital": {
           "name": "Nouakchott",
           "latitude": 18.0841,
-          "longitude": -15.9784
+          "longitude": -15.9784,
+          "alternativeNames": []
         },
         "latitude": 20.3484,
         "longitude": -10.5731,
@@ -2719,7 +2914,8 @@
         "capital": {
           "name": "Port Louis",
           "latitude": -20.1654,
-          "longitude": 57.4896
+          "longitude": 57.4896,
+          "alternativeNames": []
         },
         "latitude": -20.3484,
         "longitude": 57.5522,
@@ -2734,7 +2930,8 @@
         "capital": {
           "name": "Mamoudzou",
           "latitude": -12.7806,
-          "longitude": 45.2279
+          "longitude": 45.2279,
+          "alternativeNames": []
         },
         "latitude": -12.8275,
         "longitude": 45.1662,
@@ -2749,7 +2946,8 @@
         "capital": {
           "name": "Rabat",
           "latitude": 34.0209,
-          "longitude": -6.8415
+          "longitude": -6.8415,
+          "alternativeNames": []
         },
         "latitude": 31.7917,
         "longitude": -7.0926,
@@ -2771,7 +2969,8 @@
         "capital": {
           "name": "Maputo",
           "latitude": -25.9653,
-          "longitude": 32.5892
+          "longitude": 32.5892,
+          "alternativeNames": []
         },
         "latitude": -18.6657,
         "longitude": 35.5296,
@@ -2793,7 +2992,8 @@
         "capital": {
           "name": "Windhoek",
           "latitude": -22.5597,
-          "longitude": 17.0832
+          "longitude": 17.0832,
+          "alternativeNames": []
         },
         "latitude": -22.9576,
         "longitude": 18.4904,
@@ -2808,7 +3008,8 @@
         "capital": {
           "name": "Niamey",
           "latitude": 13.5127,
-          "longitude": 2.1126
+          "longitude": 2.1126,
+          "alternativeNames": []
         },
         "latitude": 17.6078,
         "longitude": 8.0817,
@@ -2823,7 +3024,8 @@
         "capital": {
           "name": "Abuja",
           "latitude": 9.0579,
-          "longitude": 7.4951
+          "longitude": 7.4951,
+          "alternativeNames": []
         },
         "latitude": 9.0820,
         "longitude": 8.6753,
@@ -2838,7 +3040,8 @@
         "capital": {
           "name": "Saint-Denis",
           "latitude": -20.8789,
-          "longitude": 55.4481
+          "longitude": 55.4481,
+          "alternativeNames": ["Saint Denis"]
         },
         "latitude": -21.1306,
         "longitude": 55.5260,
@@ -2853,7 +3056,8 @@
         "capital": {
           "name": "Kigali",
           "latitude": -1.9439,
-          "longitude": 30.0594
+          "longitude": 30.0594,
+          "alternativeNames": []
         },
         "latitude": -1.9403,
         "longitude": 29.8739,
@@ -2875,7 +3079,8 @@
         "capital": {
           "name": "Jamestown",
           "latitude": -15.9274,
-          "longitude": -5.7172
+          "longitude": -5.7172,
+          "alternativeNames": []
         },
         "latitude": -15.9650,
         "longitude": -5.7089,
@@ -2897,23 +3102,24 @@
         ]
       },
       {
-        "name": "Sao Tome and Principe",
+        "name": "São Tomé and Príncipe",
         "capital": {
-          "name": "Sao Tome",
+          "name": "São Tomé",
           "latitude": 0.3360,
-          "longitude": 6.7274
+          "longitude": 6.7274,
+          "alternativeNames": ["Sao Tome"]
         },
         "latitude": 0.1864,
         "longitude": 6.6131,
         "population": 219159,
-        "alternativeNames": [],
+        "alternativeNames": ["Sao Tome and Principe"],
         "countryCode": "ST",
         "area": 1001,
         "translations": [
           {
            "language": "de",
            "capital": null,
-           "name": "Sao Tome und Principe",
+           "name": "São Tomé und Príncipe",
            "alternativeNames": []
           }
         ]
@@ -2923,7 +3129,8 @@
         "capital": {
           "name": "Dakar",
           "latitude": 14.7167,
-          "longitude": -17.4677
+          "longitude": -17.4677,
+          "alternativeNames": []
         },
         "latitude": 14.4974,
         "longitude": -14.4524,
@@ -2938,7 +3145,8 @@
         "capital": {
           "name": "Victoria",
           "latitude": -4.6191,
-          "longitude": 55.4513
+          "longitude": 55.4513,
+          "alternativeNames": []
         },
         "latitude": -4.6796,
         "longitude": 55.4920,
@@ -2960,7 +3168,8 @@
         "capital": {
           "name": "Freetown",
           "latitude": 8.4840,
-          "longitude": -13.2287
+          "longitude": -13.2287,
+          "alternativeNames": []
         },
         "latitude": 8.4606,
         "longitude": -11.7799,
@@ -2975,7 +3184,8 @@
         "capital": {
           "name": "Mogadishu",
           "latitude": 2.0417,
-          "longitude": 45.3426
+          "longitude": 45.3426,
+          "alternativeNames": []
         },
         "latitude": 5.1521,
         "longitude": 46.1996,
@@ -2990,7 +3200,8 @@
         "capital": {
           "name": "Pretoria",
           "latitude": -25.7463,
-          "longitude": 28.1876
+          "longitude": 28.1876,
+          "alternativeNames": []
         },
         "latitude": -30.5595,
         "longitude": 22.9375,
@@ -3012,7 +3223,8 @@
         "capital": {
           "name": "Juba",
           "latitude": 4.8594,
-          "longitude": 31.5713
+          "longitude": 31.5713,
+          "alternativeNames": []
         },
         "latitude": 6.8769,
         "longitude": 31.3069,
@@ -3034,7 +3246,8 @@
         "capital": {
           "name": "Khartoum",
           "latitude": 15.5007,
-          "longitude": 32.5599
+          "longitude": 32.5599,
+          "alternativeNames": []
         },
         "latitude": 12.8628,
         "longitude": 30.2176,
@@ -3049,7 +3262,8 @@
         "capital": {
           "name": "Dodoma",
           "latitude": -6.1748,
-          "longitude": 35.7382
+          "longitude": 35.7382,
+          "alternativeNames": []
         },
         "latitude": -6.3690,
         "longitude": 34.8888,
@@ -3071,7 +3285,8 @@
         "capital": {
           "name": "Lome",
           "latitude": 6.5244,
-          "longitude": 1.2135
+          "longitude": 1.2135,
+          "alternativeNames": []
         },
         "latitude": 8.6195,
         "longitude": 0.8248,
@@ -3086,7 +3301,8 @@
         "capital": {
           "name": "Tunis",
           "latitude": 36.8065,
-          "longitude": 10.1815
+          "longitude": 10.1815,
+          "alternativeNames": []
         },
         "latitude": 33.8869,
         "longitude": 9.5375,
@@ -3108,7 +3324,8 @@
         "capital": {
           "name": "Kampala",
           "latitude": 0.3136,
-          "longitude": 32.5811
+          "longitude": 32.5811,
+          "alternativeNames": []
         },
         "latitude": 1.3733,
         "longitude": 32.2903,
@@ -3123,7 +3340,8 @@
         "capital": {
           "name": "El Aaiún",
           "latitude": 27.1536,
-          "longitude": -13.2033
+          "longitude": -13.2033,
+          "alternativeNames": ["El Aaiun"]
         },
         "latitude": 24.2155,
         "longitude": -12.8858,
@@ -3145,7 +3363,8 @@
         "capital": {
           "name": "Lusaka",
           "latitude": -15.3875,
-          "longitude": 28.3228
+          "longitude": 28.3228,
+          "alternativeNames": []
         },
         "latitude": -13.1339,
         "longitude": 27.8493,
@@ -3167,7 +3386,8 @@
         "capital": {
           "name": "Harare",
           "latitude": -17.8252,
-          "longitude": 31.0335
+          "longitude": 31.0335,
+          "alternativeNames": []
         },
         "latitude": -19.0154,
         "longitude": 29.1549,
@@ -3194,7 +3414,8 @@
         "capital": {
           "name": "Pago Pago",
           "latitude": -14.2756,
-          "longitude": -170.7020
+          "longitude": -170.7020,
+          "alternativeNames": []
         },
         "latitude": -14.2968,
         "longitude": -170.6920,
@@ -3216,7 +3437,8 @@
         "capital": {
           "name": "Canberra",
           "latitude": -35.2820,
-          "longitude": 149.1286
+          "longitude": 149.1286,
+          "alternativeNames": []
         },
         "latitude": -25.2744,
         "longitude": 133.7751,
@@ -3238,7 +3460,8 @@
         "capital": {
           "name": "Avarua",
           "latitude": -21.2070,
-          "longitude": -159.7750
+          "longitude": -159.7750,
+          "alternativeNames": []
         },
         "latitude": -21.2367,
         "longitude": -159.7777,
@@ -3260,7 +3483,8 @@
         "capital": {
           "name": "Suva",
           "latitude": -18.1416,
-          "longitude": 178.4419
+          "longitude": 178.4419,
+          "alternativeNames": []
         },
         "latitude": -17.7134,
         "longitude": 178.0650,
@@ -3282,7 +3506,8 @@
         "capital": {
           "name": "Papeete",
           "latitude": -17.6797,
-          "longitude": -149.4068
+          "longitude": -149.4068,
+          "alternativeNames": []
         },
         "latitude": -17.6797,
         "longitude": -149.4068,
@@ -3304,7 +3529,8 @@
         "capital": {
           "name": "Hagatna",
           "latitude": 13.4759,
-          "longitude": 144.7500
+          "longitude": 144.7500,
+          "alternativeNames": []
         },
         "latitude": 13.4443,
         "longitude": 144.7937,
@@ -3319,7 +3545,8 @@
         "capital": {
           "name": "Tarawa",
           "latitude": 1.4518,
-          "longitude": 173.0260
+          "longitude": 173.0260,
+          "alternativeNames": []
         },
         "latitude": -3.3704,
         "longitude": -168.7340,
@@ -3334,7 +3561,8 @@
         "capital": {
           "name": "Majuro",
           "latitude": 7.1164,
-          "longitude": 171.1850
+          "longitude": 171.1850,
+          "alternativeNames": []
         },
         "latitude": 7.1315,
         "longitude": 171.1845,
@@ -3356,7 +3584,8 @@
         "capital": {
           "name": "Palikir",
           "latitude": 6.9248,
-          "longitude": 158.1610
+          "longitude": 158.1610,
+          "alternativeNames": []
         },
         "latitude": 7.4256,
         "longitude": 150.5508,
@@ -3378,7 +3607,8 @@
         "capital": {
           "name": "Yaren",
           "latitude": -0.5477,
-          "longitude": 166.9209
+          "longitude": 166.9209,
+          "alternativeNames": []
         },
         "latitude": -0.5228,
         "longitude": 166.9345,
@@ -3393,7 +3623,8 @@
         "capital": {
           "name": "Noumea",
           "latitude": -22.2565,
-          "longitude": 166.4443
+          "longitude": 166.4443,
+          "alternativeNames": []
         },
         "latitude": -21.1151,
         "longitude": 165.3260,
@@ -3415,7 +3646,8 @@
         "capital": {
           "name": "Wellington",
           "latitude": -41.2865,
-          "longitude": 174.7762
+          "longitude": 174.7762,
+          "alternativeNames": []
         },
         "latitude": -40.9006,
         "longitude": 174.8859,
@@ -3437,7 +3669,8 @@
         "capital": {
           "name": "Alofi",
           "latitude": -19.0554,
-          "longitude": -169.9201
+          "longitude": -169.9201,
+          "alternativeNames": []
         },
         "latitude": -19.0544,
         "longitude": -169.8672,
@@ -3452,7 +3685,8 @@
         "capital": {
           "name": "Kingston",
           "latitude": -29.0408,
-          "longitude": 167.9547
+          "longitude": 167.9547,
+          "alternativeNames": []
         },
         "latitude": -29.0408,
         "longitude": 167.9547,
@@ -3474,7 +3708,8 @@
         "capital": {
           "name": "Saipan",
           "latitude": 15.1779,
-          "longitude": 145.7500
+          "longitude": 145.7500,
+          "alternativeNames": []
         },
         "latitude": 17.3300,
         "longitude": 145.4740,
@@ -3496,7 +3731,8 @@
         "capital": {
           "name": "Melekeok",
           "latitude": 7.5005,
-          "longitude": 134.6248
+          "longitude": 134.6248,
+          "alternativeNames": []
         },
         "latitude": 7.5150,
         "longitude": 134.5825,
@@ -3511,7 +3747,8 @@
         "capital": {
           "name": "Port Moresby",
           "latitude": -9.4438,
-          "longitude": 147.1803
+          "longitude": 147.1803,
+          "alternativeNames": []
         },
         "latitude": -6.3140,
         "longitude": 143.9555,
@@ -3533,7 +3770,8 @@
         "capital": {
           "name": "Adamstown",
           "latitude": -25.0667,
-          "longitude": -130.1000
+          "longitude": -130.1000,
+          "alternativeNames": []
         },
         "latitude": -25.0667,
         "longitude": -130.1000,
@@ -3555,7 +3793,8 @@
         "capital": {
           "name": "Apia",
           "latitude": -13.8335,
-          "longitude": -171.7501
+          "longitude": -171.7501,
+          "alternativeNames": []
         },
         "latitude": -13.7590,
         "longitude": -172.1046,
@@ -3570,7 +3809,8 @@
         "capital": {
           "name": "Honiara",
           "latitude": -9.4456,
-          "longitude": 159.9729
+          "longitude": 159.9729,
+          "alternativeNames": []
         },
         "latitude": -9.6457,
         "longitude": 160.1562,
@@ -3592,7 +3832,8 @@
         "capital": {
           "name": "Atafu",
           "latitude": -9.2026,
-          "longitude": -171.8484
+          "longitude": -171.8484,
+          "alternativeNames": []
         },
         "latitude": -9.2000,
         "longitude": -171.8484,
@@ -3607,7 +3848,8 @@
         "capital": {
           "name": "Nuku'alofa",
           "latitude": -21.1393,
-          "longitude": -175.2049
+          "longitude": -175.2049,
+          "alternativeNames": ["Nukualofa"]
         },
         "latitude": -21.1784,
         "longitude": -175.1982,
@@ -3622,7 +3864,8 @@
         "capital": {
           "name": "Funafuti",
           "latitude": -8.5235,
-          "longitude": 179.1962
+          "longitude": 179.1962,
+          "alternativeNames": []
         },
         "latitude": -7.1095,
         "longitude": 177.6493,
@@ -3637,7 +3880,8 @@
         "capital": {
           "name": "Port Vila",
           "latitude": -17.7404,
-          "longitude": 168.3219
+          "longitude": 168.3219,
+          "alternativeNames": []
         },
         "latitude": -15.3767,
         "longitude": 166.9592,
@@ -3652,7 +3896,8 @@
         "capital": {
           "name": "Mata-Utu",
           "latitude": -13.9382,
-          "longitude": -171.7589
+          "longitude": -171.7589,
+          "alternativeNames": ["Mana Utu"]
         },
         "latitude": -14.2938,
         "longitude": -178.1165,
@@ -3679,7 +3924,8 @@
         "capital": {
           "name": "The Valley",
           "latitude": 18.2206,
-          "longitude": -63.0686
+          "longitude": -63.0686,
+          "alternativeNames": []
         },
         "latitude": 18.2206,
         "longitude": -63.0686,
@@ -3694,7 +3940,8 @@
         "capital": {
           "name": "Saint John's",
           "latitude": 17.1274,
-          "longitude": -61.8468
+          "longitude": -61.8468,
+          "alternativeNames": ["Saint Johns", "St. Johns", "St Johns", "St. John's", "St John's"]
         },
         "latitude": 17.0608,
         "longitude": -61.7964,
@@ -3716,7 +3963,8 @@
         "capital": {
           "name": "Oranjestad",
           "latitude": 12.5211,
-          "longitude": -70.0359
+          "longitude": -70.0359,
+          "alternativeNames": []
         },
         "latitude": 12.5211,
         "longitude": -69.9683,
@@ -3731,7 +3979,8 @@
         "capital": {
           "name": "Nassau",
           "latitude": 25.0343,
-          "longitude": -77.3963
+          "longitude": -77.3963,
+          "alternativeNames": []
         },
         "latitude": 25.0343,
         "longitude": -77.3963,
@@ -3746,7 +3995,8 @@
         "capital": {
           "name": "Bridgetown",
           "latitude": 13.1132,
-          "longitude": -59.5988
+          "longitude": -59.5988,
+          "alternativeNames": []
         },
         "latitude": 13.1939,
         "longitude": -59.5432,
@@ -3761,7 +4011,8 @@
         "capital": {
           "name": "Belmopan",
           "latitude": 17.2510,
-          "longitude": -88.7590
+          "longitude": -88.7590,
+          "alternativeNames": []
         },
         "latitude": 17.1899,
         "longitude": -88.4976,
@@ -3776,7 +4027,8 @@
         "capital": {
           "name": "Hamilton",
           "latitude": 32.2948,
-          "longitude": -64.7814
+          "longitude": -64.7814,
+          "alternativeNames": []
         },
         "latitude": 32.3078,
         "longitude": -64.7505,
@@ -3791,7 +4043,8 @@
         "capital": {
           "name": "Kralendijk",
           "latitude": 12.1508,
-          "longitude": -68.2763
+          "longitude": -68.2763,
+          "alternativeNames": []
         },
         "latitude": 12.1784,
         "longitude": -68.2385,
@@ -3813,7 +4066,8 @@
         "capital": {
           "name": "Ottawa",
           "latitude": 45.4215,
-          "longitude": -75.6919
+          "longitude": -75.6919,
+          "alternativeNames": []
         },
         "latitude": 56.1304,
         "longitude": -106.3468,
@@ -3835,7 +4089,8 @@
         "capital": {
           "name": "George Town",
           "latitude": 19.3133,
-          "longitude": -81.2546
+          "longitude": -81.2546,
+          "alternativeNames": []
         },
         "latitude": 19.5135,
         "longitude": -80.5666,
@@ -3850,7 +4105,8 @@
         "capital": {
           "name": "San Jose",
           "latitude": 9.9281,
-          "longitude": -84.0907
+          "longitude": -84.0907,
+          "alternativeNames": []
         },
         "latitude": 9.7489,
         "longitude": -83.7534,
@@ -3865,7 +4121,8 @@
         "capital": {
           "name": "Havana",
           "latitude": 23.1136,
-          "longitude": -82.3666
+          "longitude": -82.3666,
+          "alternativeNames": []
         },
         "latitude": 21.5218,
         "longitude": -77.7812,
@@ -3887,7 +4144,8 @@
         "capital": {
           "name": "Willemstad",
           "latitude": 12.1165,
-          "longitude": -68.9335
+          "longitude": -68.9335,
+          "alternativeNames": []
         },
         "latitude": 12.1696,
         "longitude": -68.9900,
@@ -3904,7 +4162,8 @@
         "capital": {
           "name": "Roseau",
           "latitude": 15.3010,
-          "longitude": -61.3880
+          "longitude": -61.3880,
+          "alternativeNames": []
         },
         "latitude": 15.4150,
         "longitude": -61.3710,
@@ -3919,7 +4178,8 @@
         "capital": {
           "name": "Santo Domingo",
           "latitude": 18.4861,
-          "longitude": -69.9312
+          "longitude": -69.9312,
+          "alternativeNames": []
         },
         "latitude": 18.7357,
         "longitude": -70.1627,
@@ -3941,7 +4201,8 @@
         "capital": {
           "name": "San Salvador",
           "latitude": 13.6929,
-          "longitude": -89.2182
+          "longitude": -89.2182,
+          "alternativeNames": []
         },
         "latitude": 13.7942,
         "longitude": -88.8965,
@@ -3956,7 +4217,8 @@
         "capital": {
           "name": "Nuuk",
           "latitude": 64.1836,
-          "longitude": -51.7214
+          "longitude": -51.7214,
+          "alternativeNames": []
         },
         "latitude": 71.7069,
         "longitude": -42.6043,
@@ -3976,9 +4238,10 @@
       {
         "name": "Grenada",
         "capital": {
-          "name": "St. George's",
+          "name": "Saint George's",
           "latitude": 12.0529,
-          "longitude": -61.7518
+          "longitude": -61.7518,
+          "alternativeNames": ["Saint Georges", "St. Georges", "St Georges", "St. George's", "St George's"]
         },
         "latitude": 12.1165,
         "longitude": -61.6789,
@@ -3993,7 +4256,8 @@
         "capital": {
           "name": "Basse-Terre",
           "latitude": 15.9985,
-          "longitude": -61.7250
+          "longitude": -61.7250,
+          "alternativeNames": []
         },
         "latitude": 16.2650,
         "longitude": -61.5500,
@@ -4008,7 +4272,8 @@
         "capital": {
           "name": "Guatemala City",
           "latitude": 14.6349,
-          "longitude": -90.5069
+          "longitude": -90.5069,
+          "alternativeNames": []
         },
         "latitude": 15.7835,
         "longitude": -90.2308,
@@ -4023,7 +4288,8 @@
         "capital": {
           "name": "Port-au-Prince",
           "latitude": 18.5944,
-          "longitude": -72.3074
+          "longitude": -72.3074,
+          "alternativeNames": ["Port au Prince"]
         },
         "latitude": 18.9712,
         "longitude": -72.2852,
@@ -4038,7 +4304,8 @@
         "capital": {
           "name": "Tegucigalpa",
           "latitude": 14.0818,
-          "longitude": -87.2068
+          "longitude": -87.2068,
+          "alternativeNames": []
         },
         "latitude": 15.2000,
         "longitude": -86.2419,
@@ -4053,7 +4320,8 @@
         "capital": {
           "name": "Kingston",
           "latitude": 17.9710,
-          "longitude": -76.7936
+          "longitude": -76.7936,
+          "alternativeNames": []
         },
         "latitude": 18.1096,
         "longitude": -77.2975,
@@ -4075,7 +4343,8 @@
         "capital": {
           "name": "Fort-de-France",
           "latitude": 14.6089,
-          "longitude": -61.0739
+          "longitude": -61.0739,
+          "alternativeNames": ["Fort de France"]
         },
         "latitude": 14.6415,
         "longitude": -61.0242,
@@ -4090,7 +4359,8 @@
         "capital": {
           "name": "Mexico City",
           "latitude": 19.4326,
-          "longitude": -99.1332
+          "longitude": -99.1332,
+          "alternativeNames": []
         },
         "latitude": 23.6345,
         "longitude": -102.5528,
@@ -4101,7 +4371,10 @@
         "translations": [
           {
            "language": "de",
-           "capital": "Mexiko City",
+           "capital": {
+            "name": "Mexiko City",
+            "alternativeNames": []
+           },
            "name": "Mexiko",
            "alternativeNames": []
           }
@@ -4112,7 +4385,8 @@
         "capital": {
           "name": "Plymouth",
           "latitude": 16.7067,
-          "longitude": -62.2158
+          "longitude": -62.2158,
+          "alternativeNames": []
         },
         "latitude": 16.7425,
         "longitude": -62.1874,
@@ -4127,7 +4401,8 @@
         "capital": {
           "name": "Managua",
           "latitude": 12.1149,
-          "longitude": -86.2362
+          "longitude": -86.2362,
+          "alternativeNames": []
         },
         "latitude": 12.8654,
         "longitude": -85.2072,
@@ -4142,7 +4417,8 @@
         "capital": {
           "name": "Panama City",
           "latitude": 8.9824,
-          "longitude": -79.5199
+          "longitude": -79.5199,
+          "alternativeNames": []
         },
         "latitude": 8.5379,
         "longitude": -80.7821,
@@ -4157,7 +4433,8 @@
         "capital": {
           "name": "San Juan",
           "latitude": 18.4655,
-          "longitude": -66.1057
+          "longitude": -66.1057,
+          "alternativeNames": []
         },
         "latitude": 18.2208,
         "longitude": -66.5901,
@@ -4172,7 +4449,8 @@
         "capital": {
           "name": "Gustavia",
           "latitude": 17.8960,
-          "longitude": -62.8496
+          "longitude": -62.8496,
+          "alternativeNames": []
         },
         "latitude": 17.9000,
         "longitude": -62.8333,
@@ -4191,7 +4469,8 @@
         "capital": {
           "name": "Basseterre",
           "latitude": 17.3003,
-          "longitude": -62.7170
+          "longitude": -62.7170,
+          "alternativeNames": []
         },
         "latitude": 17.2500,
         "longitude": -62.6667,
@@ -4216,7 +4495,8 @@
         "capital": {
           "name": "Castries",
           "latitude": 14.0101,
-          "longitude": -60.9870
+          "longitude": -60.9870,
+          "alternativeNames": []
         },
         "latitude": 13.9094,
         "longitude": -60.9789,
@@ -4234,7 +4514,8 @@
         "capital": {
           "name": "Marigot",
           "latitude": 18.0757,
-          "longitude": -63.0597
+          "longitude": -63.0597,
+          "alternativeNames": []
         },
         "latitude": 18.0708,
         "longitude": -63.0501,
@@ -4252,7 +4533,8 @@
         "capital": {
           "name": "Saint-Pierre",
           "latitude": 46.7779,
-          "longitude": -56.1772
+          "longitude": -56.1772,
+          "alternativeNames": ["Saint Pierre", "St. Pierre", "St Pierre"]
         },
         "latitude": 46.8852,
         "longitude": -56.3159,
@@ -4277,7 +4559,8 @@
         "capital": {
           "name": "Kingstown",
           "latitude": 13.1618,
-          "longitude": -61.2245
+          "longitude": -61.2245,
+          "alternativeNames": []
         },
         "latitude": 13.2528,
         "longitude": -61.1970,
@@ -4302,7 +4585,8 @@
         "capital": {
           "name": "Philipsburg",
           "latitude": 18.0259,
-          "longitude": -63.045
+          "longitude": -63.045,
+          "alternativeNames": []
         },
         "latitude": 18.0425,
         "longitude": -63.0548,
@@ -4317,7 +4601,8 @@
         "capital": {
           "name": "Port of Spain",
           "latitude": 10.6667,
-          "longitude": -61.5167
+          "longitude": -61.5167,
+          "alternativeNames": []
         },
         "latitude": 10.6918,
         "longitude": -61.2225,
@@ -4339,7 +4624,8 @@
         "capital": {
           "name": "Cockburn Town",
           "latitude": 21.4612,
-          "longitude": -71.1419
+          "longitude": -71.1419,
+          "alternativeNames": []
         },
         "latitude": 21.6940,
         "longitude": -71.7979,
@@ -4361,7 +4647,8 @@
         "capital": {
           "name": "Washington D.C.",
           "latitude": 38.8951,
-          "longitude": -77.0364
+          "longitude": -77.0364,
+          "alternativeNames": ["Washington DC"]
         },
         "latitude": 37.0902,
         "longitude": -95.7129,
@@ -4383,7 +4670,8 @@
         "capital": {
           "name": "Road Town",
           "latitude": 18.4274,
-          "longitude": -64.6226
+          "longitude": -64.6226,
+          "alternativeNames": []
         },
         "latitude": 18.4207,
         "longitude": -64.6390,
@@ -4405,7 +4693,8 @@
         "capital": {
           "name": "Charlotte Amalie",
           "latitude": 18.3358,
-          "longitude": -64.8963
+          "longitude": -64.8963,
+          "alternativeNames": []
         },
         "latitude": 18.3358,
         "longitude": -64.8963,
@@ -4432,7 +4721,8 @@
         "capital": {
           "name": "Buenos Aires",
           "latitude": -34.6037,
-          "longitude": -58.3816
+          "longitude": -58.3816,
+          "alternativeNames": []
         },
         "latitude": -38.4161,
         "longitude": -63.6167,
@@ -4454,7 +4744,8 @@
         "capital": {
           "name": "Sucre",
           "latitude": -19.0196,
-          "longitude": -65.2619
+          "longitude": -65.2619,
+          "alternativeNames": []
         },
         "latitude": -16.2902,
         "longitude": -63.5887,
@@ -4476,7 +4767,8 @@
         "capital": {
           "name": "Brasilia",
           "latitude": -15.8267,
-          "longitude": -47.9218
+          "longitude": -47.9218,
+          "alternativeNames": []
         },
         "latitude": -14.2350,
         "longitude": -51.9253,
@@ -4498,7 +4790,8 @@
         "capital": {
           "name": "Santiago",
           "latitude": -33.4378,
-          "longitude": -70.6504
+          "longitude": -70.6504,
+          "alternativeNames": []
         },
         "latitude": -35.6751,
         "longitude": -71.5429,
@@ -4513,7 +4806,8 @@
         "capital": {
           "name": "Bogota",
           "latitude": 4.7110,
-          "longitude": -74.0721
+          "longitude": -74.0721,
+          "alternativeNames": []
         },
         "latitude": 4.5709,
         "longitude": -74.2973,
@@ -4535,7 +4829,8 @@
         "capital": {
           "name": "Quito",
           "latitude": -0.1807,
-          "longitude": -78.4678
+          "longitude": -78.4678,
+          "alternativeNames": []
         },
         "latitude": -1.8312,
         "longitude": -78.1834,
@@ -4550,7 +4845,8 @@
         "capital": {
           "name": "Stanley",
           "latitude": -51.6942,
-          "longitude": -57.8525
+          "longitude": -57.8525,
+          "alternativeNames": []
         },
         "latitude": -51.7963,
         "longitude": -59.5236,
@@ -4572,7 +4868,8 @@
         "capital": {
           "name": "Cayenne",
           "latitude": 4.9228,
-          "longitude": -52.3142
+          "longitude": -52.3142,
+          "alternativeNames": []
         },
         "latitude": 3.9339,
         "longitude": -53.1258,
@@ -4594,7 +4891,8 @@
         "capital": {
           "name": "Georgetown",
           "latitude": 6.8013,
-          "longitude": -58.1551
+          "longitude": -58.1551,
+          "alternativeNames": []
         },
         "latitude": 4.8604,
         "longitude": -58.9302,
@@ -4609,7 +4907,8 @@
         "capital": {
           "name": "Asuncion",
           "latitude": -25.2637,
-          "longitude": -57.5759
+          "longitude": -57.5759,
+          "alternativeNames": []
         },
         "latitude": -23.4425,
         "longitude": -58.4438,
@@ -4624,7 +4923,8 @@
         "capital": {
           "name": "Lima",
           "latitude": -12.0464,
-          "longitude": -77.0428
+          "longitude": -77.0428,
+          "alternativeNames": []
         },
         "latitude": -9.1900,
         "longitude": -75.0152,
@@ -4639,7 +4939,8 @@
         "capital": {
           "name": "Paramaribo",
           "latitude": 5.8520,
-          "longitude": -55.2038
+          "longitude": -55.2038,
+          "alternativeNames": []
         },
         "latitude": 3.9193,
         "longitude": -56.0278,
@@ -4654,7 +4955,8 @@
         "capital": {
           "name": "Montevideo",
           "latitude": -34.9011,
-          "longitude": -56.1650
+          "longitude": -56.1650,
+          "alternativeNames": []
         },
         "latitude": -32.5228,
         "longitude": -55.7658,
@@ -4669,7 +4971,8 @@
         "capital": {
           "name": "Caracas",
           "latitude": 10.4806,
-          "longitude": -66.9036
+          "longitude": -66.9036,
+          "alternativeNames": []
         },
         "latitude": 6.4238,
         "longitude": -66.5897,
@@ -4725,7 +5028,8 @@
         "capital": {
           "name": "Port-aux-Francais",
           "latitude": -49.3529,
-          "longitude": 70.2176
+          "longitude": 70.2176,
+          "alternativeNames": ["Port aux Francais"]
         },
         "latitude": -49.2804,
         "longitude": 69.3486,
@@ -4737,8 +5041,8 @@
           {
            "language": "de",
            "capital": null,
-           "name": "Französische Süd und Antarktisgebiete",
-           "alternativeNames": []
+           "name": "Französische Süd- und Antarktisgebiete",
+           "alternativeNames": ["Französische Süd und Antarktisgebiete"]
           }
         ]
       },
@@ -4765,7 +5069,8 @@
         "capital": {
           "name": "Grytviken",
           "latitude": -54.2806,
-          "longitude": -36.5080
+          "longitude": -36.5080,
+          "alternativeNames": []
         },
         "latitude": -54.4296,
         "longitude": -36.5879,
