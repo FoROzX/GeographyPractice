@@ -9,7 +9,7 @@ import { GameState } from "../Types/GameState";
 type Props = {
     country: Country;
     gameState: GameState;
-    determineGuessedCountry: (guess: string) => Country|undefined;
+    determineGuessedCountry: (guess: string, context?: string) => Country|undefined;
 };
 
 function ListAllData({ country, gameState, determineGuessedCountry }: Props){
@@ -58,7 +58,7 @@ function ListAllData({ country, gameState, determineGuessedCountry }: Props){
                             return;
                         }
 
-                        const guessedCountry = determineGuessedCountry(guess);
+                        const guessedCountry = solution === "Kingston" ? determineGuessedCountry(guess, country.name) : determineGuessedCountry(guess);
                         
                         if(isNil(guessedCountry) || guessedCountry.name !== country.name){
                             setError(true);

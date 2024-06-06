@@ -27,12 +27,12 @@ function ListAll(){
         setRandomizedCountries(randomizedCountries.filter(country => !isNil(country.capital)));
     }, [countries, settingsContext.listMode]);
     
-    const determineGuessedCountry = React.useCallback((guess: string) => {
+    const determineGuessedCountry = React.useCallback((guess: string, context?: string) => {
         switch(settingsContext.listMode){
             case ListMode.Country:
                 return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
             case ListMode.Capital:
-                return countries.find(country => country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLocaleLowerCase()).includes(guess.toLowerCase()));
+                return countries.find(country => (country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase())) && (isNil(context) || context === country.name));
         }
     }, [countries, settingsContext.listMode]);
 

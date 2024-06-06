@@ -1105,6 +1105,29 @@
            "alternativeNames": []
           }
         ]
+      },
+      {
+        "name": "Åland Islands",
+        "capital": {
+          "name": "Mariehamn",
+          "latitude": 60.0971,
+          "longitude": 19.9348,
+          "alternativeNames": []
+        },
+        "latitude": 60.1785,
+        "longitude": 19.9156,
+        "population": 29789,
+        "alternativeNames": ["Aland Islands"],
+        "countryCode": "AX",
+        "area": 1580,
+        "translations": [
+          {
+           "language": "de",
+           "capital": null,
+           "name": "Ålandinseln",
+           "alternativeNames": ["Alandinseln"]
+          }
+        ]
       }
     ]
   },

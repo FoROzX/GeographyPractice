@@ -48,12 +48,13 @@ function App(){
         }
     }, [country, round]);
 
-    const determineGuessedCountry = React.useCallback((guess: string) => {
+    const determineGuessedCountry = React.useCallback((guess: string, context?: string) => {
         switch(round){
             case 0:
                 return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
             case 1:
-                return countries.find(country => country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLocaleLowerCase()).includes(guess.toLowerCase()));
+                // Context is just for the Norfolk / Jamaica conflict
+                return countries.find(country => (country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase())) && (isNil(context) || context === country.name));
         }
     }, [countries, round]);
 

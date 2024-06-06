@@ -13,7 +13,7 @@ type Props = {
     country: Country;
     round: number;
     nextRound: () => void;
-    determineGuessedCountry: (guess: string) => Country|undefined;
+    determineGuessedCountry: (guess: string, context?: string) => Country|undefined;
     guessDisplayFormatter: (guessedCountries: Country[]) => React.ReactNode;
 };
 
@@ -28,7 +28,7 @@ function FindByDisplay({ label, solution, country, round, nextRound, determineGu
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     const onGuess = React.useCallback(() => {
-        const guessedCountry = determineGuessedCountry(guess);
+        const guessedCountry = solution === "Kingston" ? determineGuessedCountry(guess, country.name) : determineGuessedCountry(guess);
 
         if(isNil(guessedCountry)){
             // Display error here ig
