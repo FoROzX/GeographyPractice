@@ -9,31 +9,41 @@ import { GameState } from "../Types/GameState";
 type Props = {
     country: Country;
     gameState: GameState;
-    determineGuessedCountry: (guess: string, context?: string) => Country|undefined;
+    validateGuess: (guess: string, country: Country) => boolean;
 };
 
-function ListAllData({ country, gameState, determineGuessedCountry }: Props){
+function ListAllData({ country, gameState, validateGuess }: Props){
     const [guess, setGuess] = React.useState("");
     const [error, setError] = React.useState(false);
     const [disabled, setDisabled] = React.useState(false);
 
-    const settingsContext = React.useContext(SettingsContext);
+    const { listMode, countryMode } = React.useContext(SettingsContext);
     
-    const solution = React.useMemo(() => {
-        return settingsContext.listMode === ListMode.Country ? country.name : country.capital?.name as string;
-    }, [settingsContext.listMode, country]);
+    const solution = React.useMemo(() => listMode === ListMode.Country ? country.name : country.capital!.name, [listMode, country]);
 
     React.useEffect(() => {
-        if(gameState === GameState.GaveUp && !disabled){
+        if (gameState === GameState.GaveUp && !disabled){
             setGuess(solution);
             setDisabled(true);
         }
-        if(gameState === GameState.Searching){
+
+        if (gameState === GameState.Searching) {
             setGuess("");
             setError(false);
             setDisabled(false);
         }
     }, [gameState]);
+
+    const image = React.useMemo(() =>
+        <img 
+            src={
+                countryMode === CountryMode.Flag ?
+                `https://flagcdn.com/${country.countryCode.toLowerCase()}.svg` :
+                `https://teuteuf-dashboard-assets.pages.dev/data/common/country-shapes/${country.countryCode.toLowerCase()}.svg`
+            }
+            style={{ height: 64 }}
+        />
+    , [countryMode, country.countryCode]);
 
     if(isNil(solution)){
         return <></>;
@@ -53,15 +63,17 @@ function ListAllData({ country, gameState, determineGuessedCountry }: Props){
                         setGuess(e.target.value);
                     }}
                     onBlur={() => {
-                        if(isEmpty(guess)){
+                        if (isEmpty(guess)) {
                             setError(false);
+
                             return;
                         }
 
-                        const guessedCountry = solution === "Kingston" ? determineGuessedCountry(guess, country.name) : determineGuessedCountry(guess);
-                        
-                        if(isNil(guessedCountry) || guessedCountry.name !== country.name){
+                        const isValid = validateGuess(guess, country);
+
+                        if (!isValid) {
                             setError(true);
+
                             return;
                         }
 
@@ -71,18 +83,7 @@ function ListAllData({ country, gameState, determineGuessedCountry }: Props){
                 />
             </TableCell>
             <TableCell>
-                {
-                    settingsContext.listMode === ListMode.Country ?
-                    <img 
-                        src={
-                            settingsContext.countryMode === CountryMode.Flag ?
-                            `https://flagcdn.com/${country.countryCode.toLowerCase()}.svg` :
-                            `https://teuteuf-dashboard-assets.pages.dev/data/common/country-shapes/${country.countryCode.toLowerCase()}.svg`
-                        }
-                        style={{ height: 64 }}
-                    /> :
-                    country.name
-                }
+                { image }
             </TableCell>
         </TableRow>
     );

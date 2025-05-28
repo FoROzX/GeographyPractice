@@ -2,7 +2,7 @@ import { CircularProgress } from "@mui/material";
 import { CountryContext } from "../../Providers/CountryProvider";
 import React from "react";
 import { Country } from "../../Types/Country";
-import { isNil } from "lodash";
+import { isNil, toLower } from "lodash";
 import FindByDisplay from "./FindByDisplay";
 import CountryData from "../../Components/CountryData";
 import CapitalData from "../../Components/CapitalData";
@@ -36,26 +36,47 @@ function App(){
     }, [country, round]);
 
     const solution = React.useMemo(() => {
-        if(isNil(country)){
-            return "";
-        }
-
-        switch(round){
+        switch (round) {
             case 0:
-                return country.name;
+                return country?.name;
             case 1:
-                return country.capital?.name;
+                return country?.capital?.name;
         }
     }, [country, round]);
 
-    const determineGuessedCountry = React.useCallback((guess: string, context?: string) => {
-        switch(round){
-            case 0:
-                return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
-            case 1:
-                // Context is just for the Norfolk / Jamaica conflict
-                return countries.find(country => (country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase())) && (isNil(context) || context === country.name));
+    const filterCountries = React.useCallback((guess: string, name?: string, alternativeNames?: string[]) => {
+        const names = [];
+
+        if (!isNil(name)) {
+            names.push(name);
         }
+
+        if (!isNil(alternativeNames)) {
+            names.push(...alternativeNames);
+        }
+
+        return names.map(toLower).includes(guess.toLowerCase());
+    }, []);
+
+    const determineGuessedCountry = React.useCallback((guess: string, country: Country) => {
+        let validCountries = [];
+
+        switch (round) {
+            case 0:
+                validCountries = countries.filter(c => filterCountries(guess, c.name, c.alternativeNames));
+
+                break;
+            default:
+                validCountries = countries.filter(c => filterCountries(guess, c.capital?.name, c.capital?.alternativeNames));
+
+                break;
+        }
+        
+        if (validCountries.length > 1) {
+            return validCountries.find(c => c.name === country.name);
+        }
+
+        return validCountries[0];
     }, [countries, round]);
 
     const guessDisplayFormatter = React.useCallback((guessedCountries: Country[]) => {
@@ -78,7 +99,7 @@ function App(){
         setRound(round + 1);
     }, [round, refetchCountry]);
 
-    if(isNil(country)){
+    if (isNil(country)) {
         return <CircularProgress />;
     }
 

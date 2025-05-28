@@ -6,9 +6,7 @@ import React from 'react';
 function App() {
     const countries = React.useContext(CountryContext);
 
-    const formatNumber = React.useCallback((number: number) => {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }, []);
+    const formatNumber = React.useCallback(new Intl.NumberFormat().format, []);
 
     return (
         <DataTable
@@ -25,7 +23,7 @@ function App() {
                     {
                         header: "Capital",
                         accessor: "capital",
-                        formatter: (capital: City) => capital?.name ?? "Has no capital"
+                        formatter: (capital?: City) => capital?.name ?? "Has no capital"
                     },
                     {
                         header: "Population",
@@ -40,7 +38,7 @@ function App() {
                     {
                         header: "Flag",
                         accessor: "countryCode",
-                        formatter: (countryCode: string) => countryCode === "" ? "" : <img
+                        formatter: (countryCode: string) => <img
                             src={`https://flagcdn.com/${countryCode.toLowerCase()}.svg`}
                             style={{
                                 height: "80px"
@@ -50,7 +48,7 @@ function App() {
                     {
                         header: "Outline",
                         accessor: "countryCode",
-                        formatter: (countryCode: string) => countryCode === "" ? "" : <img
+                        formatter: (countryCode: string) => <img
                             src={`https://teuteuf-dashboard-assets.pages.dev/data/common/country-shapes/${countryCode.toLowerCase()}.svg`}
                             style={{
                                 height: "80px"

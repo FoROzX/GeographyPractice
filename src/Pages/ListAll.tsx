@@ -6,64 +6,62 @@ import { GameState } from "../Types/GameState";
 import { Country } from "../Types/Country";
 import { SettingsContext } from "../Providers/SettingsProvider";
 import { ListMode } from "../Types/Setting";
-import { isNil } from "lodash";
+import { isNil, toLower } from "lodash";
+import { City } from "../Types/City";
 
 function ListAll(){
-    const settingsContext = React.useContext(SettingsContext);
-    const countries = React.useContext(CountryContext);
+    const { listMode } = React.useContext(SettingsContext);
+    const allCountries = React.useContext(CountryContext);
+
+    const countries = React.useMemo(() => listMode === ListMode.Capital ? allCountries.filter(c => !isNil(c.capital)) : allCountries, [allCountries, listMode]);
 
     const [gameState, setGameState] = React.useState(GameState.Searching);
     const [randomizedCountries, setRandomizedCountries] = React.useState<Country[]>([]);
 
-    const randomizeCountries = React.useCallback(() => {
-        const randomizedCountries = countries.sort(() => Math.random() - Math.random());
+    const randomizeCountries = React.useCallback(() => setRandomizedCountries(countries.sort(() => 0.5 - Math.random())), [countries, listMode]);
 
-        if(settingsContext.listMode === ListMode.Country){
-            setRandomizedCountries(randomizedCountries);
+    const getOptions = React.useCallback((value?: Country|City) => {
+        if (isNil(value)) {
+            return [];
+        }
 
-            return;
-        }
-        
-        setRandomizedCountries(randomizedCountries.filter(country => !isNil(country.capital)));
-    }, [countries, settingsContext.listMode]);
-    
-    const determineGuessedCountry = React.useCallback((guess: string, context?: string) => {
-        switch(settingsContext.listMode){
-            case ListMode.Country:
-                return countries.find(country => country.name!.toLowerCase() === guess.toLowerCase() || country.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase()));
-            case ListMode.Capital:
-                return countries.find(country => (country.capital?.name.toLowerCase() === guess.toLowerCase() || country.capital?.alternativeNames.map(n => n.toLowerCase()).includes(guess.toLowerCase())) && (isNil(context) || context === country.name));
-        }
-    }, [countries, settingsContext.listMode]);
+        return [value.name, ...value.alternativeNames ?? []].map(toLower);
+    }, []);
+
+    const validateGuess = React.useCallback((guess: string, country: Country) => {
+        const options = listMode === ListMode.Capital ? getOptions(country.capital) : getOptions(country);
+
+        return options.includes(guess.toLowerCase());
+    }, [listMode]);
+
+    const content = React.useMemo(() => randomizedCountries.map((country, index) =>
+        <ListAllData
+            country={ country }
+            gameState={ gameState }
+            validateGuess={ validateGuess }
+            key={ index }
+        />
+    ), [randomizedCountries, gameState, validateGuess]);
 
     React.useEffect(() => {
         randomizeCountries();
-    }, [randomizeCountries]);
+    }, []);
 
     return (
         <>
             <Table>
                 <TableBody>
-                    {
-                        randomizedCountries.map(country => 
-                            <ListAllData
-                                country={ country }
-                                gameState={ gameState }
-                                determineGuessedCountry={ determineGuessedCountry }
-                                key={ country.countryCode }
-                            />
-                        )
-                    }
+                    { content }
                 </TableBody>
             </Table>
             
             <Button
                 variant="outlined"
                 onClick={() => {
-                    if(gameState === GameState.Searching){
+                    if (gameState === GameState.Searching) {
                         setGameState(GameState.GaveUp);
                     }
-                    else{
+                    else {
                         setGameState(GameState.Searching);
                         randomizeCountries();
                     }

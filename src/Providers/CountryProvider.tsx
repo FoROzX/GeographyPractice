@@ -1,9 +1,9 @@
 import React from "react";
-import { Country, DatabaseCountry } from "../Types/Country";
+import { Country } from "../Types/Country";
 import { SettingsContext } from "./SettingsProvider";
 import { Continent } from "../Types/Continent";
 import continents from "../Assets/countries.json";
-import { isNil } from "lodash";
+import { isNil, merge } from "lodash";
 
 export const CountryContext = React.createContext<Country[]>([]);
 
@@ -12,34 +12,24 @@ type Props = {
 };
 
 function CountryProvider({ children }: Props){
-    const settingsContext = React.useContext(SettingsContext);
+    const { excludedContinents, language } = React.useContext(SettingsContext);
 
-    const filteredCountries: DatabaseCountry[] = React.useMemo(() => {
-        return (continents as Continent[]).filter(continent => !settingsContext.excludedContinents.includes(continent.name)).flatMap(continent => continent.countries);
-    }, [continents, settingsContext.excludedContinents]);
+    const countries: Country[] = React.useMemo(() => {
+        const filteredCountries = (continents as Continent[]).filter(c => !excludedContinents.includes(c.name)).flatMap(c => c.countries);
 
-    const translatedCountries: Country[] = React.useMemo(() => {
         return filteredCountries.map((country): Country => {
-            const translation = country.translations.find(t => t.language === settingsContext.language);
-
-            const translatedCountry = { ...country };
-
-            if(!isNil(translation)){
-                if(!isNil(translation.name)){
-                    translatedCountry.name = translation.name;
-                    translatedCountry.alternativeNames = translation.alternativeNames;
-                }
-                if(!isNil(translation.capital)){
-                    translatedCountry.capital = { ...translatedCountry.capital!, ...translation.capital };
-                }
+            if (isNil(country.translations) || !(language in country.translations)) {
+                return country;
             }
 
-            return translatedCountry;
+            const translation = country.translations[language];
+
+            return merge({}, country, translation);
         });
-    }, [filteredCountries, settingsContext.language]);
+    }, [excludedContinents, language]);
 
     return (
-        <CountryContext.Provider value={ translatedCountries }>
+        <CountryContext.Provider value={ countries }>
             { children }
         </CountryContext.Provider>
     );

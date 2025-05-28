@@ -13,7 +13,7 @@ type Props = {
     country: Country;
     round: number;
     nextRound: () => void;
-    determineGuessedCountry: (guess: string, context?: string) => Country|undefined;
+    determineGuessedCountry: (guess: string, country: Country) => Country|undefined;
     guessDisplayFormatter: (guessedCountries: Country[]) => React.ReactNode;
 };
 
@@ -28,28 +28,29 @@ function FindByDisplay({ label, solution, country, round, nextRound, determineGu
     const inputRef = React.useRef<HTMLInputElement>(null);
 
     const onGuess = React.useCallback(() => {
-        const guessedCountry = solution === "Kingston" ? determineGuessedCountry(guess, country.name) : determineGuessedCountry(guess);
+        const guessedCountry = determineGuessedCountry(guess, country);
 
-        if(isNil(guessedCountry)){
-            // Display error here ig
-            return;
-        }
-        if(guessedCountries.map(country => country.name).includes(guessedCountry.name)){
-            // Display error here ig
+        if (isNil(guessedCountry)) {
             return;
         }
 
-        setGuessedCountries([...guessedCountries, guessedCountry]);
+        if (guessedCountries.some(c => c.name === guessedCountry.name)) {
+            return;
+        }
 
-        if(country.name === guessedCountry.name){
+        setGuessedCountries(current => [...current, guessedCountry]);
+
+        if (country.name === guessedCountry.name) {
             setGameState(GameState.Found);
             toastRef.current?.open(`${solution} is correct!`, 2000);
         }
 
         setGuess("");
-    }, [guess, country, solution, determineGuessedCountry]);
+    }, [guess, country, solution, setGuessedCountries, determineGuessedCountry]);
+    
     const onGiveUp = React.useCallback(() => {
         setGameState(GameState.GaveUp);
+
         toastRef.current?.open(`The correct answer was ${solution}`, 5000);
     }, [solution]);
 
@@ -65,18 +66,20 @@ function FindByDisplay({ label, solution, country, round, nextRound, determineGu
 
             return;
         }
+
         if(isNil(solution) && settingsContext.nextRoundMode === NextRoundMode.Automatic){
             nextRound();
         }
     }, [round]);
+
     React.useEffect(() => {
-        if(gameState === GameState.Searching){
+        if (gameState === GameState.Searching) {
             inputRef.current?.focus();
 
             return;
         }
 
-        if(settingsContext.nextRoundMode === NextRoundMode.Automatic){
+        if (settingsContext.nextRoundMode === NextRoundMode.Automatic) {
             nextRound();
         }
     }, [gameState]);

@@ -1,9 +1,11 @@
 import { City } from "./City";
-import { CountryTranslation } from "./Translation";
 
 export type DatabaseCountry = Country & {
-    translations: CountryTranslation[];
+    translations?: {
+        [language: string]: Partial<Country>;
+    };
 };
+
 export type Country = {
     name: string;
     countryCode: string;
@@ -11,6 +13,6 @@ export type Country = {
     longitude: number;
     area: number;
     population: number;
-    alternativeNames: string[];
-    capital: City|null;
+    alternativeNames?: string[];
+    capital?: City;
 };
